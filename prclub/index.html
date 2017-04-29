@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("banner.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("track1.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("track2.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+p {
+  font: 18px "Lato", sans-serif;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 30px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="bgimg-1">
+  <div class="caption">
+    <span class="border">PR CLUB</span>
+  </div>
+</div>
+
+<div style="color: #00205B;background-color:white;text-align:center;padding:50px 80px;text-align: center;">
+  <h3 style="text-align:center;">Upcoming Events</h3>
+  <p>Saturday, April 22, 2017: J. Fred Ducket Twilight</p>
+  <br>
+  <p>Friday, May 5, 2017: Tom Tellez Invitational (University of Houston)</p>
+  <br>
+  <p>Saturday, May 6, 2017: Oxy Invite (Los Angeles, California)</p>
+  <br>
+  <p>Thursday-Sunday, May 11-14, 2017: C-USA Championships (El Paso, Texas)</p>
+  <br>
+  <p>Thursday-Saturday, May 25-27, 2017: NCAA West Preliminary Rounds (Austin, Texas)</p>
+  <br>
+  <p>Thursday-Saturday, June 7-10, 2017: NCAA Championships (Eugene, Oregon)</p>
+  <br>
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">ANNOUCEMENTS</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+    <p>This site is still under construction.</p>
+  </div>
+</div>
+
+<div class="bgimg-3">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SPECIAL EVENTS</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+    <p>More content to come soon.</p>
+  </div>
+</div>
+
+<div class="bgimg-1">
+  <div class="caption">
+    <span class="border">CONTACT THE PR CLUB AT JHWARREN@RICE.EDU</span>
+    <p style="padding-top:10em">Created by Kunal Shah on April 28, 2017</p>
+  </div>
+</div>
+
+</body>
+</html>
