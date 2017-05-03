@@ -184,10 +184,10 @@ h1.quote{
   margin-bottom: 25rem;
   font-weight: 60; 
   font-family: "futura-pt", Helvetica, Arial, sans-serif;
-  font-size: 35px;
+  font-size: 20px;
   color:#000;
   letter-spacing: -.15rem;
-  text-align: center;
+  text-align: left;
 }
 
 
@@ -477,7 +477,7 @@ form {
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 hr {
-  margin-top: 4rem;
+  margin-top: 8rem;
   margin-bottom: 6rem;
   border-width: 0;
   border-top: 2px solid #000;

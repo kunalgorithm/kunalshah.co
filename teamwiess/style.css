@@ -47,6 +47,12 @@ body, html {
   letter-spacing: 10px;
 }
 
+/* Change the text color to grey. */
+p {
+  color: #777;
+}
+
+
 h3 {
   letter-spacing: 5px;
   text-transform: uppercase;
