@@ -1,146 +1,882 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<!--
+  Name: Kunal Shah
+	Theme: Elementy
+	Description: HTML/CSS
+	Author: Kunal Shah
 
-  <meta charset="utf-8">
-  <title>Kunal Shah | Developer&amp; Designer</title>
-  <meta name="description" content="Welcome to kunalshah.me, the home of Kunal Shah.&mdash;developer, student, visionary, and aspiring entrepreneur.">
-  <meta name="author" content="Kunal Shah">
+-->
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+ 	<head>
+		<title>Kunal Shah | Developer&amp; Designer</title>
+		<meta charset="utf-8">
+		<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+		<meta name="robots" content="index, follow" >
+		<meta name="keywords" content="Kunal Shah" >
+		<meta name="description" content="Kunal Shah" >
+		<meta name="author" content="Kunal Shah">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="theme-color" content="#2a2b2f">
 
-  <script src="https://use.typekit.net/dru0rgp.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
-  <script src="Tooltip.js" type="text/javascript"></script>
+		<!-- FAVICONS -->
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-touch-icon-114x114.png">
+    <link rel="icon" sizes="192x192" href="images/favicon/icon-192x192.png">
 
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="style.css">
-  <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+<!-- CSS -->
+    <!--  GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:500,600,300%7COpen+Sans:400,300,700" rel="stylesheet" type="text/css">
 
-  <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- REVOSLIDER CSS SETTINGS -->
 
-</head>
-<body>
+    <!-- REVOLUTION STYLE SHEETS -->
+    <link href="revo-slider/css/settings-custom.css" rel="stylesheet" type="text/css">
 
+    <!--  BOOTSTRAP -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
 
-  <div class="container">
-    <div class="row">
-      <div class="logo" title="kunalshah.me">
-      </div>
+    <!-- ICONS ELEGANT FONT & FONT AWESOME & LINEA ICONS  -->
+		<link rel="stylesheet" href="css/icons-fonts.css" >
+
+    <!--  CSS THEME -->
+		<link rel="stylesheet" href="css/style.css" >
+
+    <!-- ANIMATE -->
+		<link rel="stylesheet" href="css/animate.min.css">
+
+    <!-- FONT AWESOME -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- IE Warning CSS -->
+		<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="css/ie-warning.css" ><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="css/ie8-fix.css" ><![endif]-->
+
+    <!-- Magnific popup, Owl Carousel Assets in style.css -->
+
+<!-- CSS end -->
+
+<!-- JS begin some js files in bottom of file-->
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+	</head>
+	<body>
+
+		<!-- LOADER -->
+		<div id="loader-overflow">
+      <div id="loader3" class="loader-cont">Please enable JS</div>
     </div>
 
-    <div class="row headline">
-      <div class="nine columns">
-        <h1>Hi, I'm Kunal Shah&mdash;<br>Rice University.<br>Developer &amp; Designer. </h1>
-      </div>
-    </div>
- <!--    <div class="row">
-    <h1 class="quote">Move fast and break things. <br>&mdash; Mark Zuckerberg</h1>
-    <br><br><br>
-    </div> -->
-    <div class="row"><hr></div>
+		<div id="wrap" class="boxed ">
+			<div class="grey-bg"> <!-- Grey BG  -->
 
-    <div class="row">
-      <div class="six columns">
-        <div class="row">
-        <h2>ABOUT ME</h2>
-        <div class="six columns subhead">I'm originally from Cortlandt Manor New York and currently reside in Houston, Texas.</div>
-        </div>
-        <!-- <p>I've spent a lot of my time consumed in maniacical frenzies. I've always enjoyed picking up something new off the ground, and &mdash;literally&mdash; running with it. </p> 
+				<!--[if lte IE 8]>
+				<div id="ie-container">
+					<div id="ie-cont-close">
+						<a href="#" onclick="javascript&#058;this.parentNode.parentNode.style.display="none"; return false;"><img src="images/ie-warn/ie-warning-close.jpg" style="border: none;" alt="Close"></a>
+					</div>
+					<div id="ie-cont-content" >
+						<div id="ie-cont-warning">
+							<img src="images/ie-warn/ie-warning.jpg" alt="Warning!">
+						</div>
+						<div id="ie-cont-text" >
+							<div id="ie-text-bold">
+								You are using an outdated browser
+							</div>
+							<div id="ie-text">
+								For a better experience using this site, please upgrade to a modern web browser.
+							</div>
+						</div>
+						<div id="ie-cont-brows" >
+							<a href="http://www.firefox.com" target="_blank"><img src="images/ie-warn/ie-warning-firefox.jpg" alt="Download Firefox"></a>
+							<a href="http://www.opera.com/download/" target="_blank"><img src="images/ie-warn/ie-warning-opera.jpg" alt="Download Opera"></a>
+							<a href="http://www.apple.com/safari/download/" target="_blank"><img src="images/ie-warn/ie-warning-safari.jpg" alt="Download Safari"></a>
+							<a href="http://www.google.com/chrome" target="_blank"><img src="images/ie-warn/ie-warning-chrome.jpg" alt="Download Google Chrome"></a>
+						</div>
+					</div>
+				</div>
+				<![endif]-->
 
-        <p>By high school I had gone quite far in my knack for running, a sport I had unintentionally collided with. I placed 6th nationally in cross country at the USATF Junior Olympic Games and first in the mile at the New York State Public High School Championships. I thought it might be of use to a launch a means for other adolescents to collide into a sport that too would go on to be a great positive influence on their lives. </p>  -->
-        <p>I like data, design and development! This site is currently under construction. You'll likely see a more comprehensive bio here soon!</p>
+				<!-- HEADER 3 MIN SIDE MENU 2 FONT BLACK TRANSPARENT -->
+				<header id="nav-stick" class="header header-1 header-side-menu">
+				  <div class="header-wrapper">
+            <div class="container-m-30 clearfix">
+              <div class="logo-row">
 
-        <p>This summer I'll be working as a Technology Analyst for JP Morgan and Co. in Houston. I also plan to continue my work as a freelance developer.</p>
-        </div>
+              <!-- LOGO -->
+              <div class="logo-container-2">
+                  <div class="logo-2">
+                    <a href="index.html" class="clearfix">
+                      <img src="images/logo.png" class="logo-img" alt="Logo">
+                    </a>
+                  </div>
+                </div>
+             </div>
+            </div>
 
-        <div class="six columns">
-        <!-- <p>I launched the Stay On Track Foundation, a 501(c)3 nonprofit organization that sought to introduce the fun and competitive facets of athleticism to children in grade school. We brought together nearly a hundred participants and volunteers for a child-friendly track meet that we called the Mini Olympics.</p>
+            <!-- BUTTON -->
+            <div class="menu-btn-respons-container2">
+              <a id="cd-menu-trigger" href="#"><span class="cd-menu-icon"></span></a>
+            </div>
+				  </div> <!-- END header-wrapper -->
+				</header>
 
-        <p>My knack for running followed me to college at Rice University, where I competed on the NCAA track team. You can peak at my work for their website <a href="prclub" target="_blank">here.</a></p>
+        <!-- SIDE MENU -->
+        <nav id="cd-lateral-nav" class="font-poppins">
 
-        Rice is where I discovered my interest for data, design, and development, and where it came to balloon into an untetherable passion.</p>
+          <ul id="nav-onepage" class="cd-navigation cd-single-item-wrapper">
+            <li class="current"><a href="#index-link">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#services-link">Services</a></li>
+            <li><a href="#portfolio-link">Portfolio</a></li>
+            <li><a href="#testimonials-link">Testimonials</a></li>
+            <li><a href="#clients-link">Clients</a></li>
+            <li><a href="#contact-link">Contacts</a></li>
+          </ul> <!-- cd-single-item-wrapper -->
 
-        <p>I currently reside in Houston and am a member of Wiess College of Rice University, where I serve as Internal Vice President and Webmaster. You can visit my work on the college website <a href="teamwiess" target="_blank">here.</a></p> -->
+          <div class="cd-navigation socials text-center">
+            <div class="footer2-soc-a">
+              <a href="https://www.facebook.com/Kunal.shah239" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+              <a href="https://twitter.com/kunalsh22" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.instagram.com/kunalsh22" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+              <a href="https://www.snapchat.com/add/kjango1" title="Snapchat" target="_blank"><i class="fa fa-snapchat-ghost" aria-hidden="true"></i></a>
+              <a href="https://www.linkedin.com/in/kunalgorithm/" title="LinkedIn+" target="_blank"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>  <!-- socials -->
 
-        
-      </div>
-    </div>
+        </nav><!-- END side menu -->
 
-    <div class="row"></div>
-    <br><br><br><br><br>
-    <hr>
-    <h2>PROJECTS</h2>
+        <!-- SLIDING CONTENT -->
+        <div id="index-link" class="sliding-content rev_slider_wrapper fullscreen-container" style="background-color:#fff;padding:0px;"><!-- need for menu -->
 
-    <div class="row"><p>Here's a sneak peek at what I'm currently working on.</p></div>
+                <!-- START REVOLUTION SLIDER 5.1.4 fullscreen mode -->
+                <div class="rev_slider fullscreenbanner " data-version="5.1.4" id="rev_slider_280_1" style="display:none;">
+                    <ul>
+                        <!-- SLIDE -->
+                        <li data-description="" data-easein="Power2.easeInOut" data-easeout="default" data-index="rs-898" data-masterspeed="1500" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-title="Slide" data-transition="fade">
+                            <!-- MAIN IMAGE -->
+                            <img alt="img" class="rev-slidebg" data-bgparallax="12" data-bgposition="center center" data-duration="30000" data-ease="Linear.easeNone" data-no-retina="" src="images/wide-ks.png">
+                            <!-- LAYERS -->
+                            <!-- LAYER NR. 1 -->
+                            <div class="tp-caption font-poppins font-black tp-resizeme rs-parallaxlevel-6" id="slide-898-layer-1" style="z-index: 8; white-space: nowrap;"
+                            data-fontsize="['80','70','60','36']"
+                            data-fontweight="300"
+                            data-height="none"
+                            data-lineheight="['96','86','76','50']"
+                            data-responsive_offset="on"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-start="500"
+                            data-transform_idle="o:1;"
+                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
+                            data-transform_out="y:[100%];s:1000;s:1000;"
+                            data-mask_in="x:0px;y:0px;"
+                            data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                            data-whitespace="nowrap"
+                            data-width="none"
+                            data-x="['left','left','left','left']"
+                            data-hoffset="['40','40','40','20']"
+                            data-y="['center','center','center','center']"
+                            data-voffset="['-100','-90','-80','-50']">
+                              Hi, I'm <strong class="bold">Kunal Shah</strong>
+                            </div>
 
-      <a href="teamwiess" target="_blank"><div class="button">Wiess College</div></a><br>
-      <a href="blog/index.html" target="_blank"><div class="button">Blog</div></a><br>
-      <a href="paragon-mgt/index.html" target="_blank"><div class="button">Paragon Management</div></a><br>
-      <a href="prclub/index.html" target="_blank"><div class="button">Rice Track</div></a><br>
-      <a href="wiessoweek/index.html" target="_blank"><div class="button">O-Week</div></a><br>
-    
-    <div class="row" style="margin-top:15rem;"><hr></div>
-    <div class="row">
-      <div class="four columns" style="margin-left:0;margin-bottom:5rem;">
-        <h2>Experience</h2>
-        <!-- <div class="eight columns subhead">I'm from Cortlandt Manor, New York and I'm currently attending Rice University in Hosuton Texas.</div> -->
-        <!-- <a href="javascript:alert('Sorry, that hasn't been uploaded yet!');"><div class="button">Resume</div></a> -->
-        
-      </div>
-      <div class="four columns">
-        <ul>
-          <li>Python &amp; Java</li>
-          <li>HTML5 &amp; CSS3</li>
-          <li>React, Angular &amp; Node.js</li>
-          <li>Systems &amp; OS</li>
-          <li>C &amp; C++</li>
-          <li>Obj C &amp; Swift</li>
-        </ul>
-      </div>
-      <div class="four columns">
-        <ul>
-          <li>Web Design &amp; Dev</li>
-          <li>Databases &amp; Web Crawlers</li>
-          <li>Computer Vision &amp; Image Processing</li>
-          <li>Brand &amp; Identity</li>
-          <li>Email Marketing, Design &amp; Dev</li>
-        </ul>
-      </div>
-    </div> 
+                            <!-- LAYER NR. 2 -->
+                            <div class="tp-caption font-poppins font-black tp-resizeme rs-parallaxlevel-6" id="slide-898-layer-2" style="z-index: 8; white-space: nowrap;"
+                            data-fontsize="['80','70','60','36']"
+                            data-fontweight="300"
+                            data-height="none"
+                            data-lineheight="['96','86','76','50']"
+                            data-responsive_offset="on"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-start="800"
+                            data-transform_idle="o:1;"
+                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
+                            data-transform_out="y:[100%];s:1000;s:1000;"
+                            data-mask_in="x:0px;y:0px;"
+                            data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                            data-whitespace="nowrap"
+                            data-width="none"
+                            data-x="['left','left','left','left']"
+                            data-hoffset="['40','40','40','20']"
+                            data-y="['center','center','center','center']"
+                            data-voffset="['0','0','0','0']">
+                              developer &amp; designer
+                            </div>
 
-    <div class="row" style="margin-top:20rem;">
-      <hr>  
-      <h3>Ask me to build you a website, I'll do it for free!<br><div style="font-weight: 200; font-size: 19">To get in touch, write to <a href="mailto:kshah239@gmail.com">kshah239@gmail.com</a>.</div></h3>
-    </div>
+                            <!-- LAYER NR. 3 -->
+                            <div class="tp-caption font-poppins font-black tp-resizeme rs-parallaxlevel-6" id="slide-898-layer-3" style="z-index: 8; white-space: nowrap;"
+                            data-fontsize="['80','70','60','36']"
+                            data-fontweight="300"
+                            data-height="none"
+                            data-lineheight="['96','86','76','50']"
+                            data-responsive_offset="on"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-start="1100"
+                            data-transform_idle="o:1;"
+                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
+                            data-transform_out="y:[100%];s:1000;s:1000;"
+                            data-mask_in="x:0px;y:0px;"
+                            data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                            data-whitespace="nowrap"
+                            data-width="none"
+                            data-x="['left','left','left','left']"
+                            data-hoffset="['40','40','40','20']"
+                            data-y="['center','center','center','center']"
+                            data-voffset="['100','90','80','50']">
+                              based in Houston<span class="red-dot">.</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+                </div>
 
+        </div> <!-- END sliding-content -->
 
-      <div class="row" style="margin-top:15rem;">
-        <hr class="f">
-        <div class="footer">
-          
-          <a href="https://www.linkedin.com/in/kunalgorithm" title="LinkedIn @kunalgorithm" target="_blank"><div class="linkedin social"></div></a>
-          <!-- <a href="https://twitter.com/kjango1" title="twitter @kjango1" target="_blank"><div class="twitter social"></div></a> -->
-          <div>
-            &copy; 2017 <a href="mailto:kshah239@gmail.com">Kunal Shah</a>. New York.
+        <!-- SLIDING CONTENT -->
+        <div class="sliding-content"><!-- need for menu -->
+
+          <!-- FEATURES 5 ABOUT ME -->
+          <div id="about" class="page-section pt-160-b-120-cont">
+            <div class="container">
+
+              <div class="row">
+                <!-- TEXT -->
+                <div class="col-md-5 pb-40">
+                  <div class="font-poppins font-32 font-black bold mb-0">
+                    <p>I'm a student at Rice University<br>studying computer science.</p>
+                   </div>
+                </div>
+
+                <!-- FEATURES -->
+                <div class="col-md-offset-1 col-md-6 ">
+
+                  <div class="row">
+
+                    <div class="col-md-6 col-sm-6 pb-10">
+                      <div class="fes5-box wow fadeIn" >
+                        <p>I'm working as a Technology Analyst for JP Morgan&amp; Co. this summer in Houston, Texas.</p>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 pb-10">
+                      <div class="fes5-box wow fadeIn" data-wow-delay="200ms">
+                        <p>I also work as a freelance developer and build websites and applications.</p>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="row">
+
+                    <div class="col-md-6 col-sm-6 pb-10">
+                      <div class="fes5-box wow fadeIn" data-wow-delay="400ms">
+                        <p>My other interests span to real estate investment and development, eCommerce, HTML5 effects, and interior design.</p>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 pb-10">
+                      <div class="fes5-box wow fadeIn"  data-wow-delay="600ms">
+                        <p>Let me know if you'd like me to build you a website, I'll do it for free! </p>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
           </div>
-          
-        </div>
-      </div>
+
+          <!-- FEATURES 13 OUR SERVICES -->
+          <div id="services-link" class="page-section pt-160-b-120-cont bg-yellow">
+            <div class="container">
+              <div class="row">
+
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                  <div class="fes4-box wow fadeIn">
+                    <h2 class="section-title2"><strong>Interests</strong></h2>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                  <div class="fes4-box wow fadeIn" data-wow-delay="200ms">
+                    <div class="fes13-title-cont" >
+                      <div class="fes13-box-icon">
+                        <div class="icon icon-basic-settings"></div>
+                      </div>
+                      <h3><strong>Development</strong></h3>
+                    </div>
+                    <div class="fes14-tab-text">
+                      <!-- Maecenas luctus nisi in sem fermentum blat. In nec  elit solliudin, elementum, dictum pur quam volutpat suscipit antena. -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                  <div class="fes4-box wow fadeIn" data-wow-delay="400ms">
+                    <div class="fes13-title-cont" >
+                      <div class="fes13-box-icon">
+                        <div class="icon icon-basic-share"></div>
+                      </div>
+                      <h3><strong>Production</strong></h3>
+                    </div>
+                    <div class="fes14-tab-text">
+                      <!-- Seductio maesto nisi in sem fermentum blat. In nec elit solliudin, elementum, dictum pur quam volutpat suscipit antena. -->
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="row">
+
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                  <div class="fes4-box wow fadeIn" data-wow-delay="600ms">
+                    <div class="fes13-title-cont" >
+                      <div class="fes13-box-icon">
+                        <div class="icon icon-basic-target"></div>
+                      </div>
+                      <h3><strong>Branding</strong></h3>
+                    </div>
+                    <div class="fes14-tab-text">
+                      <!-- Donec vel luctus nisi in sem fermentum blat. In nec elit solliudin, elementum, dictum pur quam volutpat suscipit antena. -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                  <div class="fes4-box wow fadeIn" data-wow-delay="800ms" >
+                    <div class="fes13-title-cont" >
+                      <div class="fes13-box-icon">
+                        <div class="icon icon-basic-globe"></div>
+                      </div>
+                      <h3><strong>Web Design</strong></h3>
+                    </div>
+                    <div class="fes14-tab-text">
+                      <!-- Lorem luctus antena at nisi in sem blandit. In nec elit soltudin, elementum odio et, dictum quam a volutpat elementum. -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                  <div class="fes4-box wow fadeIn" data-wow-delay="1000ms">
+                    <div class="fes13-title-cont" >
+                      <div class="fes13-box-icon">
+                        <div class="icon icon-basic-picture"></div>
+                      </div>
+                      <h3><strong>Not Running</strong></h3>
+                    </div>
+                    <div class="fes14-tab-text">
+                      <!-- Fermentum nisi in sem fertum blat. In elit soldin, elemtum, arenam pur quam volutpat suscipit dictum pur quam. -->
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- 1 2 3 PROFIT! -->
+          <div class="container-fluid p-110-cont bg-gray">
+  					<div class="row">
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="work-proc2-cont wow fadeIn">
+                  <div class="work-proc2-icon-cont pos-l-12">
+                   01
+                  </div>
+                  <h3><strong>Planning</strong></h3>
+                  <p>Ain't no product without a plan.</p>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="work-proc2-cont wow fadeIn" data-wow-delay="200ms">
+                  <div class="work-proc2-icon-cont">
+                    02
+                  </div>
+                  <h3><strong>Development</strong></h3>
+                  <p>Ain't no app without some code.</p>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="work-proc2-cont wow fadeIn" data-wow-delay="400ms">
+                  <div class="work-proc2-icon-cont">
+                    03
+                  </div>
+                  <h3><strong>???</strong></h3>
+                  <p></p>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="work-proc2-a-cont wow fadeIn" data-wow-delay="600ms">
+                  <a class="work-proc2-a" href="#">
+                    <div class="work-proc2-a-text">
+                      04<br><span class="border-bot">Profit</span>
+                    </div>
+                    <div class="work-proc2-bg-block"></div>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+  				</div>
+
+          <!-- PORTFOLIO SECTION (3 COLS, BOXED) -->
+          <div id="portfolio-link" class="page-section p-140-cont">
+            <div class="relative">
+
+              <div class="container">
+                <div >
+
+                  <!-- TITLE -->
+                  <div class="mb-10">
+                    <h2 class="section-title2"><strong>Here's what I've been up to</strong></h2>
+                  </div>
+
+                  <!-- PORTFOLIO FILTER -->
+                  <div class="pl-xxs-10">
+
+                    <ul class="port-filter">
+                      <li>
+                        <a href="#" class="filter active" data-filter="*">All</a>
+                      </li>
+                      <li>
+                        <a href="#" class="filter" data-filter=".development">Development</a>
+                      </li>
+                      <li>
+                        <a href="#" class="filter" data-filter=".design">Design</a>
+                      </li>
+                      <li>
+                        <a href="#" class="filter" data-filter=".projects">Projects</a>
+                      </li>
+                      <li>
+                        <a href="#" class="filter" data-filter=".intern">Internships</a>
+                      </li>
+                    </ul>
+
+                  </div>
+
+                </div>
+
+              <!-- ITEMS GRID -->
+              <ul class="port-grid clearfix" id="items-grid">
+
+                <!-- Item 1 -->
+                <li class="port-item mix projects">
+                  <a href="#">
+                    <div class="port-img-overlay"><img class="port-main-img" src="images/crest.png" alt="img" >
+                    </div>
+                    <div class="port-overlay-cont">
+                      <div class="port-title-cont2">
+                        <h3>Wiess College</h3>
+                        <span>Internal Vice President</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+                <!-- Item 1 -->
+                <li class="port-item mix projects">
+                  <a href="#">
+                    <div class="port-img-overlay"><img class="port-main-img" src="images/crest.png" alt="img" >
+                    </div>
+                    <div class="port-overlay-cont">
+                      <div class="port-title-cont2">
+                        <h3>Wiess College</h3>
+                        <span>Webmaster</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+                <!-- Item 1 -->
+                <li class="port-item mix projects">
+                  <a href="#">
+                    <div class="port-img-overlay"><img class="port-main-img" src="images/stayontrack.jpg" alt="img" >
+                    </div>
+                    <div class="port-overlay-cont">
+                      <div class="port-title-cont2">
+                        <h3>Stay On Track Nonprofit Organization</h3>
+                        <span>Founder, Board Member, Former President</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+                <!-- Item 1 -->
+                <li class="port-item mix intern">
+                  <a href="#">
+                    <div class="port-img-overlay"><img class="port-main-img" src="images/jpmorgan.jpg" alt="img" >
+                    </div>
+                    <div class="port-overlay-cont">
+                      <div class="port-title-cont2">
+                        <h3>JP Morgan Chase &amp;Co.</h3>
+                        <span>Techonology Analyst</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+                <!-- Item 1 -->
+                <li class="port-item mix intern">
+                  <a href="#">
+                    <div class="port-img-overlay"><img class="port-main-img" src="images/shade.png" alt="img" >
+                    </div>
+                    <div class="port-overlay-cont">
+                      <div class="port-title-cont2">
+                        <h3>Shade Biotechnology Startup</h3>
+                        <span>Data Science Intern</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+                <!-- Item 1 -->
+                <li class="port-item mix intern">
+                  <a href="#">
+                    <div class="port-img-overlay"><img class="port-main-img" src="images/phylonet.jpg" alt="img" >
+                    </div>
+                    <div class="port-overlay-cont">
+                      <div class="port-title-cont2">
+                        <h3>Rice Bioinformatics Research</h3>
+                        <span>Research Intern</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+                <!-- Item 1 -->
+                <li class="port-item mix design">
+                  <a href="#">
+                    <div class="port-img-overlay"><img class="port-main-img" src="images/riceapps.png" alt="img" >
+                    </div>
+                    <div class="port-overlay-cont">
+                      <div class="port-title-cont2">
+                        <h3>Rice Apps Development Team</h3>
+                        <span>Design</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+                <!-- Item 1 -->
+                <li class="port-item mix intern">
+                  <a href="#">
+                    <div class="port-img-overlay"><img class="port-main-img" src="images/mcnair.png" alt="img" >
+                    </div>
+                    <div class="port-overlay-cont">
+                      <div class="port-title-cont2">
+                        <h3>McNair Center for Entrepreneurship and Innovation</h3>
+                        <span>Computer Science Intern</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <!-- Item 1 -->
+                <li class="port-item mix intern">
+                  <a href="#">
+                    <div class="port-img-overlay"><img class="port-main-img" src="images/u.png" alt="img" >
+                    </div>
+                    <div class="port-overlay-cont">
+                      <div class="port-title-cont2">
+                        <h3>Unix Studios</h3>
+                        <span>Founder</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+              </ul>
+
+                <!-- VIEW MORE PROJECTS -->
+                <div class="port-view-more-cont">
+                  <a class="port-view-more font-poppins" href="portfolio-masonry-4col.html">View More Projects</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- END PORTFOLIO SECTION -->
 
 
-  </div>
+          <!-- SLOGAN 1 -->
+          <div class="p-140-cont bg-gray">
+          	<div class="container">
+          		<div class="row">
+          			<div class="col-md-7 col-sm-12"><h3 class="sl1-text font-light font-raleway">Move fast and break things</h3></div>
+          			<div class="col-md-offset-1 col-md-4 col-sm-offset-7 col-sm-5 col-xs-offset-5 col-xs-7 mt-40 mb-20">
+          	      <img src="images/signature.png" alt="img">
+          	    </div>
+          		</div>
+          	</div>
+          </div>
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+          <!-- CONTACT INFO & FORM SECTION 1 -->
+          <div id="contact-link" class="page-section p-140-cont">
+            <div class="container">
 
-  ga('create', 'UA-98307196-1', 'auto');
-  ga('send', 'pageview');
+              <div class="row">
+                <div class="col-md-12">
+                  <h2 class="section-title2 mb-45 p-0"><strong>Say Hello!</strong></h2>
+                </div>
+              </div>
 
-</script>
-</body>
+              <div class="row">
 
+                <!-- CONTACT INFO -->
+                <div class="col-md-4 mb-30">
+
+                  <div class="row">
+                    <div class="col-md-12 col-sm-6">
+                      <div class="cis-cont">
+                        <div class="cis-icon">
+                          <div class="icon icon-basic-map"></div>
+                        </div>
+                        <div class="cis-text">
+                          <h3>Address</h3>
+                          <p>6340 Main St. Houston, TX 77005</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-12 col-sm-6">
+                      <div class="cis-cont">
+                        <div class="cis-icon">
+                          <div class="icon icon-basic-mail"></div>
+                        </div>
+                        <div class="cis-text">
+                          <h3>Email</h3>
+                          <p><a href="mailto:kshah239@gmail.com">kshah239@gmail.com</a></p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-12 col-sm-6">
+                      <div class="cis-cont">
+                        <div class="cis-icon">
+                          <div class="icon icon-basic-smartphone"></div>
+                        </div>
+                        <div class="cis-text">
+                          <h3>Text</h3>
+                          <p>1-914-355-8653</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- CONTACT FORM -->
+                <div class="col-md-8">
+                  <div class="relative">
+                    <form id="contact-form" action="php/contact-form.php" method="POST">
+
+                      <div class="row">
+
+                        <div class="col-md-12">
+                          <div class="row">
+
+                            <div class="col-md-6 mb-23">
+                              <!-- <label>Your name *</label> -->
+                              <input type="text" value="" data-msg-required="Please enter your name" maxlength="100" class="form-control " name="name" id="name" placeholder="Name" required>
+                            </div>
+
+                            <div class="col-md-6 mb-23">
+                              <!-- <label>Your email address *</label> -->
+                              <input type="email" value="" data-msg-required="Please enter your email address" data-msg-email="Please enter a valid email address" maxlength="100" class="form-control " name="email" id="email" placeholder="Email" required>
+                            </div>
+
+                          </div>
+                        </div>
+
+                        <div class="col-md-12">
+                          <!-- <label>Message *</label> -->
+                          <textarea maxlength="5000" data-msg-required="Please enter your message" rows="4" class="form-control " name="message" id="message" placeholder="Message" required></textarea>
+
+                          <div class="text-right text-xxs-center">
+                            <input type="submit" value="SEND MESSAGE" class="button medium rounded gray font-open-sans mt-40" data-loading-text="Loading...">
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                    </form>
+                    <div class="alert alert-success hidden animated pulse" id="contactSuccess">
+                      Thanks, your message has been sent.
+                    </div>
+
+                    <div class="alert alert-danger hidden animated shake" id="contactError">
+                      <strong>Error!</strong> There was an error sending your message.
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- FOOTER 1 only social links -->
+          <footer id="footer3" class="page-section text-center p-100-cont bg-gray">
+            <div class="container">
+
+              <!-- Social Links -->
+              <div class="footer-soc-a">
+                <a href="https://www.facebook.com/Kunal.shah239" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/kunalsh22" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/kunalsh22" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.snapchat.com/add/kjango1" title="Snapchat" target="_blank"><i class="fa fa-snapchat-ghost" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/kunalgorithm/" title="LinkedIn+" target="_blank"><i class="fa fa-linkedin"></i></a>
+              </div>
+
+            </div>
+            <img src="images/logo.png" class="logo-img" alt="Logo Footer" style="margin-top:5rem;">
+          </footer>
+
+        </div> <!-- END sliding-content -->
+
+				<!-- BACK TO TOP -->
+				<p id="back-top">
+          <a href="#top" title="Back to Top"><span class="icon icon-arrows-up"></span></a>
+        </p>
+
+			</div><!-- End BG -->
+		</div><!-- End wrap -->
+
+<!-- JS begin -->
+    <!-- FONT AWESOME - added May 16, 2017 for snapchat fa fa icon -->
+    <script src="https://use.fontawesome.com/7aba97fc98.js"></script>
+
+		<!-- jQuery  -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- PORTFOLIO SCRIPTS -->
+    <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+
+    <!-- APPEAR -->
+    <script type="text/javascript" src="js/jquery.appear.js"></script>
+
+    <!--[if lt IE 10]><script type="text/javascript" src="js/jquery.placeholder.js"></script><![endif]-->
+
+    <!-- FORMS VALIDATION	-->
+		<script src="js/jquery.validate.min.js"></script>
+		<script src="js/contact-form-validation.min.js"></script>
+
+    <!-- ONE PAGE NAV -->
+		<script src="js/jquery.nav.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+				//ONE PAGE NAV	---------------------------------------------------------------------------
+					var top_offset = $('header').height() - 1;  // get height of fixed navbar
+
+					$('#nav-onepage').onePageNav({
+						currentClass: 'current',
+						changeHash: false,
+						scrollSpeed: 700,
+						scrollOffset: top_offset,
+						scrollThreshold: 0.5,
+						filter: '',
+						easing: 'swing',
+						begin: function() {
+							//I get fired when the animation is starting
+						},
+						end: function() {
+							//I get fired when the animation is ending
+						},
+						scrollChange: function($currentListItem) {
+							//I get fired when you enter a section and I pass the list item of the section
+						}
+					});
+
+      });//END document.ready
+    </script>
+
+    <!-- MAIN SCRIPT -->
+		<script src="js/main.js"></script>
+
+    <!-- SIDE MENU -->
+		<script src="js/side-menu.js"></script>
+
+		<!-- REVOSLIDER SCRIPTS  -->
+    <script src="revo-slider/js/jquery.themepunch.tools.min.js" type="text/javascript">
+    </script>
+    <script src="revo-slider/js/jquery.themepunch.revolution.min.js" type="text/javascript">
+    </script>
+
+    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS
+      (Load Extensions only on Local File Systems !
+      The following part can be removed on Server for On Demand Loading) -->
+    <script src="revo-slider/js/extensions/revolution.extension.actions.min.js" type="text/javascript"></script>
+    <script src="revo-slider/js/extensions/revolution.extension.carousel.min.js" type="text/javascript"></script>
+    <script src="revo-slider/js/extensions/revolution.extension.kenburn.min.js" type="text/javascript"></script>
+    <script src="revo-slider/js/extensions/revolution.extension.layeranimation.min.js" type="text/javascript">
+    </script>
+    <script src="revo-slider/js/extensions/revolution.extension.migration.min.js" type="text/javascript"></script>
+    <script src="revo-slider/js/extensions/revolution.extension.navigation.min.js" type="text/javascript"></script>
+    <script src="revo-slider/js/extensions/revolution.extension.parallax.min.js" type="text/javascript"></script>
+    <script src="revo-slider/js/extensions/revolution.extension.slideanims.min.js" type="text/javascript"></script>
+    <script src="revo-slider/js/extensions/revolution.extension.video.min.js" type="text/javascript"></script>
+
+    <!-- SLIDER REVOLUTION INITIALIZATION  -->
+    <script type="text/javascript">
+      jQuery(document).ready(function() {
+
+        jQuery("#rev_slider_280_1").show().revolution({
+          sliderType: "hero",
+          jsFileLocation: "revo-slider/js/",
+          sliderLayout: "fullscreen",
+          dottedOverlay: "none",
+          delay: 9000,
+          /*navigation: {},*/
+          responsiveLevels: [1240, 1024, 778, 480],
+          visibilityLevels: [1240, 1024, 778, 480],
+          gridwidth: [1240, 1024, 778, 480],
+          gridheight: [868, 768, 960, 720],
+          lazyType: "none",
+          parallax: {
+            type: "off",
+            origo: "slidercenter",
+            speed: 1000,
+            levels: [0],
+            type: "scroll",
+            disable_onmobile: "on"
+          },
+          shadow: 0,
+          spinner: "spinner2",
+          autoHeight: "off",
+          fullScreenAutoWidth: "off",
+          fullScreenAlignForce: "off",
+          fullScreenOffsetContainer: "",
+          fullScreenOffset: "",
+          disableProgressBar: "on",
+          hideThumbsOnMobile: "off",
+          hideSliderAtLimit: 0,
+          hideCaptionAtLimit: 0,
+          hideAllCaptionAtLilmit: 0,
+          debugMode: false,
+          fallbacks: {
+            simplifyAll: "off",
+            disableFocusListener: false,
+          }
+        });
+
+      }); /*ready*/
+    </script>
+<!-- JS end -->
+
+	</body>
 </html>
