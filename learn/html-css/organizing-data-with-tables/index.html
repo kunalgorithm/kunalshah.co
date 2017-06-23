@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang='en'>
+  
+<!-- Mirrored from learn.shayhowe.com/html-css/organizing-data-with-tables/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 16 Jun 2017 17:14:12 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset='utf-8'>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <meta content='Tables coded in HTML &amp; CSS need to be organized in code and style to make the information comprehensive and understandable to users.' name='description'>
+    <meta content='tables html5 css3 organizing data table border styles spacing collapse' name='keywords'>
+    <title>Organizing Data with Tables - Learn to Code HTML &amp; CSS</title>
+    <script src='../../assets/javascripts/vendor/modernizr-2.8.1.js'></script>
+    <link href='http://cloud.typography.com/6623692/607644/css/fonts.css' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet'>
+    <link href='../../assets/stylesheets/main.css' rel='stylesheet'>
+  </head>
+  <body class='html-css html-css_organizing-data-with-tables html-css_organizing-data-with-tables_index'>
+    <div class='wrap-macro'>
+      <div class='wrap-micro group'>
+        <aside class='aside'>
+          <header class='primary-header' role='banner'>
+            <h1 class='primary-logo'>
+              <a href='../index.html'>
+                <span>Learn to Code</span>
+                <abbr title='Hyper Text Markup Language'>HTML</abbr>
+                <abbr title='and'>&amp;</abbr>
+                <abbr title='Cascading Style Sheets'>CSS</abbr>
+              </a>
+            </h1>
+            <a class='primary-nav-btn' data-js='primary-nav-btn' href='#' rel='nofollow'>Navigation</a>
+          </header>
+          <div class='aside-macro'>
+            <div class='aside-micro'>
+              <nav class='primary-nav' role='navigation'>
+                <ul>
+                  <li class='building-your-first-web-page'>
+                    <a href='../building-your-first-web-page/index.html'>
+                      <strong>Lesson 1</strong>
+                      Building Your First Web Page
+                    </a>
+                  </li>
+                  <li class='getting-to-know-html'>
+                    <a href='../getting-to-know-html/index.html'>
+                      <strong>Lesson 2</strong>
+                      Getting to Know HTML
+                    </a>
+                  </li>
+                  <li class='getting-to-know-css'>
+                    <a href='../getting-to-know-css/index.html'>
+                      <strong>Lesson 3</strong>
+                      Getting to Know CSS
+                      <span class='label-new'>New</span>
+                    </a>
+                  </li>
+                  <li class='opening-the-box-model'>
+                    <a href='../opening-the-box-model/index.html'>
+                      <strong>Lesson 4</strong>
+                      Opening the Box Model
+                    </a>
+                  </li>
+                  <li class='positioning-content'>
+                    <a href='../positioning-content/index.html'>
+                      <strong>Lesson 5</strong>
+                      Positioning Content
+                      <span class='label-new'>New</span>
+                    </a>
+                  </li>
+                  <li class='working-with-typography'>
+                    <a href='../working-with-typography/index.html'>
+                      <strong>Lesson 6</strong>
+                      Working with Typography
+                    </a>
+                  </li>
+                  <li class='setting-backgrounds-and-gradients'>
+                    <a href='../setting-backgrounds-and-gradients/index.html'>
+                      <strong>Lesson 7</strong>
+                      Setting Backgrounds &amp; Gradients
+                    </a>
+                  </li>
+                  <li class='creating-lists'>
+                    <a href='../creating-lists/index.html'>
+                      <strong>Lesson 8</strong>
+                      Creating Lists
+                    </a>
+                  </li>
+                  <li class='adding-media'>
+                    <a href='../adding-media/index.html'>
+                      <strong>Lesson 9</strong>
+                      Adding Media
+                    </a>
+                  </li>
+                  <li class='building-forms'>
+                    <a href='../building-forms/index.html'>
+                      <strong>Lesson 10</strong>
+                      Building Forms
+                    </a>
+                  </li>
+                  <li class='organizing-data-with-tables'>
+                    <a href='index.html'>
+                      <strong>Lesson 11</strong>
+                      Organizing Data with Tables
+                    </a>
+                  </li>
+                  <li class='writing-your-best-code'>
+                    <a href='../writing-your-best-code/index.html'>
+                      <strong>Lesson 12</strong>
+                      Writing Your Best Code
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <div class='aside-group'>
+                <p>Learn to Code HTML <abbr title="and">&amp;</abbr> CSS is written by designer <abbr title="and">&amp;</abbr> front-end developer <a href="http://shayhowe.com/">Shay Howe</a>.</p>
+                <p>Checkout <a href="../../advanced-html-css/index.html">Learn to Code Advanced HTML <abbr title="and">&amp;</abbr> CSS</a> for a deeper look at front-end design <abbr title="and">&amp;</abbr> development.</p>
+              </div>
+              <div data-js='geo-location' hidden>
+                <p>Want to learn to more HTML <abbr title="and">&amp;</abbr> CSS, or study other topics? Find the right course for you.</p>
+                <div class='margin-bottom'>
+                  <a class='btn btn-alt' href='../../recommendations/index.html'>Get Course Recommendations</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <section class='main' data-js='primary-nav-close'>
+          <div class='group'>
+            <article class='lesson container group' data-js='lesson'>
+              <div class='lesson-title'>
+                <h6>Lesson 11</h6>
+                <h1>Organizing Data with Tables</h1>
+              </div>
+              <div class='clamp clamp-release'>
+                <div class='pop-out'>
+                  <nav class='toc'>
+                    <h4>
+                      In this Lesson
+                      <span class='toc-number'>11</span>
+                    </h4>
+                    <h6>HTML</h6>
+                    <ul>
+                      <li>
+                        <a href='#table'>Creating a Table</a>
+                      </li>
+                      <li>
+                        <a href='#table-structure'>Table Structure</a>
+                      </li>
+                    </ul>
+                    <h6>CSS</h6>
+                    <ul>
+                      <li>
+                        <a href='#table-borders'>Table Borders</a>
+                      </li>
+                      <li>
+                        <a href='#table-striping'>Table Striping</a>
+                      </li>
+                      <li>
+                        <a href='#aligning-text'>Aligning Text</a>
+                      </li>
+                    </ul>
+                    <h6>Share</h6>
+                    <ul class='share' data-js='share' data-permalink='http://learn.shayhowe.com/html-css/organizing-data-with-tables/' data-title='Organizing Data with Tables'>
+                      <li>
+                        <a class='share-twitter' data-js='share-twitter' href='#' rel='nofollow'>
+                          Share on Twitter
+                        </a>
+                      </li>
+                      <li>
+                        <a class='share-facebook' data-js='share-facebook' href='#' rel='nofollow'>
+                          Share on Facebook
+                        </a>
+                      </li>
+                      <li>
+                        <a class='share-google' data-js='share-google' href='#' rel='nofollow'>
+                          Share on Google+
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <div class='ad-spot group'>
+                    <script async id='_carbonads_js' src='http://cdn.carbonads.com/carbon.js?zoneid=1673&amp;serve=C6AILKT&amp;placement=learnshayhowecom' type='text/javascript'></script>
+                  </div>
+                </div>
+              </div>
+              <p>HTML tables were created to provide a straightforward way to mark up structured tabular data and to display that data in a form that is easy for users to read and digest.</p>
+              <p>When HTML was being developed, however, CSS was not widely supported in browsers, so tables were the primary means by which websites were built. They were used for positioning content as well as for building the overall layout of a page. This worked at the time, but it was not what table markup was intended for, and it led to many other associated problems.</p>
+              <p>Fortunately, we have come a long way since then. Today tables are used specifically for organizing data (like they should be), and CSS is free to get on with the jobs of positioning and layout.</p>
+              <p>Building data tables still has its challenges. How a table should be built in HTML depends largely on the data and how it is to be displayed. Then, once they&#8217;re marked up in HTML, tables need to be styled with CSS to make the information more legible and understandable to users.</p>
+              <h2 id='table'>Creating a Table</h2>
+              <p>Tables are made up of data that is contained within columns and rows, and HTML supplies several different elements for defining and structuring these items. At a minimum a table must consist of <code>&#60;table&#62;</code>, <code>&#60;tr&#62;</code> (table row), and <code>&#60;td&#62;</code> (table data) elements. For greater structure and additional semantic value, tables may include the <code>&#60;th&#62;</code> (table header) ele- ment and a few other elements as well. When all of these elements are working together, they produce a solid table.</p>
+              <h3>Table</h3>
+              <p>We use the <code>&#60;table&#62;</code> element to initialize a table on a page. Using the <code>&#60;table&#62;</code> element signifies that the information within this element will be tabular data displayed in the necessary columns and rows.</p>
+              <pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4</pre></td><td class="rouge-code"><pre><span class="nt">&lt;table&gt;</span>&#x000A;  ...&#x000A;<span class="nt">&lt;/table&gt;</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <h3>Table Row</h3>
+              <p>Once a table has been defined in HTML, table rows may be added using the <code>&#60;tr&#62;</code> element. A table can have numerous table rows, or <code>&#60;tr&#62;</code> elements. Depending on the amount of information there is to display, the number of table rows may be substantial.</p>
+              <pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9</pre></td><td class="rouge-code"><pre><span class="nt">&lt;table&gt;</span>&#x000A;  <span class="nt">&lt;tr&gt;</span>&#x000A;    ...&#x000A;  <span class="nt">&lt;/tr&gt;</span>&#x000A;  <span class="nt">&lt;tr&gt;</span>&#x000A;    ...&#x000A;  <span class="nt">&lt;/tr&gt;</span>&#x000A;<span class="nt">&lt;/table&gt;</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <h3>Table Data</h3>
+              <p>Once a table is defined and rows within that table have been set up, data cells may be added to the table via the table data, or <code>&#60;td&#62;</code>, element. Listing multiple <code>&#60;td&#62;</code> elements one after the other will create columns within a table row.</p>
+              <pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10&#x000A;11&#x000A;12&#x000A;13&#x000A;14&#x000A;15&#x000A;16&#x000A;17&#x000A;18&#x000A;19&#x000A;20&#x000A;21&#x000A;22&#x000A;23&#x000A;24&#x000A;25&#x000A;26&#x000A;27</pre></td><td class="rouge-code"><pre><span class="nt">&lt;table&gt;</span>&#x000A;  <span class="nt">&lt;tr&gt;</span>&#x000A;    <span class="nt">&lt;td&gt;</span>Don<span class="ni">&amp;#8217;</span>t Make Me Think by Steve Krug<span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;td&gt;</span>In Stock<span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;td&gt;</span>1<span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;td&gt;</span>$30.02<span class="nt">&lt;/td&gt;</span>&#x000A;  <span class="nt">&lt;/tr&gt;</span>&#x000A;  <span class="nt">&lt;tr&gt;</span>&#x000A;    <span class="nt">&lt;td&gt;</span>A Project Guide to UX Design by Russ Unger <span class="ni">&amp;#38;</span> Carolyn Chandler<span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;td&gt;</span>In Stock<span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;td&gt;</span>2<span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;td&gt;</span>$52.94 ($26.47 <span class="ni">&amp;#215;</span> 2)<span class="nt">&lt;/td&gt;</span>&#x000A;  <span class="nt">&lt;/tr&gt;</span>&#x000A;  <span class="nt">&lt;tr&gt;</span>&#x000A;    <span class="nt">&lt;td&gt;</span>Introducing HTML5 by Bruce Lawson <span class="ni">&amp;#38;</span> Remy Sharp<span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;td&gt;</span>Out of Stock<span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;td&gt;</span>1<span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;td&gt;</span>$22.23<span class="nt">&lt;/td&gt;</span>&#x000A;  <span class="nt">&lt;/tr&gt;</span>&#x000A;  <span class="nt">&lt;tr&gt;</span>&#x000A;    <span class="nt">&lt;td&gt;</span>Bulletproof Web Design by Dan Cederholm<span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;td&gt;</span>In Stock<span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;td&gt;</span>1<span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;td&gt;</span>$30.17<span class="nt">&lt;/td&gt;</span>&#x000A;  <span class="nt">&lt;/tr&gt;</span>&#x000A;<span class="nt">&lt;/table&gt;</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <div class='note'>
+                <h4 class='demo-title'>Table Demo</h4>
+                <p class='codepen' data-default-tab='result' data-height='180' data-slug-hash='aGnye' data-theme-id='5995'>
+                  See the Pen <a href='http://codepen.io/shayhowe/pen/aGnye/'>Table</a> by Shay Howe (<a href='http://codepen.io/shayhowe'>@shayhowe</a>) on <a href='http://codepen.io/'>CodePen</a>.
+                </p>
+              </div>
+              <h3>Table Header</h3>
+              <p>To designate a heading for a column or row of cells, the table header element, <code>&#60;th&#62;</code>, should be used. The <code>&#60;th&#62;</code> element works just like the <code>&#60;td&#62;</code> element in that it creates a cell for data. The value to using the <code>&#60;th&#62;</code> element over the <code>&#60;td&#62;</code> element is that the table header element provides semantic value by signifying that the data within the cell is a heading, while the <code>&#60;td&#62;</code> element only represents a generic piece of data.</p>
+              <p>The difference between the two elements is similar to the difference between headings (<code>&#60;h1&#62;</code> through <code>&#60;h6&#62;</code> elements) and paragraphs (<code>&#60;p&#62;</code> elements). While a heading&#8217;s content could be placed within a paragraph, it doesn&#8217;t make sense to do so. Specifically using a heading adds more semantic value to the content. The same is true for table headers.</p>
+              <p>Table headers may be used within both columns and rows; the data within a table determines where the headers are appropriate. The <code>scope</code> attribute helps to identify exactly what content a table header relates to. The <code>scope</code> attribute indicates with the values <code>col</code>, <code>row</code>, <code>colgroup</code>, and <code>rowgroup</code> whether a table header applies to a row or column. The most commonly used values are <code>col</code> and <code>row</code>. The <code>col</code> value indicates that every cell within the column relates directly to that table header, and the <code>row</code> value indicates that every cell within the row relates directly to that table header.</p>
+              <p>Using the <code>&#60;th&#62;</code> element, along with the <code>scope</code> attribute, tremendously helps screen readers and assistive technologies make sense of a table. Therefore, they are also beneficial to those browsing a web page using those technologies.</p>
+              <p>Additionally, depending on the browser, table headers may receive some default styling, usually bold and centered.</p>
+              <pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10&#x000A;11&#x000A;12&#x000A;13&#x000A;14&#x000A;15&#x000A;16&#x000A;17&#x000A;18&#x000A;19&#x000A;20&#x000A;21&#x000A;22&#x000A;23&#x000A;24&#x000A;25&#x000A;26&#x000A;27&#x000A;28&#x000A;29&#x000A;30&#x000A;31&#x000A;32&#x000A;33</pre></td><td class="rouge-code"><pre><span class="nt">&lt;table&gt;</span>&#x000A;  <span class="nt">&lt;tr&gt;</span>&#x000A;    <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Item<span class="nt">&lt;/th&gt;</span>&#x000A;    <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Availability<span class="nt">&lt;/th&gt;</span>&#x000A;    <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Qty<span class="nt">&lt;/th&gt;</span>&#x000A;    <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Price<span class="nt">&lt;/th&gt;</span>&#x000A;  <span class="nt">&lt;/tr&gt;</span>&#x000A;  <span class="nt">&lt;tr&gt;</span>&#x000A;    <span class="nt">&lt;td&gt;</span>Don<span class="ni">&amp;#8217;</span>t Make Me Think by Steve Krug<span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;td&gt;</span>In Stock<span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;td&gt;</span>1<span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;td&gt;</span>$30.02<span class="nt">&lt;/td&gt;</span>&#x000A;  <span class="nt">&lt;/tr&gt;</span>&#x000A;  <span class="nt">&lt;tr&gt;</span>&#x000A;    <span class="nt">&lt;td&gt;</span>A Project Guide to UX Design by Russ Unger <span class="ni">&amp;#38;</span> Carolyn Chandler<span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;td&gt;</span>In Stock<span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;td&gt;</span>2<span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;td&gt;</span>$52.94 ($26.47 <span class="ni">&amp;#215;</span> 2)<span class="nt">&lt;/td&gt;</span>&#x000A;  <span class="nt">&lt;/tr&gt;</span>&#x000A;  <span class="nt">&lt;tr&gt;</span>&#x000A;    <span class="nt">&lt;td&gt;</span>Introducing HTML5 by Bruce Lawson <span class="ni">&amp;#38;</span> Remy Sharp<span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;td&gt;</span>Out of Stock<span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;td&gt;</span>1<span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;td&gt;</span>$22.23<span class="nt">&lt;/td&gt;</span>&#x000A;  <span class="nt">&lt;/tr&gt;</span>&#x000A;  <span class="nt">&lt;tr&gt;</span>&#x000A;    <span class="nt">&lt;td&gt;</span>Bulletproof Web Design by Dan Cederholm<span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;td&gt;</span>In Stock<span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;td&gt;</span>1<span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;td&gt;</span>$30.17<span class="nt">&lt;/td&gt;</span>&#x000A;  <span class="nt">&lt;/tr&gt;</span>&#x000A;<span class="nt">&lt;/table&gt;</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <div class='note'>
+                <h4 class='demo-title'>Table Header Demo</h4>
+                <p class='codepen' data-default-tab='result' data-height='198' data-slug-hash='DonKt' data-theme-id='5995'>
+                  See the Pen <a href='http://codepen.io/shayhowe/pen/DonKt/'>Table Header</a> by Shay Howe (<a href='http://codepen.io/shayhowe'>@shayhowe</a>) on <a href='http://codepen.io/'>CodePen</a>.
+                </p>
+              </div>
+              <p>Getting data into a table is only the beginning. While we&#8217;ve scratched the surface of how to semantically add data to a table, there is more we can do to define the structure of our tables.</p>
+              <div class='note note-box'>
+                <h4>The Headers Attribute</h4>
+                <p>The headers attribute is very similar to the <code>scope</code> attribute. By default, the <code>scope</code> attribute may only be used on the <code>&#60;th&#62;</code> element. In the case that a cell, either a <code>&#60;td&#62;</code> or <code>&#60;th&#62;</code> element, needs to be associated with a different header, the <code>headers</code> attribute comes into play. The value of the <code>headers</code> attribute on a <code>&#60;td&#62;</code> or <code>&#60;th&#62;</code> element needs to match the <code>id</code> attribute value of the <code>&#60;th&#62;</code> element that cell pertains to.</p>
+              </div>
+              <h2 id='table-structure'>Table Structure</h2>
+              <p>Knowing how to build a table and arrange data is extremely powerful; however, there are a few additional elements to help us <a href="http://www.456bereastreet.com/archive/200410/bring_on_the_tables/" rel="nofollow">organize the data</a> and structure of a table. These elements include <code>&#60;caption&#62;</code>, <code>&#60;thead&#62;</code>, <code>&#60;tbody&#62;</code>, and <code>&#60;tfoot&#62;</code>.</p>
+              <h3>Table Caption</h3>
+              <p>The <code>&#60;caption&#62;</code> element provides a caption or title for a table. A caption will help users identify what the table pertains to and what data they can expect to find within it. The <code>&#60;caption&#62;</code> element must come immediately after the opening <code>&#60;table&#62;</code> tag, and it is positioned at the top of a table by default.</p>
+              <pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5</pre></td><td class="rouge-code"><pre><span class="nt">&lt;table&gt;</span>&#x000A;  <span class="nt">&lt;caption&gt;</span>Design and Front-End Development Books<span class="nt">&lt;/caption&gt;</span>&#x000A;  ...&#x000A;<span class="nt">&lt;/table&gt;</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <div class='note'>
+                <h4 class='demo-title'>Table Caption Demo</h4>
+                <p class='codepen' data-default-tab='result' data-height='210' data-slug-hash='GkDlx' data-theme-id='5995'>
+                  See the Pen <a href='http://codepen.io/shayhowe/pen/GkDlx/'>Table Caption</a> by Shay Howe (<a href='http://codepen.io/shayhowe'>@shayhowe</a>) on <a href='http://codepen.io/'>CodePen</a>.
+                </p>
+              </div>
+              <h3>Table Head, Body, &amp; Foot</h3>
+              <p>The content within tables can be broken up into multiple groups, including a head, a body, and a foot. The <code>&#60;thead&#62;</code> (table head), <code>&#60;tbody&#62;</code> (table body), and <code>&#60;tfoot&#62;</code> (table foot) elements help to structurally organize tables.</p>
+              <p>The table head element, <code>&#60;thead&#62;</code>, wraps the heading row or rows of a table to denote the head. The table head should be placed at the top of a table, after any <code>&#60;caption&#62;</code> element and before any <code>&#60;tbody&#62;</code> element.</p>
+              <p>After the table head may come either the <code>&#60;tbody&#62;</code> or <code>&#60;tfoot&#62;</code> elements. Originally the <code>&#60;tfoot&#62;</code> element had to come immediately after the <code>&#60;thead&#62;</code> element, but HTML5 has provided leeway here. These elements may now occur in any order so long as they are never parent elements of one another. The <code>&#60;tbody&#62;</code> element should contain the primary data within a table, while the <code>&#60;tfoot&#62;</code> element contains data that outlines the contents of a table.</p>
+              <pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10&#x000A;11&#x000A;12&#x000A;13&#x000A;14&#x000A;15&#x000A;16&#x000A;17&#x000A;18&#x000A;19&#x000A;20&#x000A;21&#x000A;22&#x000A;23&#x000A;24&#x000A;25&#x000A;26&#x000A;27&#x000A;28&#x000A;29&#x000A;30&#x000A;31&#x000A;32&#x000A;33&#x000A;34&#x000A;35&#x000A;36&#x000A;37&#x000A;38&#x000A;39&#x000A;40&#x000A;41</pre></td><td class="rouge-code"><pre><span class="nt">&lt;table&gt;</span>&#x000A;  <span class="nt">&lt;caption&gt;</span>Design and Front-End Development Books<span class="nt">&lt;/caption&gt;</span>&#x000A;  <span class="nt">&lt;thead&gt;</span>&#x000A;    <span class="nt">&lt;tr&gt;</span>&#x000A;      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Item<span class="nt">&lt;/th&gt;</span>&#x000A;      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Availability<span class="nt">&lt;/th&gt;</span>&#x000A;      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Qty<span class="nt">&lt;/th&gt;</span>&#x000A;      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Price<span class="nt">&lt;/th&gt;</span>&#x000A;    <span class="nt">&lt;/tr&gt;</span>&#x000A;  <span class="nt">&lt;/thead&gt;</span>&#x000A;  <span class="nt">&lt;tbody&gt;</span>&#x000A;    <span class="nt">&lt;tr&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>Don<span class="ni">&amp;#8217;</span>t Make Me Think by Steve Krug<span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>In Stock<span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>1<span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>$30.02<span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;/tr&gt;</span>&#x000A;    ...&#x000A;  <span class="nt">&lt;/tbody&gt;</span>&#x000A;  <span class="nt">&lt;tfoot&gt;</span>&#x000A;    <span class="nt">&lt;tr&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>Subtotal<span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>$135.36<span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;/tr&gt;</span>&#x000A;    <span class="nt">&lt;tr&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>Tax<span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>$13.54<span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;/tr&gt;</span>&#x000A;    <span class="nt">&lt;tr&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>Total<span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>$148.90<span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;/tr&gt;</span>&#x000A;  <span class="nt">&lt;/tfoot&gt;</span>&#x000A;<span class="nt">&lt;/table&gt;</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <div class='note'>
+                <h4 class='demo-title'>Table Caption Demo</h4>
+                <p class='codepen' data-default-tab='result' data-height='258' data-slug-hash='eupjE' data-theme-id='5995'>
+                  See the Pen <a href='http://codepen.io/shayhowe/pen/eupjE/'>Table Head, Body, & Foot</a> by Shay Howe (<a href='http://codepen.io/shayhowe'>@shayhowe</a>) on <a href='http://codepen.io/'>CodePen</a>.
+                </p>
+              </div>
+              <h3>Combining Multiple Cells</h3>
+              <p>Often, two or more cells need to be combined into one without breaking the overall row and column layout. Perhaps two cells next to each other contain the same data, there&#8217;s an empty cell, or the cells should be combined for styling purposes. In these cases we can use the <code>colspan</code> and <code>rowspan</code> attributes. These two attributes work on either the <code>&#60;td&#62;</code> or <code>&#60;th&#62;</code> elements.</p>
+              <p>The <code>colspan</code> attribute is used to span a single cell across multiple columns within a table, while the <code>rowspan</code> attribute is used to span a single cell across multiple rows. Each attribute accepts an integer value that indicates the number of cells to span across, with <code>1</code> being the default value.</p>
+              <p>Using the table of books from before, we can now remove the empty table cells within the table footer as well as clean up the table header.</p>
+              <pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10&#x000A;11&#x000A;12&#x000A;13&#x000A;14&#x000A;15&#x000A;16&#x000A;17&#x000A;18&#x000A;19&#x000A;20&#x000A;21&#x000A;22&#x000A;23&#x000A;24&#x000A;25&#x000A;26&#x000A;27&#x000A;28&#x000A;29&#x000A;30&#x000A;31&#x000A;32&#x000A;33&#x000A;34</pre></td><td class="rouge-code"><pre><span class="nt">&lt;table&gt;</span>&#x000A;  <span class="nt">&lt;caption&gt;</span>Design and Front-End Development Books<span class="nt">&lt;/caption&gt;</span>&#x000A;  <span class="nt">&lt;thead&gt;</span>&#x000A;    <span class="nt">&lt;tr&gt;</span>&#x000A;      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span> <span class="na">colspan=</span><span class="s">"2"</span><span class="nt">&gt;</span>Item<span class="nt">&lt;/th&gt;</span>&#x000A;      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Qty<span class="nt">&lt;/th&gt;</span>&#x000A;      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Price<span class="nt">&lt;/th&gt;</span>&#x000A;    <span class="nt">&lt;/tr&gt;</span>&#x000A;  <span class="nt">&lt;/thead&gt;</span>&#x000A;  <span class="nt">&lt;tbody&gt;</span>&#x000A;    <span class="nt">&lt;tr&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>Don<span class="ni">&amp;#8217;</span>t Make Me Think by Steve Krug<span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>In Stock<span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>1<span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>$30.02<span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;/tr&gt;</span>&#x000A;    ...&#x000A;  <span class="nt">&lt;/tbody&gt;</span>&#x000A;  <span class="nt">&lt;tfoot&gt;</span>&#x000A;    <span class="nt">&lt;tr&gt;</span>&#x000A;      <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"3"</span><span class="nt">&gt;</span>Subtotal<span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>$135.36<span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;/tr&gt;</span>&#x000A;    <span class="nt">&lt;tr&gt;</span>&#x000A;      <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"3"</span><span class="nt">&gt;</span>Tax<span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>$13.54<span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;/tr&gt;</span>&#x000A;    <span class="nt">&lt;tr&gt;</span>&#x000A;      <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"3"</span><span class="nt">&gt;</span>Total<span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>$148.90<span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;/tr&gt;</span>&#x000A;  <span class="nt">&lt;/tfoot&gt;</span>&#x000A;<span class="nt">&lt;/table&gt;</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <div class='note'>
+                <h4 class='demo-title'>Combining Multiple Cells Demo</h4>
+                <p class='codepen' data-default-tab='result' data-height='258' data-slug-hash='feDnv' data-theme-id='5995'>
+                  See the Pen <a href='http://codepen.io/shayhowe/pen/feDnv/'>Combining Multiple Cells</a> by Shay Howe (<a href='http://codepen.io/shayhowe'>@shayhowe</a>) on <a href='http://codepen.io/'>CodePen</a>.
+                </p>
+              </div>
+              <h2 id='table-borders'>Table Borders</h2>
+              <p>Effective use of borders can help make tables more comprehensible. Borders around a table or individual cells can make a large impact when a user is trying to interpret data and quickly scan for information. When styling table borders with CSS there are two properties that will quickly come in handy: <code>border-collapse</code> and <code>border-spacing</code>.</p>
+              <h3>Border Collapse Property</h3>
+              <p>Tables consist of a parent <code>&#60;table&#62;</code> element as well as nested <code>&#60;th&#62;</code> or <code>&#60;td&#62;</code> elements. When we apply borders around these elements those borders will begin to stack up, with the border of one element sitting next to that of another element. For example, if we put a <code>2</code>-pixel border around an entire table and then an additional <code>2</code>-pixel border around each table cell, there would be a <code>4</code>-pixel border around every cell in the table.</p>
+              <p>The <code>border-collapse</code> property determines a table&#8217;s border model. There are three values for the <code>border-collapse</code> property: <code>collapse</code>, <code>separate</code>, and <code>inherit</code>. By default, the <code>border-collapse</code> property value is <code>separate</code>, meaning that all of the different borders will stack up next to one another, as described above. The <code>collapse</code> property, on the other hand, condenses the borders into one, choosing the table cell as the primary border.</p>
+              <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9</pre></td><td class="rouge-code"><pre><span class="nt">table</span> <span class="p">{</span>&#x000A;  <span class="nl">border-collapse</span><span class="p">:</span> <span class="nb">collapse</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">th</span><span class="o">,</span>&#x000A;<span class="nt">td</span> <span class="p">{</span>&#x000A;  <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="m">#cecfd5</span><span class="p">;</span>&#x000A;  <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span> <span class="m">15px</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <div class='note'>
+                <h4 class='demo-title'>Border Collapse Property Demo</h4>
+                <p class='codepen' data-default-tab='result' data-height='462' data-slug-hash='Biprk' data-theme-id='5995'>
+                  See the Pen <a href='http://codepen.io/shayhowe/pen/Biprk/'>Border Collapse Property</a> by Shay Howe (<a href='http://codepen.io/shayhowe'>@shayhowe</a>) on <a href='http://codepen.io/'>CodePen</a>.
+                </p>
+              </div>
+              <h3>Border Spacing Property</h3>
+              <p>As the <code>border-collapse</code> property with the <code>separate</code> value allows borders to be stacked up against one another, the <code>border-spacing</code> property can determine how much space, if any, appears between the borders.</p>
+              <p>For example, a table with a <code>1</code>-pixel border around the entire table and a <code>1</code>-pixel border around each cell will have a <code>2</code>-pixel border all around every cell because the borders stack up next to one another. Adding in a <code>border-spacing</code> value of <code>4</code> pixels separates the borders by <code>4</code> pixels.</p>
+              <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10&#x000A;11&#x000A;12&#x000A;13&#x000A;14</pre></td><td class="rouge-code"><pre><span class="nt">table</span> <span class="p">{</span>&#x000A;  <span class="nl">border-collapse</span><span class="p">:</span> <span class="nb">separate</span><span class="p">;</span>&#x000A;  <span class="nl">border-spacing</span><span class="p">:</span> <span class="m">4px</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">table</span><span class="o">,</span>&#x000A;<span class="nt">th</span><span class="o">,</span>&#x000A;<span class="nt">td</span> <span class="p">{</span>&#x000A;  <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="m">#cecfd5</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">th</span><span class="o">,</span>&#x000A;<span class="nt">td</span> <span class="p">{</span>&#x000A;  <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span> <span class="m">15px</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <div class='note'>
+                <h4 class='demo-title'>Border Spacing Property Demo</h4>
+                <p class='codepen' data-default-tab='result' data-height='504' data-slug-hash='geoAh' data-theme-id='5995'>
+                  See the Pen <a href='http://codepen.io/shayhowe/pen/geoAh/'>Border Spacing Property</a> by Shay Howe (<a href='http://codepen.io/shayhowe'>@shayhowe</a>) on <a href='http://codepen.io/'>CodePen</a>.
+                </p>
+              </div>
+              <p>The <code>border-spacing</code> property works only when the <code>border-collapse</code> property value is <code>separate</code>, its default value. If the <code>border-collapse</code> property hasn&#8217;t been previously used, we can use the <code>border-spacing</code> property without worry.</p>
+              <p>Additionally, the <code>border-spacing</code> property may accept two length values: the first value for horizontal spacing and the second value for vertical spacing. The declaration <code>border-spacing: 5px 10px;</code>, for example, will place <code>5</code> pixels of horizontal spacing between borders and <code>10</code> pixels of vertical spacing between borders.</p>
+              <h3>Adding Borders to Rows</h3>
+              <p>Adding borders to a table can be tricky at times, particularly when putting borders between rows. Within a table, borders cannot be applied to <code>&#60;tr&#62;</code> elements or table structural elements, so when we want to put a border between rows some thought is required.</p>
+              <p>We&#8217;ll begin by making sure the table&#8217;s <code>border-collapse</code> property value is set to <code>collapse</code>, and then we&#8217;ll add a bottom <code>border</code> to each table cell, regardless of whether it&#8217;s a <code>&#60;th&#62;</code> or <code>&#60;td&#62;</code> element. If we wish, we can remove the bottom <code>border</code> from the cells within the last row of the table by using the <code>:last-child</code> pseudo-class selector to select the last <code>&#60;tr&#62;</code> element within the table and target the <code>&#60;td&#62;</code> elements within that row. Additionally, if a table is using the structural elements, we&#8217;ll want to make sure to prequalify the last row of the table as being within the <code>&#60;tfoot&#62;</code> element.</p>
+              <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10&#x000A;11&#x000A;12</pre></td><td class="rouge-code"><pre><span class="nt">table</span> <span class="p">{</span>&#x000A;  <span class="nl">border-collapse</span><span class="p">:</span> <span class="nb">collapse</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">th</span><span class="o">,</span>&#x000A;<span class="nt">td</span> <span class="p">{</span>&#x000A;  <span class="nl">border-bottom</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="m">#cecfd5</span><span class="p">;</span>&#x000A;  <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span> <span class="m">15px</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">tfoot</span> <span class="nt">tr</span><span class="nd">:last-child</span> <span class="nt">td</span> <span class="p">{</span>&#x000A;  <span class="nl">border-bottom</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <div class='note'>
+                <h4 class='demo-title'>Adding Borders to Rows Demo</h4>
+                <p class='codepen' data-default-tab='result' data-height='456' data-slug-hash='cxydu' data-theme-id='5995'>
+                  See the Pen <a href='http://codepen.io/shayhowe/pen/cxydu/'>Adding Borders to Rows</a> by Shay Howe (<a href='http://codepen.io/shayhowe'>@shayhowe</a>) on <a href='http://codepen.io/'>CodePen</a>.
+                </p>
+              </div>
+              <h2 id='table-striping'>Table Striping</h2>
+              <p>In the effort to make tables more legible, one common design practice is to &#8220;stripe&#8221; table rows with alternating background colors. This makes the rows clearer and provides a visual cue for scanning information. One way to do this is to place a class on every other <code>&#60;tr&#62;</code> element and set a background color to that class. Another, easier way is to use the <code>:nth-child</code> pseudo-class selector with an <code>even</code> or <code>odd</code> argument to select every other <code>&#60;tr&#62;</code> element.</p>
+              <p>Here, our table of books uses the <code>:nth-child</code> pseudo-class selector with an <code>even</code> argument to select all even table rows within the table and apply a gray <code>background</code>. Consequently, every other row within the table body is gray.</p>
+              <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10&#x000A;11&#x000A;12&#x000A;13&#x000A;14&#x000A;15&#x000A;16&#x000A;17&#x000A;18&#x000A;19&#x000A;20&#x000A;21&#x000A;22&#x000A;23</pre></td><td class="rouge-code"><pre><span class="nt">table</span> <span class="p">{</span>&#x000A;  <span class="nl">border-collapse</span><span class="p">:</span> <span class="nb">separate</span><span class="p">;</span>&#x000A;  <span class="nl">border-spacing</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">th</span><span class="o">,</span>&#x000A;<span class="nt">td</span> <span class="p">{</span>&#x000A;  <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span> <span class="m">15px</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">thead</span> <span class="p">{</span>&#x000A;  <span class="nl">background</span><span class="p">:</span> <span class="m">#395870</span><span class="p">;</span>&#x000A;  <span class="nl">color</span><span class="p">:</span> <span class="m">#fff</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">tbody</span> <span class="nt">tr</span><span class="nd">:nth-child</span><span class="o">(</span><span class="nt">even</span><span class="o">)</span> <span class="p">{</span>&#x000A;  <span class="nl">background</span><span class="p">:</span> <span class="m">#f0f0f2</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">td</span> <span class="p">{</span>&#x000A;  <span class="nl">border-bottom</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="m">#cecfd5</span><span class="p">;</span>&#x000A;  <span class="nl">border-right</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="m">#cecfd5</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">td</span><span class="nd">:first-child</span> <span class="p">{</span>&#x000A;  <span class="nl">border-left</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="m">#cecfd5</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <div class='note'>
+                <h4 class='demo-title'>Table Striping Demo</h4>
+                <p class='codepen' data-default-tab='result' data-height='456' data-slug-hash='xHAjf' data-theme-id='5995'>
+                  See the Pen <a href='http://codepen.io/shayhowe/pen/xHAjf/'>Table Striping</a> by Shay Howe (<a href='http://codepen.io/shayhowe'>@shayhowe</a>) on <a href='http://codepen.io/'>CodePen</a>.
+                </p>
+              </div>
+              <p>Within this code there are a few intricacies worth mentioning. To begin, the <code>&#60;table&#62;</code> element has an explicit <code>border-collapse</code> property set to separate and a <code>border-spacing</code> property set to <code>0</code>. The reason for this is that the <code>&#60;td&#62;</code> elements include borders, while the <code>&#60;th&#62;</code> elements do not. Without the <code>border-collapse</code> property set to <code>separate</code> the borders of the <code>&#60;td&#62;</code> elements would make the body and foot of the table wider than the head.</p>
+              <p>Since the <code>border-collapse</code> property is set to <code>separate</code> we need to be careful as to how borders are applied to <code>&#60;td&#62;</code> elements. Here borders are set to the right and bottom of all <code>&#60;td&#62;</code> elements. Then, the very first <code>&#60;td&#62;</code> element within a <code>&#60;tr&#62;</code> element will receive a left <code>border</code>. As all of the <code>&#60;td&#62;</code> elements stack together so do their borders, providing the appearance of a solid border around each element.</p>
+              <p>Lastly, all <code>&#60;th&#62;</code> elements receive a blue <code>background</code>, and every even <code>&#60;tr&#62;</code> element receives a gray <code>background</code> by way of the <code>:nth-child</code> pseudo-class selector.</p>
+              <h2 id='aligning-text'>Aligning Text</h2>
+              <p>In addition to table borders and striping, the alignment of text within cells, both horizontal and vertical, plays an integral role in table formatting. Names, descriptions, and so forth are commonly flush left, while numbers and other figures are flush right. Other information, depending on its context, may be centered. We can move text horizontally using the <code>text-align</code> property in CSS, as we covered in Lesson 6, &#8220;<a href="../working-with-typography/index.html">Working with Typography</a>.&#8221;</p>
+              <p>To align text vertically, however, the <code>vertical-align</code> property is used. The <code>vertical-align</code> property works only with inline and table-cell elements&#8212;it won&#8217;t work for block, inline-block, or any other element levels.</p>
+              <p>The <code>vertical-align</code> property accepts a handful of different values; the most popular values are <code>top</code>, <code>middle</code>, and <code>bottom</code>. These values vertically position text in relation to the table cell, for table-cell elements, or to the closest parent element, for inline-level elements.</p>
+              <p>By revising the HTML and CSS to include the <code>text-align</code> and <code>vertical-align</code> properties, we can clean up the layout of our table of books. Note that the data within the table becomes much clearer and more digestible.</p>
+              <h6>HTML</h6>
+              <pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10&#x000A;11&#x000A;12&#x000A;13&#x000A;14&#x000A;15&#x000A;16&#x000A;17&#x000A;18&#x000A;19&#x000A;20&#x000A;21&#x000A;22&#x000A;23&#x000A;24&#x000A;25&#x000A;26&#x000A;27&#x000A;28&#x000A;29&#x000A;30&#x000A;31&#x000A;32&#x000A;33&#x000A;34&#x000A;35&#x000A;36&#x000A;37&#x000A;38&#x000A;39&#x000A;40&#x000A;41&#x000A;42&#x000A;43&#x000A;44&#x000A;45&#x000A;46&#x000A;47&#x000A;48&#x000A;49&#x000A;50&#x000A;51&#x000A;52&#x000A;53&#x000A;54&#x000A;55&#x000A;56&#x000A;57&#x000A;58</pre></td><td class="rouge-code"><pre><span class="nt">&lt;table&gt;</span>&#x000A;  <span class="nt">&lt;thead&gt;</span>&#x000A;    <span class="nt">&lt;tr&gt;</span>&#x000A;      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span> <span class="na">colspan=</span><span class="s">"2"</span><span class="nt">&gt;</span>Item<span class="nt">&lt;/th&gt;</span>&#x000A;      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Qty<span class="nt">&lt;/th&gt;</span>&#x000A;      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Price<span class="nt">&lt;/th&gt;</span>&#x000A;    <span class="nt">&lt;/tr&gt;</span>&#x000A;  <span class="nt">&lt;/thead&gt;</span>&#x000A;  <span class="nt">&lt;tbody&gt;</span>&#x000A;    <span class="nt">&lt;tr&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>&#x000A;        <span class="nt">&lt;strong</span> <span class="na">class=</span><span class="s">"book-title"</span><span class="nt">&gt;</span>Don<span class="ni">&amp;#8217;</span>t Make Me Think<span class="nt">&lt;/strong&gt;</span> by Steve Krug&#x000A;      <span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"item-stock"</span><span class="nt">&gt;</span>In Stock<span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"item-qty"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"item-price"</span><span class="nt">&gt;</span>$30.02<span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;/tr&gt;</span>&#x000A;    <span class="nt">&lt;tr&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>&#x000A;        <span class="nt">&lt;strong</span> <span class="na">class=</span><span class="s">"book-title"</span><span class="nt">&gt;</span>A Project Guide to UX Design<span class="nt">&lt;/strong&gt;</span> by Russ Unger <span class="ni">&amp;#38;</span> Carolyn Chandler&#x000A;      <span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"item-stock"</span><span class="nt">&gt;</span>In Stock<span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"item-qty"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"item-price"</span><span class="nt">&gt;</span>$52.94 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"item-multiple"</span><span class="nt">&gt;</span>$26.47 <span class="ni">&amp;#215;</span> 2<span class="nt">&lt;/span&gt;&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;/tr&gt;</span>&#x000A;    <span class="nt">&lt;tr&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>&#x000A;        <span class="nt">&lt;strong</span> <span class="na">class=</span><span class="s">"book-title"</span><span class="nt">&gt;</span>Introducing HTML5<span class="nt">&lt;/strong&gt;</span> by Bruce Lawson <span class="ni">&amp;#38;</span> Remy Sharp&#x000A;      <span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"item-stock"</span><span class="nt">&gt;</span>Out of Stock<span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"item-qty"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"item-price"</span><span class="nt">&gt;</span>$22.23<span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;/tr&gt;</span>&#x000A;    <span class="nt">&lt;tr&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>&#x000A;        <span class="nt">&lt;strong</span> <span class="na">class=</span><span class="s">"book-title"</span><span class="nt">&gt;</span>Bulletproof Web Design<span class="nt">&lt;/strong&gt;</span> by Dan Cederholm&#x000A;      <span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"item-stock"</span><span class="nt">&gt;</span>In Stock<span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"item-qty"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"item-price"</span><span class="nt">&gt;</span>$30.17<span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;/tr&gt;</span>&#x000A;  <span class="nt">&lt;/tbody&gt;</span>&#x000A;  <span class="nt">&lt;tfoot&gt;</span>&#x000A;    <span class="nt">&lt;tr&gt;</span>&#x000A;      <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"3"</span><span class="nt">&gt;</span>Subtotal<span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>$135.36<span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;/tr&gt;</span>&#x000A;    <span class="nt">&lt;tr&gt;</span>&#x000A;      <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"3"</span><span class="nt">&gt;</span>Tax<span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>$13.54<span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;/tr&gt;</span>&#x000A;    <span class="nt">&lt;tr&gt;</span>&#x000A;      <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"3"</span><span class="nt">&gt;</span>Total<span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>$148.90<span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;/tr&gt;</span>&#x000A;  <span class="nt">&lt;/tfoot&gt;</span>&#x000A;<span class="nt">&lt;/table&gt;</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <h6>CSS</h6>
+              <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10&#x000A;11&#x000A;12&#x000A;13&#x000A;14&#x000A;15&#x000A;16&#x000A;17&#x000A;18&#x000A;19&#x000A;20&#x000A;21&#x000A;22&#x000A;23&#x000A;24&#x000A;25&#x000A;26&#x000A;27&#x000A;28&#x000A;29&#x000A;30&#x000A;31&#x000A;32&#x000A;33&#x000A;34&#x000A;35&#x000A;36&#x000A;37&#x000A;38&#x000A;39&#x000A;40&#x000A;41&#x000A;42&#x000A;43&#x000A;44&#x000A;45&#x000A;46&#x000A;47&#x000A;48&#x000A;49</pre></td><td class="rouge-code"><pre><span class="nt">table</span> <span class="p">{</span>&#x000A;  <span class="nl">border-collapse</span><span class="p">:</span> <span class="nb">separate</span><span class="p">;</span>&#x000A;  <span class="nl">border-spacing</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>&#x000A;  <span class="nl">color</span><span class="p">:</span> <span class="m">#4a4a4d</span><span class="p">;</span>&#x000A;  <span class="nl">font</span><span class="p">:</span> <span class="m">14px</span><span class="p">/</span><span class="m">1.4</span> <span class="s1">"Helvetica Neue"</span><span class="p">,</span> <span class="n">Helvetica</span><span class="p">,</span> <span class="n">Arial</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">th</span><span class="o">,</span>&#x000A;<span class="nt">td</span> <span class="p">{</span>&#x000A;  <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span> <span class="m">15px</span><span class="p">;</span>&#x000A;  <span class="nl">vertical-align</span><span class="p">:</span> <span class="nb">middle</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">thead</span> <span class="p">{</span>&#x000A;  <span class="nl">background</span><span class="p">:</span> <span class="m">#395870</span><span class="p">;</span>&#x000A;  <span class="nl">color</span><span class="p">:</span> <span class="m">#fff</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">th</span><span class="nd">:first-child</span> <span class="p">{</span>&#x000A;  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">tbody</span> <span class="nt">tr</span><span class="nd">:nth-child</span><span class="o">(</span><span class="nt">even</span><span class="o">)</span> <span class="p">{</span>&#x000A;  <span class="nl">background</span><span class="p">:</span> <span class="m">#f0f0f2</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">td</span> <span class="p">{</span>&#x000A;  <span class="nl">border-bottom</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="m">#cecfd5</span><span class="p">;</span>&#x000A;  <span class="nl">border-right</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="m">#cecfd5</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">td</span><span class="nd">:first-child</span> <span class="p">{</span>&#x000A;  <span class="nl">border-left</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="m">#cecfd5</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nc">.book-title</span> <span class="p">{</span>&#x000A;  <span class="nl">color</span><span class="p">:</span> <span class="m">#395870</span><span class="p">;</span>&#x000A;  <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nc">.item-stock</span><span class="o">,</span>&#x000A;<span class="nc">.item-qty</span> <span class="p">{</span>&#x000A;  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nc">.item-price</span> <span class="p">{</span>&#x000A;  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">right</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nc">.item-multiple</span> <span class="p">{</span>&#x000A;  <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">tfoot</span> <span class="p">{</span>&#x000A;  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">right</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">tfoot</span> <span class="nt">tr</span><span class="nd">:last-child</span> <span class="p">{</span>&#x000A;  <span class="nl">background</span><span class="p">:</span> <span class="m">#f0f0f2</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <div class='note'>
+                <h4 class='demo-title'>Aligning Text Demo</h4>
+                <p class='codepen' data-default-tab='result' data-height='480' data-slug-hash='omCfb' data-theme-id='5995'>
+                  See the Pen <a href='http://codepen.io/shayhowe/pen/omCfb/'>Aligning Text</a> by Shay Howe (<a href='http://codepen.io/shayhowe'>@shayhowe</a>) on <a href='http://codepen.io/'>CodePen</a>.
+                </p>
+              </div>
+              <h2 id='styled-table'>Completely Styled Table</h2>
+              <p>So far our table of books is looking pretty good. Let&#8217;s take it one step further by rounding some corners and styling some of the text just a little more.</p>
+              <h6>HTML</h6>
+              <pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10&#x000A;11&#x000A;12&#x000A;13&#x000A;14&#x000A;15&#x000A;16&#x000A;17&#x000A;18&#x000A;19&#x000A;20&#x000A;21&#x000A;22&#x000A;23&#x000A;24&#x000A;25&#x000A;26&#x000A;27&#x000A;28&#x000A;29&#x000A;30&#x000A;31&#x000A;32&#x000A;33&#x000A;34&#x000A;35&#x000A;36&#x000A;37&#x000A;38&#x000A;39&#x000A;40&#x000A;41&#x000A;42&#x000A;43&#x000A;44&#x000A;45&#x000A;46&#x000A;47&#x000A;48&#x000A;49&#x000A;50&#x000A;51&#x000A;52&#x000A;53&#x000A;54&#x000A;55&#x000A;56&#x000A;57&#x000A;58&#x000A;59&#x000A;60&#x000A;61&#x000A;62</pre></td><td class="rouge-code"><pre><span class="nt">&lt;table&gt;</span>&#x000A;  <span class="nt">&lt;thead&gt;</span>&#x000A;    <span class="nt">&lt;tr&gt;</span>&#x000A;      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span> <span class="na">colspan=</span><span class="s">"2"</span><span class="nt">&gt;</span>Item<span class="nt">&lt;/th&gt;</span>&#x000A;      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Qty<span class="nt">&lt;/th&gt;</span>&#x000A;      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Price<span class="nt">&lt;/th&gt;</span>&#x000A;    <span class="nt">&lt;/tr&gt;</span>&#x000A;  <span class="nt">&lt;/thead&gt;</span>&#x000A;  <span class="nt">&lt;tbody&gt;</span>&#x000A;    <span class="nt">&lt;tr&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>&#x000A;        <span class="nt">&lt;strong</span> <span class="na">class=</span><span class="s">"book-title"</span><span class="nt">&gt;</span>Don<span class="ni">&amp;#8217;</span>t Make Me Think<span class="nt">&lt;/strong&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-offset"</span><span class="nt">&gt;</span>by Steve Krug<span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"item-stock"</span><span class="nt">&gt;</span>In Stock<span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"item-qty"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"item-price"</span><span class="nt">&gt;</span>$30.02<span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;/tr&gt;</span>&#x000A;    <span class="nt">&lt;tr&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>&#x000A;        <span class="nt">&lt;strong</span> <span class="na">class=</span><span class="s">"book-title"</span><span class="nt">&gt;</span>A Project Guide to UX Design<span class="nt">&lt;/strong&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-offset"</span><span class="nt">&gt;</span>by Russ Unger <span class="ni">&amp;#38;</span> Carolyn Chandler<span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"item-stock"</span><span class="nt">&gt;</span>In Stock<span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"item-qty"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"item-price"</span><span class="nt">&gt;</span>$52.94 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-offset item-multiple"</span><span class="nt">&gt;</span>$26.47 <span class="ni">&amp;#215;</span> 2<span class="nt">&lt;/span&gt;&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;/tr&gt;</span>&#x000A;    <span class="nt">&lt;tr&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>&#x000A;        <span class="nt">&lt;strong</span> <span class="na">class=</span><span class="s">"book-title"</span><span class="nt">&gt;</span>Introducing HTML5<span class="nt">&lt;/strong&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-offset"</span><span class="nt">&gt;</span>by Bruce Lawson <span class="ni">&amp;#38;</span> Remy Sharp<span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"item-stock"</span><span class="nt">&gt;</span>Out of Stock<span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"item-qty"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"item-price"</span><span class="nt">&gt;</span>$22.23<span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;/tr&gt;</span>&#x000A;    <span class="nt">&lt;tr&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>&#x000A;        <span class="nt">&lt;strong</span> <span class="na">class=</span><span class="s">"book-title"</span><span class="nt">&gt;</span>Bulletproof Web Design<span class="nt">&lt;/strong&gt;</span>&#x000A;        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-offset"</span><span class="nt">&gt;</span>by Dan Cederholm<span class="nt">&lt;/span&gt;</span>&#x000A;      <span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"item-stock"</span><span class="nt">&gt;</span>In Stock<span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"item-qty"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"item-price"</span><span class="nt">&gt;</span>$30.17<span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;/tr&gt;</span>&#x000A;  <span class="nt">&lt;/tbody&gt;</span>&#x000A;  <span class="nt">&lt;tfoot&gt;</span>&#x000A;    <span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"text-offset"</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"3"</span><span class="nt">&gt;</span>Subtotal<span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>$135.36<span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;/tr&gt;</span>&#x000A;    <span class="nt">&lt;tr</span> <span class="na">class=</span><span class="s">"text-offset"</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"3"</span><span class="nt">&gt;</span>Tax<span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>$13.54<span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;/tr&gt;</span>&#x000A;    <span class="nt">&lt;tr&gt;</span>&#x000A;      <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"3"</span><span class="nt">&gt;</span>Total<span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>$148.90<span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;/tr&gt;</span>&#x000A;  <span class="nt">&lt;/tfoot&gt;</span>&#x000A;<span class="nt">&lt;/table&gt;</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <h6>CSS</h6>
+              <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10&#x000A;11&#x000A;12&#x000A;13&#x000A;14&#x000A;15&#x000A;16&#x000A;17&#x000A;18&#x000A;19&#x000A;20&#x000A;21&#x000A;22&#x000A;23&#x000A;24&#x000A;25&#x000A;26&#x000A;27&#x000A;28&#x000A;29&#x000A;30&#x000A;31&#x000A;32&#x000A;33&#x000A;34&#x000A;35&#x000A;36&#x000A;37&#x000A;38&#x000A;39&#x000A;40&#x000A;41&#x000A;42&#x000A;43&#x000A;44&#x000A;45&#x000A;46&#x000A;47&#x000A;48&#x000A;49&#x000A;50&#x000A;51&#x000A;52&#x000A;53&#x000A;54&#x000A;55&#x000A;56&#x000A;57&#x000A;58&#x000A;59&#x000A;60&#x000A;61&#x000A;62&#x000A;63&#x000A;64&#x000A;65&#x000A;66&#x000A;67&#x000A;68</pre></td><td class="rouge-code"><pre><span class="nt">table</span> <span class="p">{</span>&#x000A;  <span class="nl">border-collapse</span><span class="p">:</span> <span class="nb">separate</span><span class="p">;</span>&#x000A;  <span class="nl">border-spacing</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>&#x000A;  <span class="nl">color</span><span class="p">:</span> <span class="m">#4a4a4d</span><span class="p">;</span>&#x000A;  <span class="nl">font</span><span class="p">:</span> <span class="m">14px</span><span class="p">/</span><span class="m">1.4</span> <span class="s1">"Helvetica Neue"</span><span class="p">,</span> <span class="n">Helvetica</span><span class="p">,</span> <span class="n">Arial</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">th</span><span class="o">,</span>&#x000A;<span class="nt">td</span> <span class="p">{</span>&#x000A;  <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span> <span class="m">15px</span><span class="p">;</span>&#x000A;  <span class="nl">vertical-align</span><span class="p">:</span> <span class="nb">middle</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">thead</span> <span class="p">{</span>&#x000A;  <span class="nl">background</span><span class="p">:</span> <span class="m">#395870</span><span class="p">;</span>&#x000A;  <span class="nl">background</span><span class="p">:</span> <span class="n">linear-gradient</span><span class="p">(</span><span class="m">#49708f</span><span class="p">,</span> <span class="m">#293f50</span><span class="p">);</span>&#x000A;  <span class="nl">color</span><span class="p">:</span> <span class="m">#fff</span><span class="p">;</span>&#x000A;  <span class="nl">font-size</span><span class="p">:</span> <span class="m">11px</span><span class="p">;</span>&#x000A;  <span class="nl">text-transform</span><span class="p">:</span> <span class="nb">uppercase</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">th</span><span class="nd">:first-child</span> <span class="p">{</span>&#x000A;  <span class="nl">border-top-left-radius</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span>&#x000A;  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">th</span><span class="nd">:last-child</span> <span class="p">{</span>&#x000A;  <span class="nl">border-top-right-radius</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">tbody</span> <span class="nt">tr</span><span class="nd">:nth-child</span><span class="o">(</span><span class="nt">even</span><span class="o">)</span> <span class="p">{</span>&#x000A;  <span class="nl">background</span><span class="p">:</span> <span class="m">#f0f0f2</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">td</span> <span class="p">{</span>&#x000A;  <span class="nl">border-bottom</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="m">#cecfd5</span><span class="p">;</span>&#x000A;  <span class="nl">border-right</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="m">#cecfd5</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">td</span><span class="nd">:first-child</span> <span class="p">{</span>&#x000A;  <span class="nl">border-left</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="m">#cecfd5</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nc">.book-title</span> <span class="p">{</span>&#x000A;  <span class="nl">color</span><span class="p">:</span> <span class="m">#395870</span><span class="p">;</span>&#x000A;  <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nc">.text-offset</span> <span class="p">{</span>&#x000A;  <span class="nl">color</span><span class="p">:</span> <span class="m">#7c7c80</span><span class="p">;</span>&#x000A;  <span class="nl">font-size</span><span class="p">:</span> <span class="m">12px</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nc">.item-stock</span><span class="o">,</span>&#x000A;<span class="nc">.item-qty</span> <span class="p">{</span>&#x000A;  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nc">.item-price</span> <span class="p">{</span>&#x000A;  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">right</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nc">.item-multiple</span> <span class="p">{</span>&#x000A;  <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">tfoot</span> <span class="p">{</span>&#x000A;  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">right</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">tfoot</span> <span class="nt">tr</span><span class="nd">:last-child</span> <span class="p">{</span>&#x000A;  <span class="nl">background</span><span class="p">:</span> <span class="m">#f0f0f2</span><span class="p">;</span>&#x000A;  <span class="nl">color</span><span class="p">:</span> <span class="m">#395870</span><span class="p">;</span>&#x000A;  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">tfoot</span> <span class="nt">tr</span><span class="nd">:last-child</span> <span class="nt">td</span><span class="nd">:first-child</span> <span class="p">{</span>&#x000A;  <span class="nl">border-bottom-left-radius</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">tfoot</span> <span class="nt">tr</span><span class="nd">:last-child</span> <span class="nt">td</span><span class="nd">:last-child</span> <span class="p">{</span>&#x000A;  <span class="nl">border-bottom-right-radius</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <div class='note'>
+                <h4 class='demo-title'>Completely Styled Table</h4>
+                <p class='codepen' data-default-tab='result' data-height='468' data-slug-hash='tdKJz' data-theme-id='5995'>
+                  See the Pen <a href='http://codepen.io/shayhowe/pen/tdKJz/'>Completely Styled Table</a> by Shay Howe (<a href='http://codepen.io/shayhowe'>@shayhowe</a>) on <a href='http://codepen.io/'>CodePen</a>.
+                </p>
+              </div>
+              <h2 id='practice-1'>In Practice</h2>
+              <p>Now that we know how to create and style tables, let&#8217;s wrap up the last remaining page of our Styles Conference website, the schedule.</p>
+              <ol class='practice'>
+                <li>
+                  <p>We&#8217;ll begin our Schedule page by opening up the schedule.html file and adding a <code>&#60;section&#62;</code> element with a class attribute value of <code>row</code>, much like we&#8217;ve done with all of the other subpages. Within this new <code>&#60;section&#62;</code> element let&#8217;s also add a <code>&#60;div&#62;</code> element with a class attribute value of <code>container</code>.</p>
+                  <pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6</pre></td><td class="rouge-code"><pre><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>&#x000A;    ...&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/section&gt;</span>&#x000A;</pre></td></tr></tbody></table>
+                  </code></pre>
+                  <p>With these elements and classes we&#8217;ve created a new section of the page with a white <code>background</code> and vertical <code>padding</code>, and we&#8217;ve centered our content on the page. What&#8217;s different here from all of the other subpages is the <code>container</code> class attribute value in place of the <code>grid</code> class attribute value on the <code>&#60;div&#62;</code> element. Since we&#8217;re not using any of the <code>col</code>-based classes we&#8217;ll forgo the <code>grid</code> class attribute value in favor of the <code>container</code> class attribute value.</p>
+                </li>
+                <li>
+                  <p>Within the new section we&#8217;ll add three tables, one for each day of the conference. The tables will display the events of each day using three columns and multiple rows and will include a table head and table body.</p>
+                  <p>To get started let&#8217;s outline the structure of the first table, including the <code>&#60;table&#62;</code>, <code>&#60;thead&#62;</code>, and <code>&#60;tbody&#62;</code> elements.</p>
+                  <pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10&#x000A;11&#x000A;12&#x000A;13&#x000A;14&#x000A;15</pre></td><td class="rouge-code"><pre><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>&#x000A;&#x000A;    <span class="nt">&lt;table&gt;</span>&#x000A;      <span class="nt">&lt;thead&gt;</span>&#x000A;        ...&#x000A;      <span class="nt">&lt;/thead&gt;</span>&#x000A;      <span class="nt">&lt;tbody&gt;</span>&#x000A;        ...&#x000A;      <span class="nt">&lt;/tbody&gt;</span>&#x000A;    <span class="nt">&lt;/table&gt;</span>&#x000A;&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/section&gt;</span>&#x000A;</pre></td></tr></tbody></table>
+                  </code></pre>
+                </li>
+                <li>
+                  <p>Currently, even though our first table doesn&#8217;t contain any data, it does have some styles applied to it. Specifically, the reset we added back in Lesson 1 to tone down all of the default browser styles has added the <code>border-collapse</code> property with a value of <code>collapse</code> and the <code>border-spacing</code> property with a value of <code>0</code> to the table. We want these styles, so we&#8217;ll leave them alone; however, let&#8217;s create a new section in our <code>main.css</code> file to add some additional styles.</p>
+                  <p>In our new section of styles specifically for the Schedule page (which will appear just below the styles for the Speakers page), let&#8217;s set our <code>&#60;table&#62;</code> elements to have a <code>width</code> of <code>100%</code> and a bottom <code>margin</code> of <code>44</code> pixels.</p>
+                  <p>Then, using the <code>:last-child</code> pseudo-class selector to identify the last <code>&#60;table&#62;</code> element within the section, let&#8217;s set its bottom <code>margin</code> to <code>0</code> pixels. Doing so prevents this table from conflicting with the bottom <code>padding</code> belonging to the <code>&#60;section&#62;</code> element with a class attribute value of <code>row</code>.</p>
+                  <p>So far, the new section within our <code>main.css</code> file looks like this:</p>
+                  <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10&#x000A;11&#x000A;12&#x000A;13&#x000A;14</pre></td><td class="rouge-code"><pre><span class="c">/*&#x000A;  ========================================&#x000A;  Schedule&#x000A;  ========================================&#x000A;*/</span>&#x000A;&#x000A;<span class="nt">table</span> <span class="p">{</span>&#x000A;  <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">44px</span><span class="p">;</span>&#x000A;  <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">table</span><span class="nd">:last-child</span> <span class="p">{</span>&#x000A;  <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+                  </code></pre>
+                </li>
+                <li>
+                  <p>Now let&#8217;s add some data to our table. We&#8217;ll begin with the first day of our conference, the workshop day on August 24.</p>
+                  <p>Within the <code>&#60;thead&#62;</code> element of the table let&#8217;s add a <code>&#60;tr&#62;</code> element. The first cell within the row will be a <code>&#60;th&#62;</code> element noting the focus of the day: &#8220;Workshops&#8221; for this specific day. Since the <code>&#60;th&#62;</code> element is the heading for the row we&#8217;ll also add the <code>scope</code> attribute with a value of <code>row</code> to it.</p>
+                  <p>After the <code>&#60;th&#62;</code> element comes a <code>&#60;td&#62;</code> element with the date, &#8220;August 24th&#8221; in this case. Now, more often than not we&#8217;ll have three columns, the first being a table heading that identifies a time of day and the second two columns being regular table cells that identify speakers for that given time. Since this row doesn&#8217;t feature two separate speakers we&#8217;ll want to add the <code>colspan</code> attribute with a value of <code>2</code> to the <code>&#60;td&#62;</code> element, forcing it to span two columns.</p>
+                  <p>Our code for the table now looks like this:</p>
+                  <pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10&#x000A;11&#x000A;12&#x000A;13&#x000A;14&#x000A;15&#x000A;16</pre></td><td class="rouge-code"><pre><span class="nt">&lt;table&gt;</span>&#x000A;  <span class="nt">&lt;thead&gt;</span>&#x000A;    <span class="nt">&lt;tr&gt;</span>&#x000A;      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>&#x000A;        Workshops&#x000A;      <span class="nt">&lt;/th&gt;</span>&#x000A;      <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"2"</span><span class="nt">&gt;</span>&#x000A;        August 24th&#x000A;      <span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;/tr&gt;</span>&#x000A;  <span class="nt">&lt;/thead&gt;</span>&#x000A;  <span class="nt">&lt;tbody&gt;</span>&#x000A;    ...&#x000A;  <span class="nt">&lt;/tbody&gt;</span>&#x000A;<span class="nt">&lt;/table&gt;</span>&#x000A;</pre></td></tr></tbody></table>
+                  </code></pre>
+                </li>
+                <li>
+                  <p>Inside the <code>&#60;tbody&#62;</code> element let&#8217;s fill out the day&#8217;s activities. We&#8217;ll begin by adding a <code>&#60;tr&#62;</code> element with a <code>&#60;th&#62;</code> and a <code>&#60;td&#62;</code> element directly inside the row.</p>
+                  <p>On the <code>&#60;th&#62;</code> element, and all subsequent <code>&#60;th&#62;</code> elements, we&#8217;ll add the <code>scope</code> attribute with a value of <code>row</code> to semantically identify this element as the header for the row. Then within the <code>&#60;th&#62;</code> element let&#8217;s add a <code>&#60;time&#62;</code> element that shows the time of the first activity of the day, &#8220;8:30 AM&#8221; in this case. We&#8217;ll also include a <code>datetime</code> attribute on the <code>&#60;time&#62;</code> element with a value noting the time in hours, minutes, and seconds, <code>08:30:00</code>.</p>
+                  <p>In the <code>&#60;td&#62;</code> element that follows the <code>&#60;th&#62;</code> element we&#8217;ll include the activity name (since there aren&#8217;t any speakers at this time), which is &#8220;Registration&#8221; in this case. Since there is only one activity at this time we&#8217;ll also include the <code>colspan</code> attribute with a value of 2 on the <code>&#60;td&#62;</code> element.</p>
+                  <p>In all, the code for our first table looks like this:</p>
+                  <pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10&#x000A;11&#x000A;12&#x000A;13&#x000A;14&#x000A;15&#x000A;16&#x000A;17&#x000A;18&#x000A;19&#x000A;20&#x000A;21&#x000A;22&#x000A;23</pre></td><td class="rouge-code"><pre><span class="nt">&lt;table&gt;</span>&#x000A;  <span class="nt">&lt;thead&gt;</span>&#x000A;    <span class="nt">&lt;tr&gt;</span>&#x000A;      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>&#x000A;        Workshops&#x000A;      <span class="nt">&lt;/th&gt;</span>&#x000A;      <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"2"</span><span class="nt">&gt;</span>&#x000A;        August 24th&#x000A;      <span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;/tr&gt;</span>&#x000A;  <span class="nt">&lt;/thead&gt;</span>&#x000A;  <span class="nt">&lt;tbody&gt;</span>&#x000A;    <span class="nt">&lt;tr&gt;</span>&#x000A;      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;time</span> <span class="na">datetime=</span><span class="s">"08:30:00"</span><span class="nt">&gt;</span>8:30 AM<span class="nt">&lt;/time&gt;</span>&#x000A;      <span class="nt">&lt;/th&gt;</span>&#x000A;      <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"2"</span><span class="nt">&gt;</span>&#x000A;        Registration&#x000A;      <span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;/tr&gt;</span>&#x000A;  <span class="nt">&lt;/tbody&gt;</span>&#x000A;<span class="nt">&lt;/table&gt;</span>&#x000A;</pre></td></tr></tbody></table>
+                  </code></pre>
+                </li>
+                <li>
+                  <p>For the second row within the <code>&#60;tbody&#62;</code> element let&#8217;s add a <code>&#60;tr&#62;</code> element just below our previous row. Then let&#8217;s add a <code>&#60;th&#62;</code> element with the <code>scope</code> attribute with a value of <code>row</code>, and again add a <code>&#60;time&#62;</code> element with the appropriate time and <code>datetime</code> attribute value within that <code>&#60;th&#62;</code> element.</p>
+                  <p>After the <code>&#60;th&#62;</code> element let&#8217;s add two <code>&#60;td&#62;</code> elements for the two speakers presenting at that time. Directly inside each <code>&#60;td&#62;</code> element we&#8217;ll add an <code>&#60;a&#62;</code> element, which will link back to where that speaker is positioned on the Speakers page. Remember, we added <code>id</code> attributes with each speaker&#8217;s name to the parent elements for each speaker. Using that <code>id</code> attribute value preceded by the <code>speakers.html</code> filename and a pound/hash sign, <code>#</code>, we can link directly to that speaker&#8217;s talk description and biography on the Speakers page.</p>
+                  <p>Within the <code>&#60;a&#62;</code> element we&#8217;ll include an <code>&#60;h4&#62;</code> element with the speaker&#8217;s name followed by the talk title.</p>
+                  <p>The code for the first two workshops looks like this:</p>
+                  <pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10&#x000A;11&#x000A;12&#x000A;13&#x000A;14&#x000A;15&#x000A;16&#x000A;17&#x000A;18&#x000A;19&#x000A;20&#x000A;21&#x000A;22&#x000A;23&#x000A;24&#x000A;25&#x000A;26&#x000A;27&#x000A;28&#x000A;29&#x000A;30&#x000A;31&#x000A;32&#x000A;33&#x000A;34&#x000A;35&#x000A;36&#x000A;37&#x000A;38&#x000A;39&#x000A;40</pre></td><td class="rouge-code"><pre><span class="nt">&lt;table&gt;</span>&#x000A;  <span class="nt">&lt;thead&gt;</span>&#x000A;    <span class="nt">&lt;tr&gt;</span>&#x000A;      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>&#x000A;        Workshops&#x000A;      <span class="nt">&lt;/th&gt;</span>&#x000A;      <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"2"</span><span class="nt">&gt;</span>&#x000A;        August 24th&#x000A;      <span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;/tr&gt;</span>&#x000A;  <span class="nt">&lt;/thead&gt;</span>&#x000A;  <span class="nt">&lt;tbody&gt;</span>&#x000A;    <span class="nt">&lt;tr&gt;</span>&#x000A;      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;time</span> <span class="na">datetime=</span><span class="s">"08:30:00"</span><span class="nt">&gt;</span>8:30 AM<span class="nt">&lt;/time&gt;</span>&#x000A;      <span class="nt">&lt;/th&gt;</span>&#x000A;      <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"2"</span><span class="nt">&gt;</span>&#x000A;        Registration&#x000A;      <span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;/tr&gt;</span>&#x000A;    <span class="nt">&lt;tr&gt;</span>&#x000A;      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;time</span> <span class="na">datetime=</span><span class="s">"09:00:00"</span><span class="nt">&gt;</span>9:00 AM<span class="nt">&lt;/time&gt;</span>&#x000A;      <span class="nt">&lt;/th&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"speakers.html#adam-connor"</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;h4&gt;</span>Adam Connor<span class="nt">&lt;/h4&gt;</span>&#x000A;          Lights! Camera! Interaction! Design Inspiration from Filmmakers&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"speakers.html#jennifer-jones"</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;h4&gt;</span>Jennifer Jones<span class="nt">&lt;/h4&gt;</span>&#x000A;          What Designers Can Learn from Parenting&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;/tr&gt;</span>&#x000A;  <span class="nt">&lt;/tbody&gt;</span>&#x000A;<span class="nt">&lt;/table&gt;</span>&#x000A;</pre></td></tr></tbody></table>
+                  </code></pre>
+                </li>
+                <li>
+                  <p>From here, we can repeat this pattern for each activity and speaker to finish our first table and then add the next two tables for the second two days of the conference.</p>
+                  <p>While doing this, keep in mind that the table head will always include a table heading noting the events of the day and a table cell spanning two columns showing the date.</p>
+                  <p>Then, within the body of each table, every row will have a table heading that shows the time of day. After the table heading will be an activity, a speaker, or multiple speakers. Activities without speakers will reside within a single <code>&#60;td&#62;</code> element that spans two columns. If only one speaker is presenting at a certain time, that speaker will reside within a single <code>&#60;td&#62;</code> element that spans two columns as well, <code>&#60;a&#62;</code> and <code>&#60;h4&#62;</code> elements and all.</p>
+                  <p>If there are two speakers for a given time then each speaker will reside within his or her own <code>&#60;td&#62;</code> element, just as before.</p>
+                  <p>The full code for all three tables can be found at at the end of this exercise. For reference, the table for the first day, which includes lunch and two more speakers, looks like this:</p>
+                  <pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10&#x000A;11&#x000A;12&#x000A;13&#x000A;14&#x000A;15&#x000A;16&#x000A;17&#x000A;18&#x000A;19&#x000A;20&#x000A;21&#x000A;22&#x000A;23&#x000A;24&#x000A;25&#x000A;26&#x000A;27&#x000A;28&#x000A;29&#x000A;30&#x000A;31&#x000A;32&#x000A;33&#x000A;34&#x000A;35&#x000A;36&#x000A;37&#x000A;38&#x000A;39&#x000A;40&#x000A;41&#x000A;42&#x000A;43&#x000A;44&#x000A;45&#x000A;46&#x000A;47&#x000A;48&#x000A;49&#x000A;50&#x000A;51&#x000A;52&#x000A;53&#x000A;54&#x000A;55&#x000A;56&#x000A;57&#x000A;58&#x000A;59&#x000A;60&#x000A;61&#x000A;62&#x000A;63&#x000A;64&#x000A;65</pre></td><td class="rouge-code"><pre><span class="nt">&lt;table&gt;</span>&#x000A;  <span class="nt">&lt;thead&gt;</span>&#x000A;    <span class="nt">&lt;tr&gt;</span>&#x000A;      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>&#x000A;        Workshops&#x000A;      <span class="nt">&lt;/th&gt;</span>&#x000A;      <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"2"</span><span class="nt">&gt;</span>&#x000A;        August 24th&#x000A;      <span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;/tr&gt;</span>&#x000A;  <span class="nt">&lt;/thead&gt;</span>&#x000A;  <span class="nt">&lt;tbody&gt;</span>&#x000A;    <span class="nt">&lt;tr&gt;</span>&#x000A;      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;time</span> <span class="na">datetime=</span><span class="s">"08:30:00"</span><span class="nt">&gt;</span>8:30 AM<span class="nt">&lt;/time&gt;</span>&#x000A;      <span class="nt">&lt;/th&gt;</span>&#x000A;      <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"2"</span><span class="nt">&gt;</span>&#x000A;        Registration&#x000A;      <span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;/tr&gt;</span>&#x000A;    <span class="nt">&lt;tr&gt;</span>&#x000A;      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;time</span> <span class="na">datetime=</span><span class="s">"09:00:00"</span><span class="nt">&gt;</span>9:00 AM<span class="nt">&lt;/time&gt;</span>&#x000A;      <span class="nt">&lt;/th&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"speakers.html#adam-connor"</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;h4&gt;</span>Adam Connor<span class="nt">&lt;/h4&gt;</span>&#x000A;          Lights! Camera! Interaction! Design Inspiration from Filmmakers&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"speakers.html#jennifer-jones"</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;h4&gt;</span>Jennifer Jones<span class="nt">&lt;/h4&gt;</span>&#x000A;          What Designers Can Learn from Parenting&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;/tr&gt;</span>&#x000A;    <span class="nt">&lt;tr&gt;</span>&#x000A;      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;time</span> <span class="na">datetime=</span><span class="s">"12:30:00"</span><span class="nt">&gt;</span>12:30 PM<span class="nt">&lt;/time&gt;</span>&#x000A;      <span class="nt">&lt;/th&gt;</span>&#x000A;      <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"2"</span><span class="nt">&gt;</span>&#x000A;        Lunch&#x000A;      <span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;/tr&gt;</span>&#x000A;    <span class="nt">&lt;tr&gt;</span>&#x000A;      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;time</span> <span class="na">datetime=</span><span class="s">"14:00"</span><span class="nt">&gt;</span>2:00 PM<span class="nt">&lt;/time&gt;</span>&#x000A;      <span class="nt">&lt;/th&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"speakers.html#tessa-harmon"</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;h4&gt;</span>Tessa Harmon<span class="nt">&lt;/h4&gt;</span>&#x000A;          Crafty Coding: Generating Knitting Patterns&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/td&gt;</span>&#x000A;      <span class="nt">&lt;td&gt;</span>&#x000A;        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"speakers.html#russ-unger"</span><span class="nt">&gt;</span>&#x000A;          <span class="nt">&lt;h4&gt;</span>Russ Unger<span class="nt">&lt;/h4&gt;</span>&#x000A;          From Muppets to Mastery: Core UX Principles from Mr. Jim Henson&#x000A;        <span class="nt">&lt;/a&gt;</span>&#x000A;      <span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;/tr&gt;</span>&#x000A;  <span class="nt">&lt;/tbody&gt;</span>&#x000A;<span class="nt">&lt;/table&gt;</span>&#x000A;</pre></td></tr></tbody></table>
+                  </code></pre>
+                </li>
+                <li>
+                  <p>Now that our tables are taking shape, it&#8217;s time to add a little style to them. Let&#8217;s begin by adding some general styles to the <code>&#60;th&#62;</code> and <code>&#60;td&#62;</code> elements. For both the <code>&#60;th&#62;</code> and <code>&#60;td&#62;</code> elements let&#8217;s add a bottom <code>padding</code> of <code>22</code> pixels and a vertical alignment of <code>top</code>. For <code>&#60;th&#62;</code> elements specifically let&#8217;s add a right <code>padding</code> of <code>45</code> pixels, a text alignment of <code>right</code>, and a <code>width</code> of <code>20%</code>. Then, for <code>&#60;td&#62;</code> elements let&#8217;s add a <code>width</code> of <code>40%</code>.</p>
+                  <p>Below our existing table and schedule styles, our code should look like this:</p>
+                  <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10&#x000A;11&#x000A;12&#x000A;13&#x000A;14</pre></td><td class="rouge-code"><pre><span class="nt">th</span><span class="o">,</span>&#x000A;<span class="nt">td</span> <span class="p">{</span>&#x000A;  <span class="nl">padding-bottom</span><span class="p">:</span> <span class="m">22px</span><span class="p">;</span>&#x000A;  <span class="nl">vertical-align</span><span class="p">:</span> <span class="nb">top</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">th</span> <span class="p">{</span>&#x000A;  <span class="nl">padding-right</span><span class="p">:</span> <span class="m">45px</span><span class="p">;</span>&#x000A;  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">right</span><span class="p">;</span>&#x000A;  <span class="nl">width</span><span class="p">:</span> <span class="m">20%</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">td</span> <span class="p">{</span>&#x000A;  <span class="nl">width</span><span class="p">:</span> <span class="m">40%</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+                  </code></pre>
+                </li>
+                <li>
+                  <p>Next, let&#8217;s style the table head and the elements within the table head. We&#8217;ll set a <code>line-height</code> of <code>44</code> pixels on the <code>&#60;thead&#62;</code> element only, and a <code>color</code> of <code>#648880</code> and a <code>font-size</code> of <code>24</code> pixels on all <code>&#60;th&#62;</code> elements nested within a <code>&#60;thead&#62;</code> element. Our new styles include the following:</p>
+                  <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8</pre></td><td class="rouge-code"><pre><span class="nt">thead</span> <span class="p">{</span>&#x000A;  <span class="nl">line-height</span><span class="p">:</span> <span class="m">44px</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">thead</span> <span class="nt">th</span> <span class="p">{</span>&#x000A;  <span class="nl">color</span><span class="p">:</span> <span class="m">#648880</span><span class="p">;</span>&#x000A;  <span class="nl">font-size</span><span class="p">:</span> <span class="m">24px</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+                  </code></pre>
+                </li>
+                <li>
+                  <p>The table head is looking good, so let&#8217;s also add some styles for the table body. We&#8217;ll begin with <code>&#60;th&#62;</code> elements nested within the <code>&#60;tbody&#62;</code> element: changing their <code>color</code>, adding some <code>font</code>- and <code>text</code>-based styles, and adding some top <code>padding</code>.</p>
+                  <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8</pre></td><td class="rouge-code"><pre><span class="nt">tbody</span> <span class="nt">th</span> <span class="p">{</span>&#x000A;  <span class="nl">color</span><span class="p">:</span> <span class="m">#a9b2b9</span><span class="p">;</span>&#x000A;  <span class="nl">font-size</span><span class="p">:</span> <span class="m">14px</span><span class="p">;</span>&#x000A;  <span class="nl">font-weight</span><span class="p">:</span> <span class="m">400</span><span class="p">;</span>&#x000A;  <span class="nl">padding-top</span><span class="p">:</span> <span class="m">22px</span><span class="p">;</span>&#x000A;  <span class="nl">text-transform</span><span class="p">:</span> <span class="nb">uppercase</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+                  </code></pre>
+                </li>
+                <li>
+                  <p>We&#8217;ll also add some styles to <code>&#60;td&#62;</code> elements nested within the <code>&#60;tbody&#62;</code> element, beginning with a top border and padding. We&#8217;ll style the <code>&#60;td&#62;</code> elements that span only one column by adding 15 pixels of right padding to those that form the left column and 15 pixels of left padding to those that form the right column. Doing so puts a total of 30 pixels of padding between the two columns while keeping each cell the same size. We don&#8217;t need to apply any left or right padding to the <code>&#60;td&#62;</code> elements that span two columns.</p>
+                  <p>We&#8217;ll add all of these horizontal paddings using the <code>:first-of-type</code>, <code>:last-of-type</code>, and <code>:only-of-type</code> pseudo-class selectors. These pseudo-class selectors work very similarly to the <code>:last-child</code> pseudo-class selector we&#8217;ve used before.</p>
+                  <p>The <code>:first-of-type</code> pseudo-class selector will select the first element of its type within a parent element. In our case, the <code>td:first-of-type</code> selector will select the first <code>&#60;td&#62;</code> element within a <code>&#60;tr&#62;</code> element. Then, the <code>:last-of-type</code> pseudo-class selector will select the last element of its type within a parent element.</p>
+                  <p>Again, in our case, the <code>td:last-of-type</code> selector will select the last <code>&#60;td&#62;</code> element within a <code>&#60;tr&#62;</code> element. Lastly, the <code>:only-of-type</code> pseudo-class selector will select an element if it&#8217;s the only element of its type within a parent element. Here, the <code>td:only-of-type</code> selector will only select a <code>&#60;td&#62;</code> element if it&#8217;s the only <code>&#60;td&#62;</code> element within a <code>&#60;tr&#62;</code> element, such as when a <code>&#60;td&#62;</code> element spans two columns.</p>
+                  <p>Our styles are a little complex, but they&#8217;re flexible in addressing the needs of our table. These new styles include the following:</p>
+                  <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10&#x000A;11&#x000A;12&#x000A;13&#x000A;14&#x000A;15</pre></td><td class="rouge-code"><pre><span class="nt">tbody</span> <span class="nt">td</span> <span class="p">{</span>&#x000A;  <span class="nl">border-top</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="m">#dfe2e5</span><span class="p">;</span>&#x000A;  <span class="nl">padding-top</span><span class="p">:</span> <span class="m">21px</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">tbody</span> <span class="nt">td</span><span class="nd">:first-of-type</span> <span class="p">{</span>&#x000A;  <span class="nl">padding-right</span><span class="p">:</span> <span class="m">15px</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">tbody</span> <span class="nt">td</span><span class="nd">:last-of-type</span> <span class="p">{</span>&#x000A;  <span class="nl">padding-left</span><span class="p">:</span> <span class="m">15px</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">tbody</span> <span class="nt">td</span><span class="nd">:only-of-type</span> <span class="p">{</span>&#x000A;  <span class="nl">padding-left</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>&#x000A;  <span class="nl">padding-right</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+                  </code></pre>
+                </li>
+                <li>
+                  <p>Our schedule&#8212;and the tables that display it&#8212;is coming together. Let&#8217;s adjust a few of the styles on existing elements to clean up the design. We&#8217;ll start by making all of the links within the table a medium gray. If we target only the <code>&#60;a&#62;</code> elements within a table, our headings with the speaker&#8217;s name within the links will remain green, while the talk titles will be gray, creating a nice contrast between the two.</p>
+                  <p>While we&#8217;re adjusting the styles of the entries for the talks, let&#8217;s also remove the bottom <code>margin</code> on the <code>&#60;h4&#62;</code> elements within the table, allowing the speaker&#8217;s name to sit closer to her or his title. We can implement these styles with the following code:</p>
+                  <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7</pre></td><td class="rouge-code"><pre><span class="nt">table</span> <span class="nt">a</span> <span class="p">{</span>&#x000A;  <span class="nl">color</span><span class="p">:</span> <span class="m">#888</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">table</span> <span class="nt">h4</span> <span class="p">{</span>&#x000A;  <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+                  </code></pre>
+                </li>
+                <li>
+                  <p>Lastly, let&#8217;s create some visual contrast among the different types of activities hap- pening throughout the day. All of the talks look good with our latest changes. For all of the other activities, such as registration, lunch, and breaks (which are within the table body) as well as for the date (which is within the table header) let&#8217;s use a subtle gray.</p>
+                  <p>We&#8217;ll do so by creating a new class, <code>schedule-offset</code>, and assigning a <code>color</code> of <code>#a9b2b9</code> to it.</p>
+                  <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4</pre></td><td class="rouge-code"><pre><span class="nc">.schedule-offset</span> <span class="p">{</span>&#x000A;  <span class="nl">color</span><span class="p">:</span> <span class="m">#a9b2b9</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+                  </code></pre>
+                  <p>Once the class is in place, let&#8217;s add it to all of the <code>&#60;td&#62;</code> elements that span two columns and include either the day&#8217;s date or a designated activity&#8212;registration, lunch, or a break. Looking back to our table for the first day, the workshops day, the HTML will look like this:</p>
+                  <pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10&#x000A;11&#x000A;12&#x000A;13&#x000A;14&#x000A;15&#x000A;16&#x000A;17&#x000A;18&#x000A;19&#x000A;20&#x000A;21&#x000A;22&#x000A;23&#x000A;24&#x000A;25&#x000A;26&#x000A;27&#x000A;28&#x000A;29&#x000A;30&#x000A;31&#x000A;32&#x000A;33</pre></td><td class="rouge-code"><pre><span class="nt">&lt;table&gt;</span>&#x000A;  <span class="nt">&lt;thead&gt;</span>&#x000A;    <span class="nt">&lt;tr&gt;</span>&#x000A;      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>&#x000A;        Workshops&#x000A;      <span class="nt">&lt;/th&gt;</span>&#x000A;      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"schedule-offset"</span> <span class="na">colspan=</span><span class="s">"2"</span><span class="nt">&gt;</span>&#x000A;        August 24th&#x000A;      <span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;/tr&gt;</span>&#x000A;  <span class="nt">&lt;/thead&gt;</span>&#x000A;  <span class="nt">&lt;tbody&gt;</span>&#x000A;    <span class="nt">&lt;tr&gt;</span>&#x000A;      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;time</span> <span class="na">datetime=</span><span class="s">"08:30:00"</span><span class="nt">&gt;</span>8:30 AM<span class="nt">&lt;/time&gt;</span>&#x000A;      <span class="nt">&lt;/th&gt;</span>&#x000A;      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"schedule-offset"</span> <span class="na">colspan=</span><span class="s">"2"</span><span class="nt">&gt;</span>&#x000A;        Registration&#x000A;      <span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;/tr&gt;</span>&#x000A;    ...&#x000A;    <span class="nt">&lt;tr&gt;</span>&#x000A;      <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>&#x000A;        <span class="nt">&lt;time</span> <span class="na">datetime=</span><span class="s">"12:30:00"</span><span class="nt">&gt;</span>12:30 PM<span class="nt">&lt;/time&gt;</span>&#x000A;      <span class="nt">&lt;/th&gt;</span>&#x000A;      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"schedule-offset"</span> <span class="na">colspan=</span><span class="s">"2"</span><span class="nt">&gt;</span>&#x000A;        Lunch&#x000A;      <span class="nt">&lt;/td&gt;</span>&#x000A;    <span class="nt">&lt;/tr&gt;</span>&#x000A;    ...&#x000A;  <span class="nt">&lt;/tbody&gt;</span>&#x000A;<span class="nt">&lt;/table&gt;</span>&#x000A;</pre></td></tr></tbody></table>
+                  </code></pre>
+                </li>
+              </ol>
+              <p>Tables, which may appear simple on the surface, can be quite complex, and that is the case with our Styles Conference schedule. The good news is that our schedule is now complete, and it&#8217;s looking great.</p>
+              <figure class='fig'>
+                <img alt="Styles Conference website" src="../../assets/images/courses/html-css/organizing-data-with-tables/practice-1.png" />
+                <figcaption>
+                  <strong>Fig 11</strong>
+                  <p>The Schedule page, which includes multiple tables, for Styles Conference</p>
+                </figcaption>
+              </figure>
+              <h3>Demo &amp; Source Code</h3>
+              <p>Below you may view the Styles Conference website in its current state, as well as download the source code for the website in its current state.</p>
+              <p>
+                <a class='btn btn-alt' href='../../practice/organizing-data-with-tables/index.html'>View the Styles Conference Website</a>
+                <span class='practice-link-separator'>
+                  or
+                  <a download href='../../practice/organizing-data-with-tables.zip' onClick="_gaq.push(['_trackEvent', 'Download', 'HTML &amp; CSS - Lesson 11', 'Organizing Data with Tables']);" rel='nofollow'>Download the Source Code</a>
+                  <span class='practice-link-detail'>(Zip file)</span>
+                </span>
+              </p>
+              <h2 id='summary'>Summary</h2>
+              <p>All right, we now know how to semantically lay out tabular data within HTML while also making it intuitive with CSS. Discussing tables was our last major hurdle in learning HTML and CSS, and we have now officially finished our Styles Conference website.</p>
+              <p>To review, within this lesson we covered the following:</p>
+              <ul>
+                <li>The best ways to semantically create tables</li>
+                <li>How to make individual table cells span multiple columns or rows</li>
+                <li>The structural elements that make up tables</li>
+                <li>Different ways to style borders on a table, and how different border properties affect a table&#8217;s appearance</li>
+                <li>How to vertically align text within a table</li>
+              </ul>
+              <p>We&#8217;ve done a great job at putting all of our new skills to use, and we&#8217;re miles beyond where we were a few lessons ago. Let&#8217;s end on a high note, tie up some loose ends, and look at ways to write our best possible code.</p>
+              <h2 id='resources-and-links'>Resources <abbr title="and">&amp;</abbr> Links</h2>
+              <ul class='list-column-2 group'>
+                <li>
+                  <a href='http://www.456bereastreet.com/archive/200410/bring_on_the_tables/' rel='nofollow'>Bring on the tables</a>
+                  via 456 Berra St.
+                </li>
+              </ul>
+              <ul class='share' data-js='share' data-permalink='http://learn.shayhowe.com/html-css/organizing-data-with-tables/' data-title='Organizing Data with Tables'>
+                <li>
+                  <a class='share-twitter' data-js='share-twitter' href='#' rel='nofollow'>
+                    Share on Twitter
+                  </a>
+                </li>
+                <li>
+                  <a class='share-facebook' data-js='share-facebook' href='#' rel='nofollow'>
+                    Share on Facebook
+                  </a>
+                </li>
+                <li>
+                  <a class='share-google' data-js='share-google' href='#' rel='nofollow'>
+                    Share on Google+
+                  </a>
+                </li>
+              </ul>
+            </article>
+            <nav class='pagination container'>
+              <ul>
+                <li class='pagination-prev'>
+                  <a href='../building-forms/index.html' rel='prev'>
+                    <strong>Lesson 10</strong>
+                    <span>Building Forms</span>
+                  </a>
+                </li>
+                <li class='pagination-next'>
+                  <a href='../writing-your-best-code/index.html' rel='next'>
+                    <strong>Lesson 12</strong>
+                    <span>Writing Your Best Code</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div data-js='geo-location' hidden>
+              <section class='lead-promo'>
+                <div class='container'>
+                  <h2>Learn More <span>HTML &amp; CSS</span> or Study Other Topics</h2>
+                  <p>Learning how to code HTML <abbr title="and">&amp;</abbr> CSS and building successful websites can be challenging, and at times additional help and explanation can go a long way. Fortunately there are plenty of schools, boot camps, workshops, and the alike, both in-person and online, that can help.</p>
+                  <p>If you&#8217;re interested, complete the form below and I will connect you with a course I believe will provide the best learning opportunity for you.</p>
+                  <iframe hidden name='hidden_form'></iframe>
+                  <form action='https://docs.google.com/forms/d/e/1FAIpQLSeGG16EvML8mAF-EXUzTWsoy30ORq7W203_qORXT4SCebxqoQ/formResponse' data-js='recommendation-form' method='post' target='hidden_form'>
+                    <div class='margin-bottom'>
+                      <label class='form-label' for='name'>Name</label>
+                      <input class='form-control' data-js='name' id='name' name='entry.301578661' required type='text'>
+                    </div>
+                    <div class='margin-bottom'>
+                      <label class='form-label' for='email'>Email Address</label>
+                      <input class='form-control' data-js='email' id='email' name='entry.1305847502' required type='email'>
+                    </div>
+                    <div class='margin-bottom'>
+                      <label class='form-label' for='phone'>Phone Number</label>
+                      <input class='form-control' data-js='tel' id='phone' name='entry.363783636' required type='tel'>
+                    </div>
+                    <div class='margin-bottom hide'>
+                      <label class='form-label' for='location'>Location</label>
+                      <input class='form-control' data-js='location' id='location' name='entry.954966139' type='text'>
+                    </div>
+                    <div class='margin-bottom hide'>
+                      <label class='form-label' for='robot'>You&#8217;re not a robot, right?</label>
+                      <input class='form-control' data-js='checkbox-robot' id='robot' name='entry.1329951651' type='checkbox' value='Yes'>Yes</input>
+                    </div>
+                    <div class='margin-bottom hide'>
+                      <label class='form-label' for='key'>What is the special key?</label>
+                      <input class='form-control' data-js='key' id='key' name='entry.1046405393' required type='text' value='robotsnotwelcome'>
+                    </div>
+                    <button class='btn btn-alt' disabled type='submit'>Get Course Recommendations</button>
+                  </form>
+                  <form action='https://docs.google.com/forms/d/e/1FAIpQLSfhjyPa_D0iRyAjFyBEq3NAS5J-NONJfRLjElJyWSkALMXuwQ/formResponse' data-js='recommendation-follow-up-form' hidden method='post' target='hidden_form'>
+                    <h3>A Few Quick Follow-up Questions</h3>
+                    <p>Thank you! For the best recommendation, please answer the questions below. It&#8217;ll be the last I ask of you, promise!</p>
+                    <div class='margin-bottom hide'>
+                      <label class='form-label' for='name'>Name</label>
+                      <input class='form-control' data-js='name' id='name' name='entry.1576133276' type='text'>
+                    </div>
+                    <div class='margin-bottom hide'>
+                      <label class='form-label' for='email'>Email Address</label>
+                      <input class='form-control' data-js='email' id='email' name='entry.311025906' type='email'>
+                    </div>
+                    <div class='margin-bottom hide'>
+                      <label class='form-label' for='phone'>Phone Number</label>
+                      <input class='form-control' data-js='tel' id='phone' name='entry.1708507367' type='tel'>
+                    </div>
+                    <div class='margin-bottom hide'>
+                      <label class='form-label' for='location'>Location</label>
+                      <input class='form-control' data-js='location' id='location' name='entry.176432259' type='text'>
+                    </div>
+                    <div class='margin-bottom'>
+                      <label class='form-label'>Are you interested in an in-person or online course?</label>
+                      <div class='form-toggles'>
+                        <input data-toggle-control='setting' hidden id='setting-in-person' name='entry.814649513' required type='radio' value='In-Person'>
+                        <label class='form-toggle' for='setting-in-person'>In-Person</label>
+                        <input data-toggle-control='setting' hidden id='setting-online' name='entry.814649513' required type='radio' value='Online'>
+                        <label class='form-toggle' for='setting-online'>Online</label>
+                        <input data-toggle-control='setting' hidden id='setting-both' name='entry.814649513' required type='radio' value='Both'>
+                        <label class='form-toggle' for='setting-both'>Both</label>
+                      </div>
+                    </div>
+                    <div class='margin-bottom grid-1-1' data-toggle-setting='In-Person Online Both' hidden>
+                      <label class='form-label' for='topic'>What is your topic of interest?</label>
+                      <select class='form-select' data-toggle-control='duration' id='topic' name='entry.1204048627' required>
+                        <option value=''>Please Choose</option>
+                        <optgroup label='Design &amp; Product'>
+                          <option data-toggle-setting='In-Person Both' hidden value='Visual Design'>
+                            Visual Design
+                          </option>
+                          <option data-toggle-setting='In-Person Online Both' hidden value='User Experience Design'>
+                            User Experience Design
+                          </option>
+                          <option data-toggle-setting='In-Person Both' hidden value='Product Management'>
+                            Product Management
+                          </option>
+                        </optgroup>
+                        <optgroup label='Front-End'>
+                          <option data-toggle-setting='In-Person Online Both' hidden value='Front-End Development'>
+                            Front-End Development
+                          </option>
+                          <option data-toggle-setting='In-Person Both' hidden value='JavaScript Development'>
+                            JavaScript Development
+                          </option>
+                        </optgroup>
+                        <optgroup label='Development'>
+                          <option data-toggle-setting='In-Person Online Both' hidden value='Web Development'>
+                            Web Development
+                          </option>
+                          <option data-toggle-setting='In-Person Both' hidden value='iOS Development'>
+                            iOS Development
+                          </option>
+                          <option data-toggle-setting='In-Person Both' hidden value='Android Development'>
+                            Android Development
+                          </option>
+                        </optgroup>
+                        <optgroup label='Data &amp; Marketing'>
+                          <option data-toggle-setting='In-Person Both' hidden value='Data Science'>
+                            Data Science
+                          </option>
+                          <option data-toggle-setting='In-Person Both' hidden value='Data Analytics'>
+                            Data Analytics
+                          </option>
+                          <option data-toggle-setting='Online Both' hidden value='Data Analysis'>
+                            Data Analysis
+                          </option>
+                          <option data-toggle-setting='In-Person Online Both' hidden value='Digital Marketing'>
+                            Digital Marketing
+                          </option>
+                        </optgroup>
+                      </select>
+                    </div>
+                    <div class='margin-bottom' data-toggle-duration='User Experience Design Data Science' hidden>
+                      <label class='form-label'>Are you interested in a full-time or part-time course?</label>
+                      <div class='form-toggles'>
+                        <input hidden id='duration-full' name='entry.2037457624' type='radio' value='Full-time'>
+                        <label class='form-toggle' for='duration-full'>Full-time</label>
+                        <input hidden id='duration-part' name='entry.2037457624' type='radio' value='Part-time'>
+                        <label class='form-toggle' for='duration-part'>Part-time</label>
+                        <input hidden id='duration-both' name='entry.2037457624' type='radio' value='Both'>
+                        <label class='form-toggle' for='duration-both'>Both</label>
+                      </div>
+                    </div>
+                    <div class='margin-bottom' data-toggle-setting='In-Person Both' hidden>
+                      <label class='form-label' for='city'>In what city, or cities, would you prefer to attend a course?</label>
+                      <textarea class='form-control form-area' id='city' name='entry.1507070782' placeholder='Do you want to stay local to where you live? Are you open to traveling?'></textarea>
+                    </div>
+                    <div class='margin-bottom'>
+                      <label class='form-label' for='comments'>Do you have any additional questions or comments?</label>
+                      <textarea class='form-control form-area' id='comments' name='entry.71247427' placeholder="Any specific topics you're looking to learn more about? Any other comments?"></textarea>
+                    </div>
+                    <div class='margin-bottom hide'>
+                      <label class='form-label' for='robot'>You&#8217;re not a robot, right?</label>
+                      <input class='form-control' data-js='checkbox-robot' id='robot' name='entry.241165342' type='checkbox' value='Yes'>Yes</input>
+                    </div>
+                    <div class='margin-bottom hide'>
+                      <label class='form-label' for='key'>What is the special key?</label>
+                      <input class='form-control' data-js='key' id='key' name='entry.191730697' required type='text'>
+                    </div>
+                    <button class='btn btn-alt' disabled type='submit'>Get Course Recommendations</button>
+                  </form>
+                  <div data-js='recommendation-form-success' hidden>
+                    <h3 class='form-success-heading'>Thanks, you&#8217;re all set!</h3>
+                    Please keep an eye out for your recommendation, either from me or directly from one of the schools, boot camps, or workshops I recommend.
+                  </div>
+                </div>
+              </section>
+            </div>
+            <section class='container'>
+              <div class='promo-book'>
+                <h2>
+                  <a href='#'>Learn to Code HTML <abbr title="and">&amp;</abbr> CSS the Book</a>
+                </h2>
+                <a class='promo-img promo-book-img' data-js='promo-book-img' href='../../advanced-html-css/index.html'><img alt="HTML and CSS" src="../../assets/images/book/book-sm.png" /></a>
+                <p><cite>Learn to Code HTML <abbr title="and">&amp;</abbr> CSS</cite> is an interactive beginner&#8217;s guide with one express goal: <strong>teach you how to develop and style websites</strong> with HTML and CSS. Outlining the fundamentals, this book covers all of the common elements of front-end design and development.</p>
+                <div class='promo-btn'>
+                  <a class='btn btn-cta' href='http://click.linksynergy.com/fs-bin/click?id=0UVRLqz5qts&amp;offerid=145244.10000181&amp;type=3&amp;subid=0' onClick="_gaq.push(['_trackEvent', 'Purchase', 'Peachpit', 'Organizing Data with Tables']);" rel='nofollow'>Buy Learn to Code HTML <abbr title="and">&amp;</abbr> CSS</a>
+                </div>
+                <p class='promo-links'>
+                  Also available at
+                  <span>
+                    <a href='http://www.amazon.com/Learn-Code-HTML-CSS-Websites/dp/0321940520' onClick="_gaq.push(['_trackEvent', 'Purchase', 'Amazon', 'Organizing Data with Tables']);" rel='nofollow'>Amazon</a>
+                    and
+                    <a href='http://www.barnesandnoble.com/w/learn-to-code-html-and-css-shay-howe/1124334828' onClick="_gaq.push(['_trackEvent', 'Purchase', 'Barnes &amp; Noble', 'Organizing Data with Tables']);" rel='nofollow'>Barnes &amp; Noble</a>
+                  </span>
+                </p>
+              </div>
+            </section>
+            <section class='container'>
+              <div class='note'>
+                <div class='promo note-box note-stack'>
+                  <h3>
+                    <a href='../../advanced-html-css/index.html'>Looking for Advanced HTML <abbr title="and">&amp;</abbr> CSS Lessons?</a>
+                  </h3>
+                  <a class='promo-img promo-course-img' href='../../advanced-html-css/index.html'><img alt="HTML and CSS" class="media-circle" src="../../assets/images/code.jpg" /></a>
+                  <p>Checkout these <a href="../../advanced-html-css/index.html">advanced HTML and CSS lessons</a> to take a deeper look at front-end design and development, perfect for any designer or front-end developer looking to round out their skills.</p>
+                  <a class='btn btn-alt' href='../../advanced-html-css/index.html'>View  Advanced HTML <abbr title="and">&amp;</abbr> CSS Lessons</a>
+                </div>
+                <div class='newsletter note-box group'>
+                  <h3>Join the Newsletter</h3>
+                  <p>To stay up to date and learn when new courses and lessons are posted, please sign up for the newsletter&#8212;spam free.</p>
+                  <form action='http://shayhowe.us4.list-manage2.com/subscribe/post?u=98ada7f8bdec8f5ac0c78fd0f&amp;amp;id=4750db3524' class='newsletter-form' method='post' name='mc-embedded-subscribe-form' target='_blank'>
+                    <div class='input-group'>
+                      <input class='input-control' name='EMAIL' placeholder='Email address' required type='email'>
+                      <div class='input-group-btn'>
+                        <button class='btn btn-alt' name='subscribe'>Get Updates</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </section>
+            <script async src='http://codepen.io/assets/embed/ei.js'></script>
+          </div>
+          <footer class='primary-footer'>
+            <div class='clamp'>
+              <small>&copy; 2017 Shay Howe</small>
+              <div class='enjoy-cta'>
+                Enjoy these lessons?
+                <a class='twitter-follow-button' data-lang='en' data-show-count='false' data-size='large' href='https://twitter.com/shayhowe'>
+                  Follow @shayhowe
+                </a>
+              </div>
+            </div>
+          </footer>
+        </section>
+      </div>
+    </div>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
+    <script>
+      window.jQuery || document.write('<script src="../../assets/javascripts/vendor/jquery-1.11.0.min.js"><\/script>')
+    </script>
+    <script src="../../assets/javascripts/main.js" type="text/javascript"></script>
+    <script>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-3738010-2']);
+      _gaq.push(['_trackPageview']);
+      
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <script>
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    </script>
+  </body>
+
+<!-- Mirrored from learn.shayhowe.com/html-css/organizing-data-with-tables/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 16 Jun 2017 17:27:36 GMT -->
+</html>

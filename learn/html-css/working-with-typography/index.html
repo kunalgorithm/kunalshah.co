@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang='en'>
+  
+<!-- Mirrored from learn.shayhowe.com/html-css/working-with-typography/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 16 Jun 2017 16:16:11 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset='utf-8'>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <meta content='Online typography has risen in popularity thanks to HTML and CSS, as well as CSS3, capabilities. Learn the latest text and font properties.' name='description'>
+    <meta content='online typography text font css3 html blockquotes cite quote type introduction' name='keywords'>
+    <title>Working with Typography - Learn to Code HTML &amp; CSS</title>
+    <script src='../../assets/javascripts/vendor/modernizr-2.8.1.js'></script>
+    <link href='http://cloud.typography.com/6623692/607644/css/fonts.css' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet'>
+    <link href='../../assets/stylesheets/main.css' rel='stylesheet'>
+  </head>
+  <body class='html-css html-css_working-with-typography html-css_working-with-typography_index'>
+    <div class='wrap-macro'>
+      <div class='wrap-micro group'>
+        <aside class='aside'>
+          <header class='primary-header' role='banner'>
+            <h1 class='primary-logo'>
+              <a href='../index.html'>
+                <span>Learn to Code</span>
+                <abbr title='Hyper Text Markup Language'>HTML</abbr>
+                <abbr title='and'>&amp;</abbr>
+                <abbr title='Cascading Style Sheets'>CSS</abbr>
+              </a>
+            </h1>
+            <a class='primary-nav-btn' data-js='primary-nav-btn' href='#' rel='nofollow'>Navigation</a>
+          </header>
+          <div class='aside-macro'>
+            <div class='aside-micro'>
+              <nav class='primary-nav' role='navigation'>
+                <ul>
+                  <li class='building-your-first-web-page'>
+                    <a href='../building-your-first-web-page/index.html'>
+                      <strong>Lesson 1</strong>
+                      Building Your First Web Page
+                    </a>
+                  </li>
+                  <li class='getting-to-know-html'>
+                    <a href='../getting-to-know-html/index.html'>
+                      <strong>Lesson 2</strong>
+                      Getting to Know HTML
+                    </a>
+                  </li>
+                  <li class='getting-to-know-css'>
+                    <a href='../getting-to-know-css/index.html'>
+                      <strong>Lesson 3</strong>
+                      Getting to Know CSS
+                      <span class='label-new'>New</span>
+                    </a>
+                  </li>
+                  <li class='opening-the-box-model'>
+                    <a href='../opening-the-box-model/index.html'>
+                      <strong>Lesson 4</strong>
+                      Opening the Box Model
+                    </a>
+                  </li>
+                  <li class='positioning-content'>
+                    <a href='../positioning-content/index.html'>
+                      <strong>Lesson 5</strong>
+                      Positioning Content
+                      <span class='label-new'>New</span>
+                    </a>
+                  </li>
+                  <li class='working-with-typography'>
+                    <a href='index.html'>
+                      <strong>Lesson 6</strong>
+                      Working with Typography
+                    </a>
+                  </li>
+                  <li class='setting-backgrounds-and-gradients'>
+                    <a href='../setting-backgrounds-and-gradients/index.html'>
+                      <strong>Lesson 7</strong>
+                      Setting Backgrounds &amp; Gradients
+                    </a>
+                  </li>
+                  <li class='creating-lists'>
+                    <a href='../creating-lists/index.html'>
+                      <strong>Lesson 8</strong>
+                      Creating Lists
+                    </a>
+                  </li>
+                  <li class='adding-media'>
+                    <a href='../adding-media/index.html'>
+                      <strong>Lesson 9</strong>
+                      Adding Media
+                    </a>
+                  </li>
+                  <li class='building-forms'>
+                    <a href='../building-forms/index.html'>
+                      <strong>Lesson 10</strong>
+                      Building Forms
+                    </a>
+                  </li>
+                  <li class='organizing-data-with-tables'>
+                    <a href='../organizing-data-with-tables/index.html'>
+                      <strong>Lesson 11</strong>
+                      Organizing Data with Tables
+                    </a>
+                  </li>
+                  <li class='writing-your-best-code'>
+                    <a href='../writing-your-best-code/index.html'>
+                      <strong>Lesson 12</strong>
+                      Writing Your Best Code
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <div class='aside-group'>
+                <p>Learn to Code HTML <abbr title="and">&amp;</abbr> CSS is written by designer <abbr title="and">&amp;</abbr> front-end developer <a href="http://shayhowe.com/">Shay Howe</a>.</p>
+                <p>Checkout <a href="../../advanced-html-css/index.html">Learn to Code Advanced HTML <abbr title="and">&amp;</abbr> CSS</a> for a deeper look at front-end design <abbr title="and">&amp;</abbr> development.</p>
+              </div>
+              <div data-js='geo-location' hidden>
+                <p>Want to learn to more HTML <abbr title="and">&amp;</abbr> CSS, or study other topics? Find the right course for you.</p>
+                <div class='margin-bottom'>
+                  <a class='btn btn-alt' href='../../recommendations/index.html'>Get Course Recommendations</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <section class='main' data-js='primary-nav-close'>
+          <div class='group'>
+            <article class='lesson container group' data-js='lesson'>
+              <div class='lesson-title'>
+                <h6>Lesson 6</h6>
+                <h1>Working with Typography</h1>
+              </div>
+              <div class='clamp clamp-release'>
+                <div class='pop-out'>
+                  <nav class='toc'>
+                    <h4>
+                      In this Lesson
+                      <span class='toc-number'>6</span>
+                    </h4>
+                    <h6>HTML</h6>
+                    <ul>
+                      <li>
+                        <a href='#citations-quotes'>Citations &amp; Quote</a>
+                      </li>
+                    </ul>
+                    <h6>CSS</h6>
+                    <ul>
+                      <li>
+                        <a href='#color'>Text Color</a>
+                      </li>
+                      <li>
+                        <a href='#font-properties'>Font Properties</a>
+                      </li>
+                      <li>
+                        <a href='#text-properties'>Text Properties</a>
+                      </li>
+                      <li>
+                        <a href='#web-safe-fonts'>Web-Safe Fonts</a>
+                      </li>
+                      <li>
+                        <a href='#embedding-web-fonts'>Embedding Web Fonts</a>
+                      </li>
+                    </ul>
+                    <h6>Share</h6>
+                    <ul class='share' data-js='share' data-permalink='http://learn.shayhowe.com/html-css/working-with-typography/' data-title='Working with Typography'>
+                      <li>
+                        <a class='share-twitter' data-js='share-twitter' href='#' rel='nofollow'>
+                          Share on Twitter
+                        </a>
+                      </li>
+                      <li>
+                        <a class='share-facebook' data-js='share-facebook' href='#' rel='nofollow'>
+                          Share on Facebook
+                        </a>
+                      </li>
+                      <li>
+                        <a class='share-google' data-js='share-google' href='#' rel='nofollow'>
+                          Share on Google+
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <div class='ad-spot group'>
+                    <script async id='_carbonads_js' src='http://cdn.carbonads.com/carbon.js?zoneid=1673&amp;serve=C6AILKT&amp;placement=learnshayhowecom' type='text/javascript'></script>
+                  </div>
+                </div>
+              </div>
+              <p>The field of <a href="http://webtypography.net/" rel="nofollow">web typography</a> has grown substantially over time. There are a couple of different reasons for its rise in popularity; one widely acknowledged reason is the development of a system for embedding our own web fonts on a website.</p>
+              <p>In the past we were limited to a small number of typefaces that we could use on a website. These typefaces were the most commonly installed fonts on computers, so they were the most likely to render properly on-screen. If a font wasn&#8217;t installed on a computer, it wouldn&#8217;t render on the website either. Now, with the ability to embed fonts, we have a much larger palette of typefaces to choose from, including those that we add to a website.</p>
+              <p>While the ability to embed fonts gives us access to countless new typefaces, it&#8217;s also important for us to know the basic principles of typography. In this lesson we&#8217;re going to take a look at some of these basic principles and how to apply them to our web pages using HTML and CSS.</p>
+              <div class='note note-box'>
+                <h4>Typeface vs. Font</h4>
+                <p>The terms &#8220;typeface&#8221; and &#8220;font&#8221; are often interchanged, causing confusion. Here is a breakdown of exactly what each term means.</p>
+                <p>A <em>typeface</em> is what we see. It is the artistic impression of how text looks, feels, and reads.</p>
+                <p>A <em>font</em> is a file that contains a typeface. Using a font on a computer allows the computer to access the typeface.</p>
+                <p>One way to help clarify the difference between a typeface and a font is to compare them to a <a href="http://fontfeed.com/archives/font-or-typeface/" rel="nofollow">song and an MP3</a>. A typeface is very similar to a song in that it is a work of art. It is created by an artist or artists and is open to public interpretation. A font, on the other hand, is very similar to an MP3 in that it is not the artistic impression itself, but only a method of delivering the artistic value.</p>
+              </div>
+              <h2 id='color'>Adding Color to Text</h2>
+              <p>Typically one of the first decisions we&#8217;ll make when building a website is choosing the primary typeface and text color to be used. While there are a number of other properties that can be changed&#8212;size, weight, and so on&#8212;the typeface and text color generally have the largest impact on the look and legibility of a page. Getting rid of the browser defaults and using our own typeface and text color immediately begins setting the tone of our page.</p>
+              <p>The only property we need to set the color of text is the <code>color</code> property. The <code>color</code> property accepts one color value, but in many different formats. These formats, as we discussed in Lesson 3, &#8220;<a href="../getting-to-know-css/index.html">Getting to Know CSS</a>,&#8221; include keywords, hexadecimal values, and RGB, RGBa, HSL, and HSLa values. Hexadecimal values are the most prevalent, as they provide the most control with the least amount of effort.</p>
+              <p>Let&#8217;s take a look at the CSS required to change the color of all the text within the <code>&#60;html&#62;</code> element on a page:</p>
+              <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4</pre></td><td class="rouge-code"><pre><span class="nt">html</span> <span class="p">{</span>&#x000A;  <span class="nl">color</span><span class="p">:</span> <span class="m">#555</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <h2 id='font-properties'>Changing Font Properties</h2>
+              <p>CSS offers a lot of different properties for editing the look and feel of text on a page. These properties fit into two categories: font-based properties and text-based properties. Most of these properties will be prefaced with either <code>font-*</code> or <code>text-*</code>. To begin we&#8217;ll discuss the font-based properties.</p>
+              <h3>Font Family</h3>
+              <p>The <code>font-family</code> property is used to declare which font&#8212;as well as which fallback or substitute fonts&#8212;should be used to display text. The value of the <code>font-family</code> property contains multiple font names, all comma separated.</p>
+              <p>The first declared font, starting from the left, is the primary font choice. Should the first font be unavailable, alternative fonts are declared after it in order of preference from left to right.</p>
+              <p>Font names consisting of two or more words need to be wrapped in quotation marks. Additionally, the last font should be a keyword value, which will use the system default font for the specified type, most commonly either <code>sans-serif</code> or <code>serif</code>.</p>
+              <p>The <code>font-family</code> property in action looks like this:</p>
+              <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4</pre></td><td class="rouge-code"><pre><span class="nt">body</span> <span class="p">{</span>&#x000A;  <span class="nl">font-family</span><span class="p">:</span> <span class="s1">"Helvetica Neue"</span><span class="p">,</span> <span class="n">Helvetica</span><span class="p">,</span> <span class="n">Arial</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <p>In this case, <code>Helvetica Neue</code> is the preferred font to display. If this font is unavailable or not installed on a given device, the next font in the list&#8212;Helvetica&#8212;will be used, and so on.</p>
+              <h3>Font Size</h3>
+              <p>The <code>font-size</code> property provides the ability to set the size of text using common length values, including pixels, em units, percentages, points, or <code>font-size</code> keywords.</p>
+              <p>Here the CSS is setting a <code>font-size</code> of <code>14</code> pixels on the <code>&#60;body&#62;</code> element:</p>
+              <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4</pre></td><td class="rouge-code"><pre><span class="nt">body</span> <span class="p">{</span>&#x000A;  <span class="nl">font-size</span><span class="p">:</span> <span class="m">14px</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <h3>Font Style</h3>
+              <p>To change text to italics, or to prevent text from being italicized, we&#8217;ll use the <code>font-style</code> property. The <code>font-style</code> property accepts four keyword values: <code>normal</code>, <code>italic</code>, <code>oblique</code>, and <code>inherit</code>. Of these four, the most commonly used are <code>italic</code> (sets text to italic) and <code>normal</code> (returns text to its normal style).</p>
+              <p>The following CSS sets all elements with a class of <code>special</code> to include a <code>font-style</code> of <code>italic</code>:</p>
+              <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4</pre></td><td class="rouge-code"><pre><span class="nc">.special</span> <span class="p">{</span>&#x000A;  <span class="nl">font-style</span><span class="p">:</span> <span class="nb">italic</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <h3>Font Variant</h3>
+              <p>It doesn&#8217;t happen often, but occasionally text will need to be set in small capitals, also known as small caps. For this specific case we&#8217;ll use the <code>font-variant</code> property. The <code>font-variant</code> property accepts three values: <code>normal</code>, <code>small-caps</code>, and <code>inherit</code>. The most typically seen values are <code>normal</code> and <code>small-caps</code>, which are used to switch typefaces between normal and small caps variants.</p>
+              <p>To switch all elements with a class of <code>firm</code>, we&#8217;ll use a <code>font-variant</code> of <code>small-caps</code>:</p>
+              <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4</pre></td><td class="rouge-code"><pre><span class="nc">.firm</span> <span class="p">{</span>&#x000A;  <span class="nl">font-variant</span><span class="p">:</span> <span class="nb">small-caps</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <h3>Font Weight</h3>
+              <p>Occasionally, we&#8217;ll want to style text as bold or to change the specific weight of a typeface. For these cases we&#8217;ll use the <code>font-weight</code> property. The <code>font-weight</code> property accepts either keyword or numeric values.</p>
+              <p>Keyword values include <code>normal</code>, <code>bold</code>, <code>bolder</code>, <code>lighter</code>, and <code>inherit</code>. Of these keyword values, it is recommended to primarily use <code>normal</code> and <code>bold</code> to change text from normal to bold and vice versa. Rather than using the keyword values <code>bolder</code> or <code>lighter</code>, it&#8217;s better to use a numeric value for more specific control.</p>
+              <p>In practice, here&#8217;s the CSS to set the <code>font-weight</code> to <code>bold</code> for any element with the class of <code>daring</code>:</p>
+              <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4</pre></td><td class="rouge-code"><pre><span class="nc">.daring</span> <span class="p">{</span>&#x000A;  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <p>The numeric values <code>100</code>, <code>200</code>, <code>300</code>, <code>400</code>, <code>500</code>, <code>600</code>, <code>700</code>, <code>800</code>, and <code>900</code> pertain specifically to typefaces that have multiple weights. The order of these weights starts with the thinnest weight, <code>100</code>, and scales up to the thickest weight, <code>900</code>. For reference, the keyword value of <code>normal</code> maps to <code>400</code> and the keyword <code>bold</code> maps to <code>700</code>; thus, any numeric value below <code>400</code> will be fairly thin, and any value above <code>700</code> will be fairly thick.</p>
+              <p>Changing the <code>font-weight</code> to <code>600</code> for any element with the class of <code>daring</code> now renders that text as semibold&#8212;not quite as thick as the <code>bold</code> keyword value from before:</p>
+              <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4</pre></td><td class="rouge-code"><pre><span class="nc">.daring</span> <span class="p">{</span>&#x000A;  <span class="nl">font-weight</span><span class="p">:</span> <span class="m">600</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <div class='note note-box'>
+                <h4>Typeface Weights</h4>
+                <p>Before using a numeric value, we need to check and see whether the typeface we are using comes in the weight we&#8217;d like to use. Attempting to use a weight that&#8217;s not available for a given typeface will cause those styles to default to the closest value.</p>
+                <p>For example, the Times New Roman typeface comes in two weights: <code>normal</code>, or <code>400</code>, and <code>bold</code>, or <code>700</code>. Attempting to use a weight of <code>900</code> will default the typeface to the closest related weight, <code>700</code> in this case.</p>
+              </div>
+              <h3>Line Height</h3>
+              <p>Line height, the distance between two lines of text (often referred to as leading) is declared using the <code>line-height</code> property. The <code>line-height</code> property accepts all general length values, which we covered in Lesson 3, &#8220;<a href="../getting-to-know-css/index.html">Getting to Know CSS</a>.&#8221;</p>
+              <p>The best practice for legibility is to set the <code>line-height</code> to around one and a half times our <code>font-size</code> property value. This could be quickly accomplished by setting the <code>line-height</code> to <code>150%</code>, or just <code>1.5</code>. However, if we&#8217;re working with a baseline grid, having a little more control over our <code>line-height</code> using pixels may be preferable.</p>
+              <p>Looking at the CSS, we&#8217;re setting a <code>line-height</code> of <code>22</code> pixels within the <body> element, thus placing <code>22</code> pixels between each line of text:</p>
+              <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4</pre></td><td class="rouge-code"><pre><span class="nt">body</span> <span class="p">{</span>&#x000A;  <span class="nl">line-height</span><span class="p">:</span> <span class="m">22px</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <p>Line height may also be used to vertically center a single line of text within an element. Using the same property value for the <code>line-height</code> and <code>height</code> properties will vertically center the text:</p>
+              <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5</pre></td><td class="rouge-code"><pre><span class="nc">.btn</span> <span class="p">{</span>&#x000A;  <span class="nl">height</span><span class="p">:</span> <span class="m">22px</span><span class="p">;</span>&#x000A;  <span class="nl">line-height</span><span class="p">:</span> <span class="m">22px</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <p>This technique may be seen with buttons, alert messages, and other single-line text blocks.</p>
+              <h3>Shorthand Font Properties</h3>
+              <p>All of the <code>font</code>-based properties listed earlier may be combined and rolled into one <code>font</code> property and <a href="http://www.impressivewebs.com/css-font-shorthand-property-cheat-sheet/" rel="nofollow">shorthand value</a>. The <code>font</code> property can accept multiple <code>font</code>-based property values. The order of these property values should be as follows, from left to right: <code>font-style</code>, <code>font-variant</code>, <code>font-weight</code>, <code>font-size</code>, <code>line-height</code>, and <code>font-family</code>.</p>
+              <p>As a shorthand value, these property values are listed from left to right without the use of commas (except for font names, as the <code>font-family</code> property value uses commas). A forward slash, <code>/</code>, separator is needed between the <code>font-size</code> and <code>line-height</code> property values.</p>
+              <p>When using this shorthand value, every property value is optional <em>except</em> the <code>font-size</code> and <code>font-family</code> property values. That said, we can include only the <code>font-size</code> and <code>font-family</code> property values in the shorthand value if we wish.</p>
+              <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4</pre></td><td class="rouge-code"><pre><span class="nt">html</span> <span class="p">{</span>&#x000A;  <span class="nl">font</span><span class="p">:</span> <span class="nb">italic</span> <span class="nb">small-caps</span> <span class="nb">bold</span> <span class="m">14px</span><span class="p">/</span><span class="m">22px</span> <span class="s1">"Helvetica Neue"</span><span class="p">,</span> <span class="n">Helvetica</span><span class="p">,</span> <span class="n">Arial</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <h3>Font Properties All Together</h3>
+              <p>Let&#8217;s take a look at an example that uses all these <code>font</code>-based properties together. The following HTML and CSS demonstrates the different possibilities when styling text.</p>
+              <h6>HTML</h6>
+              <pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6</pre></td><td class="rouge-code"><pre><span class="nt">&lt;h2&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>I Am a Builder<span class="nt">&lt;/a&gt;&lt;/h2&gt;</span>&#x000A;&#x000A;<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"byline"</span><span class="nt">&gt;</span>Posted by Shay Howe<span class="nt">&lt;/p&gt;</span>&#x000A;&#x000A;<span class="nt">&lt;p&gt;</span>Every day I see designers and developers working alongside one another. They work intelligently in pursuit of business objectives. They work diligently making exceptional products. They solve real problems and take pride in their work. They are builders. <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Continue<span class="ni">&amp;#8230;</span><span class="nt">&lt;/a&gt;&lt;/p&gt;</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <h6>CSS</h6>
+              <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10&#x000A;11&#x000A;12&#x000A;13&#x000A;14&#x000A;15&#x000A;16&#x000A;17&#x000A;18&#x000A;19&#x000A;20&#x000A;21&#x000A;22&#x000A;23</pre></td><td class="rouge-code"><pre><span class="nt">h2</span><span class="o">,</span>&#x000A;<span class="nt">p</span> <span class="p">{</span>&#x000A;  <span class="nl">color</span><span class="p">:</span> <span class="m">#555</span><span class="p">;</span>&#x000A;  <span class="nl">font</span><span class="p">:</span> <span class="m">13px</span><span class="p">/</span><span class="m">20px</span> <span class="s1">"Helvetica Neue"</span><span class="p">,</span> <span class="n">Helvetica</span><span class="p">,</span> <span class="n">Arial</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">a</span> <span class="p">{</span>&#x000A;  <span class="nl">color</span><span class="p">:</span> <span class="m">#0087cc</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>&#x000A;  <span class="nl">color</span><span class="p">:</span> <span class="m">#ff7b29</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">h2</span> <span class="p">{</span>&#x000A;  <span class="nl">font-size</span><span class="p">:</span> <span class="m">22px</span><span class="p">;</span>&#x000A;  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span>&#x000A;  <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">6px</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nc">.byline</span> <span class="p">{</span>&#x000A;  <span class="nl">color</span><span class="p">:</span> <span class="m">#9799a7</span><span class="p">;</span>&#x000A;  <span class="nl">font-family</span><span class="p">:</span> <span class="n">Georgia</span><span class="p">,</span> <span class="n">Times</span><span class="p">,</span> <span class="s1">"Times New Roman"</span><span class="p">,</span> <span class="nb">serif</span><span class="p">;</span>&#x000A;  <span class="nl">font-style</span><span class="p">:</span> <span class="nb">italic</span><span class="p">;</span>&#x000A;  <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">18px</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <div class='note'>
+                <h4 class='demo-title'>Font Properties Demo</h4>
+                <p class='codepen' data-default-tab='result' data-height='228' data-slug-hash='KfmBz' data-theme-id='5995'>
+                  See the Pen <a href='http://codepen.io/shayhowe/pen/KfmBz/'>Font Properties</a> by Shay Howe (<a href='http://codepen.io/shayhowe'>@shayhowe</a>) on <a href='http://codepen.io/'>CodePen</a>.
+                </p>
+              </div>
+              <div class='note note-box'>
+                <h4>CSS Pseudo-Classes</h4>
+                <p>The demonstration here uses the <code>:hover</code> CSS pseudo-class, something we&#8217;ve never seen before. For reference, pseudo-classes are keywords that may be added to the end of a selector to style an element when it&#8217;s in a unique state.</p>
+                <p>The <code>:hover</code> pseudo-class styles an element when a user hovers over that element. When used with the <code>&#60;a&#62;</code> element, as shown here, all <code>&#60;a&#62;</code> elements will receive unique styles when they are hovered over. Now our <code>&#60;a&#62;</code> elements will change color upon being hovered over.</p>
+              </div>
+              <h2 id='practice-1'>In Practice</h2>
+              <p>Diving back into our Styles Conference website, let&#8217;s start adding some font-based properties.</p>
+              <ol class='practice'>
+                <li>
+                  <p>We&#8217;ll begin by updating the font on all of our text. To do this, we&#8217;ll apply styles to our <code>&#60;body&#62;</code> element. We&#8217;ll start with a <code>color</code>, and we&#8217;ll also add in <code>font-weight</code>, <code>font-size</code>, <code>line-height</code>, and <code>font-family</code> values by way of the <code>font</code> property and shorthand values.</p>
+                  <p>In an attempt to keep our <code>main.css</code> file as organized as possible, let&#8217;s create a new section for these custom styles, placing it just below our reset and above our grid styles.</p>
+                  <p>We need to add the following:</p>
+                  <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10</pre></td><td class="rouge-code"><pre><span class="c">/*&#x000A;  ========================================&#x000A;  Custom styles&#x000A;  ========================================&#x000A;*/</span>&#x000A;<span class="nt">body</span> <span class="p">{</span>&#x000A;  <span class="nl">color</span><span class="p">:</span> <span class="m">#888</span><span class="p">;</span>&#x000A;  <span class="nl">font</span><span class="p">:</span> <span class="m">300</span> <span class="m">16px</span><span class="p">/</span><span class="m">22px</span> <span class="s1">"Open Sans"</span><span class="p">,</span> <span class="s1">"Helvetica Neue"</span><span class="p">,</span> <span class="n">Helvetica</span><span class="p">,</span> <span class="n">Arial</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+                  </code></pre>
+                </li>
+                <li>
+                  <p>In Lesson 4, &#8220;<a href="../opening-the-box-model/index.html">Opening the Box Model</a>,&#8221; we began adding some typographic styles, specifically adding a bottom <code>margin</code> to a few different levels of headings and paragraphs. Within the same section of the <code>main.css</code> file, let&#8217;s add a color to the level-one through level-four headings.</p>
+                  <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4</pre></td><td class="rouge-code"><pre><span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span><span class="o">,</span> <span class="nt">h3</span><span class="o">,</span> <span class="nt">h4</span> <span class="p">{</span>&#x000A;  <span class="nl">color</span><span class="p">:</span> <span class="m">#648880</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+                  </code></pre>
+                  <p>While we&#8217;re at it, let&#8217;s also add in font sizes for these different heading levels. Our <code>&#60;h1&#62;</code> and <code>&#60;h2&#62;</code> elements will use fairly large <code>font-size</code> values; consequently, we&#8217;ll also want to increase their <code>line-height</code> values to keep the text within these elements legible. For reference, we&#8217;ll make their <code>line-height</code> values <code>44</code> pixels, double the value of the base <code>line-height</code> set within the <code>&#60;body&#62;</code> element rule set.</p>
+                  <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10&#x000A;11&#x000A;12&#x000A;13&#x000A;14&#x000A;15</pre></td><td class="rouge-code"><pre><span class="nt">h1</span> <span class="p">{</span>&#x000A;  <span class="nl">font-size</span><span class="p">:</span> <span class="m">36px</span><span class="p">;</span>&#x000A;  <span class="nl">line-height</span><span class="p">:</span> <span class="m">44px</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">h2</span> <span class="p">{</span>&#x000A;  <span class="nl">font-size</span><span class="p">:</span> <span class="m">24px</span><span class="p">;</span>&#x000A;  <span class="nl">line-height</span><span class="p">:</span> <span class="m">44px</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">h3</span> <span class="p">{</span>&#x000A;  <span class="nl">font-size</span><span class="p">:</span> <span class="m">21px</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">h4</span> <span class="p">{</span>&#x000A;  <span class="nl">font-size</span><span class="p">:</span> <span class="m">18px</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+                  </code></pre>
+                </li>
+                <li>
+                  <p>Our <code>&#60;h5&#62;</code> elements are going to be a little more unique than the rest of our headings. Accordingly, we&#8217;re going to change their styles a bit.</p>
+                  <p>We&#8217;ll use a different <code>color</code> property value and a slightly smaller <code>font-size</code> for these elements, and we&#8217;re going to change the <code>font-weight</code> to <code>400</code>, or <code>normal</code>.</p>
+                  <p>By default, browsers render headings with a <code>font-weight</code> of bold. Our headings, however, are currently all set to a <code>font-weight</code> of 300. Our reset at the top of our <code>main.css</code> file changed the <code>font-weight</code> to <code>normal</code>, and then our <code>font-weight</code> of <code>300</code> within the <code>&#60;body&#62;</code> element rule set changed all headings to a <code>font-weight</code> of <code>300</code>.</p>
+                  <p>The <code>font-weight</code> of <code>400</code> on the <code>&#60;h5&#62;</code> element will actually make it slightly thicker than the rest of our other headings and text.</p>
+                  <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6</pre></td><td class="rouge-code"><pre><span class="nt">h5</span> <span class="p">{</span>&#x000A;  <span class="nl">color</span><span class="p">:</span> <span class="m">#a9b2b9</span><span class="p">;</span>&#x000A;  <span class="nl">font-size</span><span class="p">:</span> <span class="m">14px</span><span class="p">;</span>&#x000A;  <span class="nl">font-weight</span><span class="p">:</span> <span class="m">400</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+                  </code></pre>
+                </li>
+                <li>
+                  <p>Our reset at the beginning of our style sheet also reset the browser default styles for the <code>&#60;strong&#62;</code>, <code>&#60;cite&#62;</code>, and <code>&#60;em&#62;</code> elements, which we&#8217;ll want to add back in. For our <code>&#60;strong&#62;</code> elements we&#8217;ll want to set a <code>font-weight</code> of <code>400</code>, which actually equates to <code>normal</code>, not <code>bold</code>, as the typeface we&#8217;re using is thicker than most typefaces. Then, for our <code>&#60;cite&#62;</code> and <code>&#60;em&#62;</code> elements we&#8217;ll want to set a <code>font-style</code> of <code>italic</code>.</p>
+                  <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7</pre></td><td class="rouge-code"><pre><span class="nt">strong</span> <span class="p">{</span>&#x000A;  <span class="nl">font-weight</span><span class="p">:</span> <span class="m">400</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">cite</span><span class="o">,</span> <span class="nt">em</span> <span class="p">{</span>&#x000A;  <span class="nl">font-style</span><span class="p">:</span> <span class="nb">italic</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+                  </code></pre>
+                </li>
+                <li>
+                  <p>We&#8217;re on a roll, so let&#8217;s keep going by adding some styles to our anchor elements. Currently they are the browser default blue. Let&#8217;s make them the same <code>color</code> as our <code>&#60;h1&#62;</code> through <code>&#60;h4&#62;</code> heading elements. Additionally, let&#8217;s use the <code>:hover</code> pseudo-class to change the <code>color</code> to a light gray when a user hovers over an anchor.</p>
+                  <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10&#x000A;11&#x000A;12&#x000A;13</pre></td><td class="rouge-code"><pre><span class="c">/*&#x000A;  ========================================&#x000A;  Links&#x000A;  ========================================&#x000A;*/</span>&#x000A;&#x000A;<span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>&#x000A;  <span class="nl">color</span><span class="p">:</span> <span class="m">#a9b2b9</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">a</span> <span class="p">{</span>&#x000A;  <span class="nl">color</span><span class="p">:</span> <span class="m">#648880</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+                  </code></pre>
+                </li>
+                <li>
+                  <p>Now let&#8217;s take a look at our <code>&#60;header&#62;</code> element and update our styles there. We&#8217;ll begin updating our logo by adding the <code>font-size</code> and <code>line-height</code> properties within the logo rule set. Adding to the existing <code>border-top</code>, <code>float</code>, and <code>padding</code> properties, the new rule set should look like this:</p>
+                  <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8</pre></td><td class="rouge-code"><pre><span class="nc">.logo</span> <span class="p">{</span>&#x000A;  <span class="nl">border-top</span><span class="p">:</span> <span class="m">4px</span> <span class="nb">solid</span> <span class="m">#648880</span><span class="p">;</span>&#x000A;  <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>&#x000A;  <span class="nl">font-size</span><span class="p">:</span> <span class="m">48px</span><span class="p">;</span>&#x000A;  <span class="nl">line-height</span><span class="p">:</span> <span class="m">44px</span><span class="p">;</span>&#x000A;  <span class="nl">padding</span><span class="p">:</span> <span class="m">40px</span> <span class="m">0</span> <span class="m">22px</span> <span class="m">0</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+                  </code></pre>
+                </li>
+                <li>
+                  <p>Because we&#8217;ve bumped up the size of the logo quite a bit, let&#8217;s add a <code>margin</code> to the <code>&#60;h3&#62;</code> element within the <code>&#60;header&#62;</code> element to balance it. We&#8217;ll do so by placing a class attribute value of <code>tagline</code> on the <code>&#60;h3&#62;</code> element and then using that class within our CSS to apply the proper margins.</p>
+                  <p>Let&#8217;s not forget that the changes to the <code>&#60;h3&#62;</code> element need to happen on every page.</p>
+                  <h6>HTML</h6>
+                  <pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2</pre></td><td class="rouge-code"><pre><span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"tagline"</span><span class="nt">&gt;</span>August 24<span class="ni">&amp;ndash;</span>26th <span class="ni">&amp;mdash;</span> Chicago, IL<span class="nt">&lt;/h3&gt;</span>&#x000A;</pre></td></tr></tbody></table>
+                  </code></pre>
+                  <h6>CSS</h6>
+                  <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4</pre></td><td class="rouge-code"><pre><span class="nc">.tagline</span> <span class="p">{</span>&#x000A;  <span class="nl">margin</span><span class="p">:</span> <span class="m">66px</span> <span class="m">0</span> <span class="m">22px</span> <span class="m">0</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+                  </code></pre>
+                </li>
+                <li>
+                  <p>After the <code>&#60;h3&#62;</code> element with the class attribute value of tagline comes the <code>&#60;nav&#62;</code> element. Let&#8217;s add a class attribute value of <code>primary-nav</code> to the <code>&#60;nav&#62;</code> element and add <code>font-size</code> and <code>font-weight</code> properties to make the navigation stand out against the rest of the header.</p>
+                  <h6>HTML</h6>
+                  <pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4</pre></td><td class="rouge-code"><pre><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"primary-nav"</span><span class="nt">&gt;</span>&#x000A;  ...&#x000A;<span class="nt">&lt;/nav&gt;</span>&#x000A;</pre></td></tr></tbody></table>
+                  </code></pre>
+                  <h6>CSS</h6>
+                  <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5</pre></td><td class="rouge-code"><pre><span class="nc">.primary-nav</span> <span class="p">{</span>&#x000A;  <span class="nl">font-size</span><span class="p">:</span> <span class="m">14px</span><span class="p">;</span>&#x000A;  <span class="nl">font-weight</span><span class="p">:</span> <span class="m">400</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+                  </code></pre>
+                </li>
+                <li>
+                  <p>With the <code>&#60;header&#62;</code> element in slightly better shape, let&#8217;s also take a look at our <code>&#60;footer&#62;</code> element. Using the <code>primary-footer</code> class, let&#8217;s change the <code>color</code> and <code>font-size</code> for all the text within the <code>&#60;footer&#62;</code> element. Additionally, let&#8217;s bump up the <code>font-weight</code> of the <code>&#60;small&#62;</code> element to <code>400</code>.</p>
+                  <p>Including the existing styles, the styles for our primary footer section should look like this:</p>
+                  <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10&#x000A;11</pre></td><td class="rouge-code"><pre><span class="nc">.primary-footer</span> <span class="p">{</span>&#x000A;  <span class="nl">color</span><span class="p">:</span> <span class="m">#648880</span><span class="p">;</span>&#x000A;  <span class="nl">font-size</span><span class="p">:</span> <span class="m">14px</span><span class="p">;</span>&#x000A;  <span class="nl">padding-bottom</span><span class="p">:</span> <span class="m">44px</span><span class="p">;</span>&#x000A;  <span class="nl">padding-top</span><span class="p">:</span> <span class="m">44px</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nc">.primary-footer</span> <span class="nt">small</span> <span class="p">{</span>&#x000A;  <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>&#x000A;  <span class="nl">font-weight</span><span class="p">:</span> <span class="m">400</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+                  </code></pre>
+                </li>
+                <li>
+                  <p>Let&#8217;s update our home page a bit, too. We&#8217;ll start with the hero section, increasing the overall <code>line-height</code> of the section to <code>44</code> pixels. We&#8217;ll also make the text within this section larger, increasing the <code>&#60;h2&#62;</code> element&#8217;s <code>font-size</code> to <code>36</code> pixels and the <code>&#60;p&#62;</code> element&#8217;s <code>font-size</code> to <code>24</code> pixels.</p>
+                  <p>We can make all of these changes by using the existing <code>hero</code> class selector and creating new selectors for the <code>&#60;h2&#62;</code> and <code>&#60;p&#62;</code> elements. Our styles for the hero section will now break down in this way:</p>
+                  <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10&#x000A;11</pre></td><td class="rouge-code"><pre><span class="nc">.hero</span> <span class="p">{</span>&#x000A;  <span class="nl">line-height</span><span class="p">:</span> <span class="m">44px</span><span class="p">;</span>&#x000A;  <span class="nl">padding</span><span class="p">:</span> <span class="m">22px</span> <span class="m">80px</span> <span class="m">66px</span> <span class="m">80px</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nc">.hero</span> <span class="nt">h2</span> <span class="p">{</span>&#x000A;  <span class="nl">font-size</span><span class="p">:</span> <span class="m">36px</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nc">.hero</span> <span class="nt">p</span> <span class="p">{</span>&#x000A;  <span class="nl">font-size</span><span class="p">:</span> <span class="m">24px</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+                  </code></pre>
+                </li>
+                <li>
+                  <p>Lastly, we have one small issue to fix on our home page. Previously we gave all of our anchor elements a light gray color value when a user hovers over them. This works great, except for within the three teasers on our home page where the anchor element wraps both <code>&#60;h3&#62;</code> and <code>&#60;h5&#62;</code> elements. Because the <code>&#60;h3&#62;</code> and <code>&#60;h5&#62;</code> elements have their own <code>color</code> definition, they are not affected by the <code>:hover</code> pseudo-class styles from before.</p>
+                  <p>Fortunately we can fix this, although it&#8217;s going to require a fairly complicated selector. We&#8217;ll begin by adding a <code>class</code> attribute value of <code>teaser</code> to all three columns on the home page. We&#8217;ll use this class as a qualifying selector shortly.</p>
+                  <pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10&#x000A;11&#x000A;12&#x000A;13&#x000A;14&#x000A;15&#x000A;16</pre></td><td class="rouge-code"><pre><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"grid"</span><span class="nt">&gt;</span>&#x000A;&#x000A;  <span class="c">&lt;!-- Speakers --&gt;</span>&#x000A;  &#x000A;  <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"teaser col-1-3"</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"speakers.html"</span><span class="nt">&gt;</span>&#x000A;      <span class="nt">&lt;h5&gt;</span>Speakers<span class="nt">&lt;/h5&gt;</span>&#x000A;      <span class="nt">&lt;h3&gt;</span>World-Class Speakers<span class="nt">&lt;/h3&gt;</span>&#x000A;    <span class="nt">&lt;/a&gt;</span>&#x000A;    <span class="nt">&lt;p&gt;</span>Joining us from all around the world are over twenty fantastic speakers, here to share their stories.<span class="nt">&lt;/p&gt;</span>&#x000A;  <span class="nt">&lt;/section&gt;</span>&#x000A;&#x000A;  ...&#x000A;&#x000A;<span class="nt">&lt;/section&gt;</span>&#x000A;</pre></td></tr></tbody></table>
+                  </code></pre>
+                  <p>With a qualifying class in place, we&#8217;re ready to do some CSS heavy lifting and create a fairly complex selector. We&#8217;ll begin our selector with the <code>teaser</code> class, as we only want to target elements within an element with the class of <code>teaser</code>. From there we want to apply styles to elements that reside within anchor elements that are being hovered over; thus we&#8217;ll add the a type selector along with the <code>:hover</code> pseudo-class. Lastly, we&#8217;ll add the <code>h3</code> type selector to select the actual <code>&#60;h3&#62;</code> elements we wish to apply styles to.</p>
+                  <p>Altogether, our selector and styles for these <code>&#60;h3&#62;</code> elements will look like this:</p>
+                  <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4</pre></td><td class="rouge-code"><pre><span class="nc">.teaser</span> <span class="nt">a</span><span class="nd">:hover</span> <span class="nt">h3</span> <span class="p">{</span>&#x000A;  <span class="nl">color</span><span class="p">:</span> <span class="m">#a9b2b9</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+                  </code></pre>
+                </li>
+              </ol>
+              <p>Whew, that was quite a bit. The good news is that our Styles Conference home page is starting to look really nice and is showing a bit of personality.</p>
+              <figure class='fig'>
+                <img alt="Styles Conference website" src="../../assets/images/courses/html-css/working-with-typography/practice-1.png" />
+                <figcaption>
+                  <strong>Fig 6</strong>
+                  <p>Our Styles Conference website has received quite a bit of love from a handful of font-based properties</p>
+                </figcaption>
+              </figure>
+              <h2 id='text-properties'>Applying Text Properties</h2>
+              <p>Knowing how to set the family, size, style, variant, weight, and line height of a font is only half the battle. Additionally we can decide how to align, decorate, indent, transform, and space text. Let&#8217;s start with text alignment.</p>
+              <h3>Text Align</h3>
+              <p>Aligning text is an important part of building a rhythm and flow on a page; we do this using the <code>text-align</code> property. The <code>text-align</code> property has five values: <code>left</code>, <code>right</code>, <code>center</code>, <code>justify</code>, and <code>inherit</code>. All of these values are fairly straightforward; as expected, they align text to the left, right, or center, or they justify text.</p>
+              <p>The following CSS sets all paragraph text to be center aligned:</p>
+              <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4</pre></td><td class="rouge-code"><pre><span class="nt">p</span> <span class="p">{</span>&#x000A;  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <p>The <code>text-align</code> property, however, should not be confused with the <code>float</code> property. The <code>text-align</code> values <code>left</code> and <code>right</code> will align text within an element to the left or right, whereas the <code>float</code> values <code>left</code> and <code>right</code> will move the entire element. Sometimes the <code>text-align</code> property will give us the desired outcome, and other times we may need to use the <code>float</code> property.</p>
+              <h3>Text Decoration</h3>
+              <p>The <code>text-decoration</code> property provides a handful of ways to spruce up text. It accepts the keyword values of <code>none</code>, <code>underline</code>, <code>overline</code>, <code>line-through</code>, and <code>inherit</code>. Use of the <code>text-decoration</code> property varies, but the most popular use is to underline links, which is a default browser style.</p>
+              <p>Here the CSS styles any element with the class of <code>note</code> with a <code>text-decoration</code> of underline:</p>
+              <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4</pre></td><td class="rouge-code"><pre><span class="nc">.note</span> <span class="p">{</span>&#x000A;  <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">underline</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <p>Multiple text-decoration values may be applied to an element at once by space-separating each keyword within the value.</p>
+              <h3>Text Indent</h3>
+              <p>The <code>text-indent</code> property can be used to indent the first line of text within an element, as is commonly seen in printed publications. All common length values are available for this property, including pixels, points, percentages, and so on. Positive values will indent text inward, while negative values will indent text outward.</p>
+              <p>Here, the CSS indents the text for all <code>&#60;p&#62;</code> elements inward by <code>20</code> pixels:</p>
+              <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4</pre></td><td class="rouge-code"><pre><span class="nt">p</span> <span class="p">{</span>&#x000A;  <span class="nl">text-indent</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <h3>Text Shadow</h3>
+              <p>The <code>text-shadow</code> property allows us to add a shadow or multiple shadows to text. The property generally takes four values, all listed one after the other from left to right. The first three values are lengths, and the last value is a color.</p>
+              <p>Within the three length values, the first value determines the shadow&#8217;s horizontal offset, the second value determines the shadow&#8217;s vertical offset, and the third value determines the shadow&#8217;s blur radius. The fourth, and last, value is the shadow&#8217;s color, which can be any of the color values used within the <code>color</code> property.</p>
+              <p>The <code>text-shadow</code> property here is casting a <code>30%</code> opaque black shadow <code>3</code> pixels towards the right, <code>6</code> pixels down, and blurred <code>2</code> pixels off all <code>&#60;p&#62;</code> element text:</p>
+              <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4</pre></td><td class="rouge-code"><pre><span class="nt">p</span> <span class="p">{</span>&#x000A;  <span class="nl">text-shadow</span><span class="p">:</span> <span class="m">3px</span> <span class="m">6px</span> <span class="m">2px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">.3</span><span class="p">);</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <p>Using negative length values for the horizontal and vertical offsets allows us to move shadows toward the left and the top.</p>
+              <p>Multiple text shadows can also be chained together using comma-separated values, adding more than one shadow to the text. Using numerous shadows allows us to place them above and below the text, or in any variation we desire.</p>
+              <div class='note note-box'>
+                <h4>Box Shadow</h4>
+                <p>The <code>text-shadow</code> property places a shadow specifically on the text of an element. If we&#8217;d like to place a shadow on the element as a whole, we can use the <code>box-shadow</code> property.</p>
+                <p>The <code>box-shadow</code> property works just like the <code>text-shadow</code> property, accepting values for horizontal and vertical offsets, a blur, and a color.</p>
+                <p>The <code>box-shadow</code> property also accepts an optional fourth length value, before the color value, for the spread of a shadow. As a positive length value, the spread will expand the shadow larger than the size of the element it&#8217;s applied to, and as a negative length value the spread will shrink the shadow to be smaller than the size of the element it&#8217;s applied to.</p>
+                <p>Lastly, the <code>box-shadow</code> property may include an optional <code>inset</code> value at the beginning of the value to place the shadow inside an element as opposed to outside the element.</p>
+              </div>
+              <h3>Text Transform</h3>
+              <p>Similar to the <code>font-variant</code> property, there is the <code>text-transform</code> property. While the <code>font-variant</code> property looks for an alternate variant of a typeface, the <code>text-transform</code> property will change the text inline without the need for an alternate typeface. The <code>text-transform</code> property accepts five values: <code>none</code>, <code>capitalize</code>, <code>uppercase</code>, <code>lowercase</code>, and <code>inherit</code>.</p>
+              <p>The <code>capitalize</code> value will capitalize the first letter of each word, the <code>uppercase</code> value will capitalize every letter, and the <code>lowercase</code> value will make every letter lowercase. Using <code>none</code> will return any of these inherited values back to the original text style.</p>
+              <p>The following CSS sets all <code>&#60;p&#62;</code> element text to appear in all uppercase letters:</p>
+              <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4</pre></td><td class="rouge-code"><pre><span class="nt">p</span> <span class="p">{</span>&#x000A;  <span class="nl">text-transform</span><span class="p">:</span> <span class="nb">uppercase</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <h3>Letter Spacing</h3>
+              <p>Using the <code>letter-spacing</code> property, we can adjust the space (or tracking) between the letters on a page. A positive length value will push letters farther apart from one another, while a negative length value will pull letters closer together. The keyword value none will return the space between letters back to its normal size.</p>
+              <p>Using a relative length value with the <code>letter-spacing</code> property will help ensure that we maintain the correct spacing between letters as the <code>font-size</code> of the text is changed. It is, however, always a good idea to double-check our work.</p>
+              <p>With the CSS here, all of the letters within our <code>&#60;p&#62;</code> elements will appear <code>.5</code> em closer together:</p>
+              <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4</pre></td><td class="rouge-code"><pre><span class="nt">p</span> <span class="p">{</span>&#x000A;  <span class="nl">letter-spacing</span><span class="p">:</span> <span class="m">-.5em</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <h3>Word Spacing</h3>
+              <p>Much like the <code>letter-spacing</code> property, we can also adjust the space between words within an element using the <code>word-spacing</code> property. The <code>word-spacing</code> property accepts the same length values and keywords as the <code>letter-spacing</code> property. Instead of spacing letters apart, though, the <code>word-spacing</code> property applies those values between words.</p>
+              <p>Here every word within a <code>&#60;p&#62;</code> element will be spaced <code>.25</code> em apart.</p>
+              <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4</pre></td><td class="rouge-code"><pre><span class="nt">p</span> <span class="p">{</span>&#x000A;  <span class="nl">word-spacing</span><span class="p">:</span> <span class="m">.25em</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <h3>Text Properties All Together</h3>
+              <p>Let&#8217;s revisit our blog teaser demonstration from before, this time adding in a few <code>text</code>-based properties on top of our font-based properties.</p>
+              <h6>HTML</h6>
+              <pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6</pre></td><td class="rouge-code"><pre><span class="nt">&lt;h2&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>I Am a Builder<span class="nt">&lt;/a&gt;&lt;/h2&gt;</span>&#x000A;&#x000A;<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"byline"</span><span class="nt">&gt;</span>Posted by Shay Howe<span class="nt">&lt;/p&gt;</span>&#x000A;&#x000A;<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"intro"</span><span class="nt">&gt;</span>Every day I see designers and developers working alongside one another. They work intelligently in pursuit of business objectives. They work diligently making exceptional products. They solve real problems and take pride in their work. They are builders. <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Continue<span class="ni">&amp;#8230;</span><span class="nt">&lt;/a&gt;&lt;/p&gt;</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <h6>CSS</h6>
+              <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10&#x000A;11&#x000A;12&#x000A;13&#x000A;14&#x000A;15&#x000A;16&#x000A;17&#x000A;18&#x000A;19&#x000A;20&#x000A;21&#x000A;22&#x000A;23&#x000A;24&#x000A;25&#x000A;26&#x000A;27&#x000A;28&#x000A;29&#x000A;30&#x000A;31&#x000A;32&#x000A;33&#x000A;34&#x000A;35&#x000A;36&#x000A;37</pre></td><td class="rouge-code"><pre><span class="nt">h2</span><span class="o">,</span>&#x000A;<span class="nt">p</span> <span class="p">{</span>&#x000A;  <span class="nl">color</span><span class="p">:</span> <span class="m">#555</span><span class="p">;</span>&#x000A;  <span class="nl">font</span><span class="p">:</span> <span class="m">13px</span><span class="p">/</span><span class="m">20px</span> <span class="s1">"Helvetica Neue"</span><span class="p">,</span> <span class="n">Helvetica</span><span class="p">,</span> <span class="n">Arial</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">a</span> <span class="p">{</span>&#x000A;  <span class="nl">color</span><span class="p">:</span> <span class="m">#0087cc</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>&#x000A;  <span class="nl">color</span><span class="p">:</span> <span class="m">#ff7b29</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">h2</span> <span class="p">{</span>&#x000A;  <span class="nl">font-size</span><span class="p">:</span> <span class="m">22px</span><span class="p">;</span>&#x000A;  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span>&#x000A;  <span class="nl">letter-spacing</span><span class="p">:</span> <span class="m">-.02em</span><span class="p">;</span>&#x000A;  <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">6px</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">h2</span> <span class="nt">a</span> <span class="p">{</span>&#x000A;  <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>&#x000A;  <span class="nl">text-shadow</span><span class="p">:</span> <span class="m">2px</span> <span class="m">2px</span> <span class="m">1px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">.2</span><span class="p">);</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nc">.byline</span> <span class="p">{</span>&#x000A;  <span class="nl">color</span><span class="p">:</span> <span class="m">#9799a7</span><span class="p">;</span>&#x000A;  <span class="nl">font-family</span><span class="p">:</span> <span class="n">Georgia</span><span class="p">,</span> <span class="n">Times</span><span class="p">,</span> <span class="s1">"Times New Roman"</span><span class="p">,</span> <span class="nb">serif</span><span class="p">;</span>&#x000A;  <span class="nl">font-style</span><span class="p">:</span> <span class="nb">italic</span><span class="p">;</span>&#x000A;  <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">18px</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nc">.intro</span> <span class="p">{</span>&#x000A;  <span class="nl">text-indent</span><span class="p">:</span> <span class="m">15px</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nc">.intro</span> <span class="nt">a</span> <span class="p">{</span>&#x000A;  <span class="nl">font-size</span><span class="p">:</span> <span class="m">11px</span><span class="p">;</span>&#x000A;  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span>&#x000A;  <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">underline</span><span class="p">;</span>&#x000A;  <span class="nl">text-transform</span><span class="p">:</span> <span class="nb">uppercase</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <div class='note'>
+                <h4 class='demo-title'>Text Properties Demo</h4>
+                <p class='codepen' data-default-tab='result' data-height='228' data-slug-hash='tBazc' data-theme-id='5995'>
+                  See the Pen <a href='http://codepen.io/shayhowe/pen/tBazc/'>Text Properties</a> by Shay Howe (<a href='http://codepen.io/shayhowe'>@shayhowe</a>) on <a href='http://codepen.io/'>CodePen</a>.
+                </p>
+              </div>
+              <h2 id='practice-2'>In Practice</h2>
+              <p>With <code>text</code>-based properties under our belts, let&#8217;s jump back into our Styles Conference website and put them to work.</p>
+              <ol class='practice'>
+                <li>
+                  <p>Currently every link on the page is underlined, which is the default style for anchor elements. This style is a little overbearing at times, though, so we&#8217;re going to change it up a bit.</p>
+                  <p>Adding to our links section within our <code>main.css</code> file, we&#8217;ll begin by removing the underline from all anchor elements by way of the <code>text-decoration</code> property. Next, we&#8217;ll select all anchor elements that appear within a paragraph element and give them a bottom <code>border</code>.</p>
+                  <p>We could use the <code>text-decoration</code> property instead of the <code>border-bottom</code> property to underline all the links within each paragraph; however, by using the <code>border-bottom</code> property we have more control over the underline&#8217;s appearance. Here, for example, the underline will be a different color than the text itself.</p>
+                  <p>Our links section, which includes our previous hover styles, should look like this:</p>
+                  <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10&#x000A;11</pre></td><td class="rouge-code"><pre><span class="nt">a</span> <span class="p">{</span>&#x000A;  <span class="nl">color</span><span class="p">:</span> <span class="m">#648880</span><span class="p">;</span>&#x000A;  <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>&#x000A;  <span class="nl">color</span><span class="p">:</span> <span class="m">#a9b2b9</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">p</span> <span class="nt">a</span> <span class="p">{</span>&#x000A;  <span class="nl">border-bottom</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="m">#dfe2e5</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+                  </code></pre>
+                </li>
+                <li>
+                  <p>Going back to our <code>&#60;h5&#62;</code> elements from before, which have slightly different styles than the rest of the headings, let&#8217;s make them all uppercase using the <code>text-transform</code> property. Our new <code>&#60;h5&#62;</code> element styles should look like this:</p>
+                  <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7</pre></td><td class="rouge-code"><pre><span class="nt">h5</span> <span class="p">{</span>&#x000A;  <span class="nl">color</span><span class="p">:</span> <span class="m">#a9b2b9</span><span class="p">;</span>&#x000A;  <span class="nl">font-size</span><span class="p">:</span> <span class="m">14px</span><span class="p">;</span>&#x000A;  <span class="nl">font-weight</span><span class="p">:</span> <span class="m">400</span><span class="p">;</span>&#x000A;  <span class="nl">text-transform</span><span class="p">:</span> <span class="nb">uppercase</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+                  </code></pre>
+                </li>
+                <li>
+                  <p>Let&#8217;s revisit our <code>&#60;header&#62;</code> element to apply additional styles to our navigation menu (to which we previously added the <code>primary-nav</code> class attribute value). After the existing <code>font-size</code> and <code>font-weight</code> properties, let&#8217;s add some slight <code>letter-spacing</code> and change our text to all uppercase via the <code>text-transform</code> property.</p>
+                  <p>Our styles for the <code>&#60;nav&#62;</code> element with the <code>primary-nav</code> class attribute value should now look like this:</p>
+                  <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7</pre></td><td class="rouge-code"><pre><span class="nc">.primary-nav</span> <span class="p">{</span>&#x000A;  <span class="nl">font-size</span><span class="p">:</span> <span class="m">14px</span><span class="p">;</span>&#x000A;  <span class="nl">font-weight</span><span class="p">:</span> <span class="m">400</span><span class="p">;</span>&#x000A;  <span class="nl">letter-spacing</span><span class="p">:</span> <span class="m">.5px</span><span class="p">;</span>&#x000A;  <span class="nl">text-transform</span><span class="p">:</span> <span class="nb">uppercase</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+                  </code></pre>
+                </li>
+                <li>
+                  <p>Previously, we floated our logo to the <code>left</code> within the <code>&#60;header&#62;</code> element. Now our tagline sits directly to the right of the logo; however, we&#8217;d like it to appear all the way to the right of the <code>&#60;header&#62;</code> element, flush right.</p>
+                  <p>We need to add the <code>text-align</code> property with a value of <code>right</code> to the <code>&#60;h3&#62;</code> element with the class attribute value of <code>tagline</code> to get the tagline to sit all the way to the right.</p>
+                  <p>When added to the existing <code>margin</code> property, our new styles for the <code>&#60;h3&#62;</code> element with the class attribute value of <code>tagline</code> will look like this:</p>
+                  <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5</pre></td><td class="rouge-code"><pre><span class="nc">.tagline</span> <span class="p">{</span>&#x000A;  <span class="nl">margin</span><span class="p">:</span> <span class="m">66px</span> <span class="m">0</span> <span class="m">22px</span> <span class="m">0</span><span class="p">;</span>&#x000A;  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">right</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+                  </code></pre>
+                </li>
+                <li>
+                  <p>We&#8217;d also like our navigation menus, both in the <code>&#60;header&#62;</code> and <code>&#60;footer&#62;</code> elements, to sit flush right. Because both the <code>&#60;header&#62;</code> and <code>&#60;footer&#62;</code> elements have child elements that are floated to the <code>left</code>, we can use the same approach as we did with our tagline.</p>
+                  <p>The floated elements within the <code>&#60;header&#62;</code> and <code>&#60;footer&#62;</code> elements are taken out of the normal flow of the page, and this causes other elements to wrap around them. In this specific case, our navigation menus are the elements wrapping around the floated elements.</p>
+                  <p>Because we&#8217;ll be sharing the same styles across both navigation menus, we&#8217;ll give them each the class of <code>nav</code>. Our <code>&#60;header&#62;</code> element will now look like this:</p>
+                  <pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10&#x000A;11&#x000A;12</pre></td><td class="rouge-code"><pre><span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"container group"</span><span class="nt">&gt;</span>&#x000A;&#x000A;  <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"logo"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/h1&gt;</span>&#x000A;&#x000A;  <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"tagline"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/h3&gt;</span>&#x000A;&#x000A;  <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"nav primary-nav"</span><span class="nt">&gt;</span>&#x000A;    ...&#x000A;  <span class="nt">&lt;/nav&gt;</span>&#x000A;&#x000A;<span class="nt">&lt;/header&gt;</span>&#x000A;</pre></td></tr></tbody></table>
+                  </code></pre>
+                  <p>And our <code>&#60;footer&#62;</code> element will now look like this:</p>
+                  <pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10</pre></td><td class="rouge-code"><pre><span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">"primary-footer container group"</span><span class="nt">&gt;</span>&#x000A;&#x000A;  <span class="nt">&lt;small&gt;</span>...<span class="nt">&lt;/small&gt;</span>&#x000A;&#x000A;  <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"nav"</span><span class="nt">&gt;</span>&#x000A;    ...&#x000A;  <span class="nt">&lt;/nav&gt;</span>&#x000A;&#x000A;<span class="nt">&lt;/footer&gt;</span>&#x000A;</pre></td></tr></tbody></table>
+                  </code></pre>
+                  <p>Let&#8217;s not forget, changes to our <code>&#60;header&#62;</code> and <code>&#60;footer&#62;</code> elements need to be made on every page.</p>
+                </li>
+                <li>
+                  <p>With the nav class in place on both navigation menus, let&#8217;s create a new section within our <code>main.css</code> file to add shared navigation styles. We&#8217;ll begin by adding the <code>text-align</code> property with a value of <code>right</code> to a <code>nav</code> class rule set. We&#8217;ll expand these styles later on, but this will serve as a great foundation.</p>
+                  <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10</pre></td><td class="rouge-code"><pre><span class="c">/*&#x000A;  ========================================&#x000A;  Navigation&#x000A;  ========================================&#x000A;*/</span>&#x000A;&#x000A;<span class="nc">.nav</span> <span class="p">{</span>&#x000A;  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">right</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+                  </code></pre>
+                </li>
+                <li>
+                  <p>While we&#8217;re adding the <code>text-align</code> property to a few different elements, let&#8217;s also add the <code>text-align</code> property with a value of <code>center</code> to our <code>hero</code> class selector rule set. For reference, these styles, including our existing <code>line-height</code> and <code>padding</code> properties, are located within the home page section of our <code>main.css</code> file.</p>
+                  <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6</pre></td><td class="rouge-code"><pre><span class="nc">.hero</span> <span class="p">{</span>&#x000A;  <span class="nl">line-height</span><span class="p">:</span> <span class="m">44px</span><span class="p">;</span>&#x000A;  <span class="nl">padding</span><span class="p">:</span> <span class="m">22px</span> <span class="m">80px</span> <span class="m">66px</span> <span class="m">80px</span><span class="p">;</span>&#x000A;  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+                  </code></pre>
+                </li>
+              </ol>
+              <p>Our Styles Conference now has some serious style. (Bad joke, sorry.) Seriously, though, all of our styles are coming along quite well, and our website is progressing.</p>
+              <figure class='fig'>
+                <img alt="Styles Conference website" src="../../assets/images/courses/html-css/working-with-typography/practice-2.png" />
+                <figcaption>
+                  <strong>Fig 6</strong>
+                  <p>Our Styles Conference website is coming along quite well after adding a few text-based properties</p>
+                </figcaption>
+              </figure>
+              <h2 id='web-safe-fonts'>Using Web-Safe Fonts</h2>
+              <p>By default there are a few fonts that are pre-installed on every computer, tablet, smart-phone, or other web-browsing-capable device. Because they&#8217;ve been installed on every device, we can use these fonts freely within our websites, knowing that no matter what device is browsing our site, the font will render properly. These fonts have become known as &#8220;web-safe fonts.&#8221; There are only a handful of them, and the safest of the web-safe fonts are listed here:</p>
+              <ul class='list-column-2 group'>
+                <li>Arial</li>
+                <li>Courier New, Courier</li>
+                <li>Garamond</li>
+                <li>Georgia</li>
+                <li>Lucida Sans, Lucida Grande, Lucida</li>
+                <li>Palatino Linotype</li>
+                <li>Tahoma</li>
+                <li>Times New Roman, Times</li>
+                <li>Trebuchet</li>
+                <li>Verdana</li>
+              </ul>
+              <h2 id='embedding-web-fonts'>Embedding Web Fonts</h2>
+              <p>We also have the ability to upload fonts to a server and include them on a website via the CSS <code>@font-face</code> at-rule. This capability has done wonders for online typography. Now, more than ever, typography is coming to life online.</p>
+              <p>Embedding our own web fonts looks a bit like the following CSS. First, we use the <code>@font-face</code> at-rule to identify our font&#8217;s name, via the <code>font-family</code> property, as well as the source of our font (the path to the font file containing our chosen font), via the <code>src</code> property. From there we are able to use this font by including its name within any <code>font-family</code> property value.</p>
+              <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8</pre></td><td class="rouge-code"><pre><span class="k">@font-face</span> <span class="p">{</span>&#x000A;  <span class="nl">font-family</span><span class="p">:</span> <span class="s1">"Lobster"</span><span class="p">;</span>&#x000A;  <span class="nl">src</span><span class="p">:</span> <span class="n">local</span><span class="p">(</span><span class="s1">"Lobster"</span><span class="p">),</span> <span class="sx">url("lobster.woff")</span> <span class="n">format</span><span class="p">(</span><span class="s1">"woff"</span><span class="p">);</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">body</span> <span class="p">{</span>&#x000A;  <span class="nl">font-family</span><span class="p">:</span> <span class="s1">"Lobster"</span><span class="p">,</span> <span class="s1">"Comic Sans"</span><span class="p">,</span> <span class="nb">cursive</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <div class='note'>
+                <h4 class='demo-title'>Text Properties Demo</h4>
+                <p class='codepen' data-default-tab='result' data-height='210' data-slug-hash='kpiAh' data-theme-id='5995'>
+                  See the Pen <a href='http://codepen.io/shayhowe/pen/kpiAh/'>Embedding Web Fonts</a> by Shay Howe (<a href='http://codepen.io/shayhowe'>@shayhowe</a>) on <a href='http://codepen.io/'>CodePen</a>.
+                </p>
+              </div>
+              <p>Having the ability to embed any typeface on a website does not mean we legally have the authority to do so. Typefaces are works of art, and posting them on our server may allow others to easily steal them. The authority to use a typeface depends on the licensing we&#8217;ve been warranted.</p>
+              <p>Fortunately, the value of using new typefaces online has been recognized, and companies have begun developing ways to license and include new fonts on websites. Some of these companies, like <a href="https://typekit.com/" rel="nofollow">Typekit</a> and <a href="http://fontdeck.com/" rel="nofollow">Fontdeck</a>, work off a subscription model for licensing fonts, while others, like <a href="https://www.google.com/fonts" rel="nofollow">Google Fonts</a>, license the fonts for free. Before uploading any fonts, let&#8217;s make sure we have permission to do so.</p>
+              <h2 id='practice-3'>In Practice</h2>
+              <p>To add a little character to our Styles Conference website, let&#8217;s try using a Google Font on our website.</p>
+              <ol class='practice'>
+                <li>
+                  <p>Let&#8217;s head over to the <a href="https://www.google.com/fonts" rel="nofollow">Google Fonts website</a> and search for the font we&#8217;d like to use: Lato. Once we&#8217;ve found it, let&#8217;s proceed with adding it to our collection and following the steps on their website to use the font.</p>
+                  <p>When the time comes to choose which font weights we&#8217;d like to use, let&#8217;s make sure to select <code>300</code> and <code>400</code>, as we&#8217;ve already been using those within our CSS. Let&#8217;s also add <code>100</code> to the collection for another variation, too.</p>
+                  <p>Google will give us an additional <code>&#60;link&#62;</code> element to include in the <code>&#60;head&#62;</code> element of all of our pages. We&#8217;ll place this new <code>&#60;link&#62;</code> element directly below our existing <code>&#60;link&#62;</code> element. The new element will include the proper style sheet reference to Google, which will take care of including a new CSS file with the proper <code>@font-face</code> at-rule necessary for us to use the Lato font.</p>
+                  <p>With the addition of the new <code>&#60;link&#62;</code> element, our <code>&#60;head&#62;</code> element will look like this:</p>
+                  <pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8</pre></td><td class="rouge-code"><pre><span class="nt">&lt;head&gt;</span>&#x000A;  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;title&gt;</span>Styles Conference<span class="nt">&lt;/title&gt;</span>&#x000A;  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"assets/stylesheets/main.css"</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span>&#x000A;  <span class="na">href=</span><span class="s">"http://fonts.googleapis.com/css?family=Lato:100,300,400"</span><span class="nt">&gt;</span>&#x000A;<span class="nt">&lt;/head&gt;</span>&#x000A;</pre></td></tr></tbody></table>
+                  </code></pre>
+                </li>
+                <li>
+                  <p>Once we have added the new <code>&#60;link&#62;</code> element to all of our pages, we are ready to begin using the Lato font. We&#8217;ll do so by adding it to our primary font stack within the <code>font</code> property inside our <code>&#60;body&#62;</code> element styles.</p>
+                  <p>Let&#8217;s add Lato to the beginning of our font stack to make it <code>"Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif</code>.</p>
+                  <p>Although Lato is a single word, because it is an embedded web font we&#8217;ll want to surround it with quotation marks within any CSS reference. Our new <code>&#60;body&#62;</code> element styles will look like this:</p>
+                  <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5</pre></td><td class="rouge-code"><pre><span class="nt">body</span> <span class="p">{</span>&#x000A;  <span class="nl">color</span><span class="p">:</span> <span class="m">#888</span><span class="p">;</span>&#x000A;  <span class="nl">font</span><span class="p">:</span> <span class="m">300</span> <span class="m">16px</span><span class="p">/</span><span class="m">22px</span> <span class="s1">"Lato"</span><span class="p">,</span> <span class="s1">"Open Sans"</span><span class="p">,</span> <span class="s1">"Helvetica Neue"</span><span class="p">,</span> <span class="n">Helvetica</span><span class="p">,</span> <span class="n">Arial</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+                  </code></pre>
+                </li>
+                <li>
+                  <p>Lato should now be up and running, visible in all of our text across the Styles Conference website. Let&#8217;s take a closer look at our logo and update it a bit.</p>
+                  <p>Within our <code>logo</code> class selector rule set, we&#8217;ll begin by adding the <code>font-weight</code> property with a value of <code>100</code> to make the text fairly thin. We&#8217;ll also use the <code>text-transform</code> property with a value of <code>uppercase</code> to make all of the letters uppercase, as well as the <code>letter-spacing</code> property with a value of <code>.5</code> pixels to add a tiny bit of space between each letter within the logo.</p>
+                  <p>Altogether the styles for our logo will look like this:</p>
+                  <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10&#x000A;11</pre></td><td class="rouge-code"><pre><span class="nc">.logo</span> <span class="p">{</span>&#x000A;  <span class="nl">border-top</span><span class="p">:</span> <span class="m">4px</span> <span class="nb">solid</span> <span class="m">#648880</span><span class="p">;</span>&#x000A;  <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>&#x000A;  <span class="nl">font-size</span><span class="p">:</span> <span class="m">48px</span><span class="p">;</span>&#x000A;  <span class="nl">font-weight</span><span class="p">:</span> <span class="m">100</span><span class="p">;</span>&#x000A;  <span class="nl">letter-spacing</span><span class="p">:</span> <span class="m">.5px</span><span class="p">;</span>&#x000A;  <span class="nl">line-height</span><span class="p">:</span> <span class="m">44px</span><span class="p">;</span>&#x000A;  <span class="nl">padding</span><span class="p">:</span> <span class="m">40px</span> <span class="m">0</span> <span class="m">22px</span> <span class="m">0</span><span class="p">;</span>&#x000A;  <span class="nl">text-transform</span><span class="p">:</span> <span class="nb">uppercase</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+                  </code></pre>
+                </li>
+                <li>
+                  <p>Because we have a <code>font-weight</code> property value of <code>100</code> available, let&#8217;s also set the paragraph element within our hero section to that weight. We can use the existing selector to do so, and the new rule set will look like this:</p>
+                  <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5</pre></td><td class="rouge-code"><pre><span class="nc">.hero</span> <span class="nt">p</span> <span class="p">{</span>&#x000A;  <span class="nl">font-size</span><span class="p">:</span> <span class="m">24px</span><span class="p">;</span>&#x000A;  <span class="nl">font-weight</span><span class="p">:</span> <span class="m">100</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+                  </code></pre>
+                </li>
+              </ol>
+              <p>Our Styles Conference website has taken quite a few large steps this lesson, and the look and feel of our website is starting to really shine.</p>
+              <figure class='fig'>
+                <img alt="Styles Conference website" src="../../assets/images/courses/html-css/working-with-typography/practice-3.png" />
+                <figcaption>
+                  <strong>Fig 6</strong>
+                  <p>Our Styles Conference home page after adding the Lato Google web font</p>
+                </figcaption>
+              </figure>
+              <h3>Demo &amp; Source Code</h3>
+              <p>Below you may view the Styles Conference website in its current state, as well as download the source code for the website in its current state.</p>
+              <p>
+                <a class='btn btn-alt' href='../../practice/working-with-typography/index.html'>View the Styles Conference Website</a>
+                <span class='practice-link-separator'>
+                  or
+                  <a download href='../../practice/working-with-typography.zip' onClick="_gaq.push(['_trackEvent', 'Download', 'HTML &amp; CSS - Lesson 6', 'Working with Typography']);" rel='nofollow'>Download the Source Code</a>
+                  <span class='practice-link-detail'>(Zip file)</span>
+                </span>
+              </p>
+              <h2 id='citations-quotes'>Including Citations &amp; Quotes</h2>
+              <p>Writing online sometimes involves citing different sources or quotations. All of the different citation and quotation cases can be covered semantically in HTML using the <code>&#60;cite&#62;</code>, <code>&#60;q&#62;</code>, and <code>&#60;blockquote&#62;</code> elements. Because they are usually distinguished from regular text in appearance, we&#8217;ll discuss them here in the typography lesson.</p>
+              <p>Knowing when to use which element and attribute to properly mark up citations and quotes takes a bit of practice. In general, follow these rules:</p>
+              <ul>
+                <li><code>&#60;cite&#62;</code>: Used to reference a creative work, author, or resource</li>
+                <li><code>&#60;q&#62;</code>: Used for short, inline quotations</li>
+                <li><code>&#60;blockquote&#62;</code>: Used for longer external quotations</li>
+              </ul>
+              <h3>Citing a Creative Work</h3>
+              <p>The <code>&#60;cite&#62;</code> inline element is used in HTML to specifically cite a creative work; the element must include either the title of the work, the author&#8217;s name, or a URL reference to the work. By default, content wrapped within the <code>&#60;cite&#62;</code> element will appear in italics within the browser.</p>
+              <p>For additional reference, it helps to include a hyperlink to the original source of the citation when relevant.</p>
+              <p>Here the book <cite>Steve Jobs</cite>, by Walter Isaacson, is referenced within the <code>&#60;cite&#62;</code> element. Inside the citation is also a hyperlink to the book.</p>
+              <pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2</pre></td><td class="rouge-code"><pre><span class="nt">&lt;p&gt;</span>The book <span class="nt">&lt;cite&gt;&lt;a</span> <span class="na">href=</span><span class="s">"http://www.amazon.com/Steve-Jobs-Walter-Isaacson/dp/1451648537"</span><span class="nt">&gt;</span>Steve Jobs<span class="nt">&lt;/a&gt;&lt;/cite&gt;</span> is truly inspirational.<span class="nt">&lt;/p&gt;</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <div class='note'>
+                <h4 class='demo-title'>Citing a Creative Work Demo</h4>
+                <p class='codepen' data-default-tab='result' data-height='96' data-slug-hash='IHsDx' data-theme-id='5995'>
+                  See the Pen <a href='http://codepen.io/shayhowe/pen/IHsDx/'>Citing a Creative Work</a> by Shay Howe (<a href='http://codepen.io/shayhowe'>@shayhowe</a>) on <a href='http://codepen.io/'>CodePen</a>.
+                </p>
+              </div>
+              <h3>Dialogue &amp; Prose Quotation</h3>
+              <p>Quite often, dialogue or prose is quoted inline, within other text. For this purpose, the <code>&#60;q&#62;</code> (or quote) inline element should be applied. The <code>&#60;q&#62;</code> element semantically indicates quoted dialogue or prose and shouldn&#8217;t be used for any other purposes.</p>
+              <p>By default, the browser will insert the proper quotation marks for us and will even change the quotation marks based on the language identified within the <code>lang</code> global attribute.</p>
+              <p>Here&#8217;s an example:</p>
+              <pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2</pre></td><td class="rouge-code"><pre><span class="nt">&lt;p&gt;</span>Steve Jobs once said, <span class="nt">&lt;q&gt;</span>One home run is much better than two doubles.<span class="nt">&lt;/q&gt;&lt;/p&gt;</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <h3>Dialogue &amp; Prose Citation</h3>
+              <p>An optional attribute to include on the <code>&#60;q&#62;</code> element is the <code>cite</code> attribute. The <code>cite</code> attribute acts as a citation reference to the quote in the form of a URL. This attribute doesn&#8217;t alter the appearance of the element; it simply adds value for screen readers and other devices. Because the attribute isn&#8217;t viewable within the browser, it&#8217;s also helpful to provide a hyperlink to this source next to the actual quotation.</p>
+              <p>Here&#8217;s an example:</p>
+              <pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2</pre></td><td class="rouge-code"><pre><span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"http://www.businessweek.com/magazine/content/06_06/b3970001.htm"</span><span class="nt">&gt;</span>Steve Jobs<span class="nt">&lt;/a&gt;</span> once said, <span class="nt">&lt;q</span> <span class="na">cite=</span><span class="s">"http://www.businessweek.com/magazine/content/06_06/b3970001.htm"</span><span class="nt">&gt;</span>One home run is much better than two doubles.<span class="nt">&lt;/q&gt;&lt;/p&gt;</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <div class='note'>
+                <h4 class='demo-title'>Dialogue &amp; Prose Citation Demo</h4>
+                <p class='codepen' data-default-tab='result' data-height='96' data-slug-hash='yJbej' data-theme-id='5995'>
+                  See the Pen <a href='http://codepen.io/shayhowe/pen/yJbej/'>Dialogue & Prose Citation</a> by Shay Howe (<a href='http://codepen.io/shayhowe'>@shayhowe</a>) on <a href='http://codepen.io/'>CodePen</a>.
+                </p>
+              </div>
+              <h3>External Quotation</h3>
+              <p>To quote a large block of text that comes from an external source and spans several lines, we&#8217;ll use the <code>&#60;blockquote&#62;</code> element. The <code>&#60;blockquote&#62;</code> is a block-level element that may have other block-level elements nested inside it, including headings and paragraphs.</p>
+              <p>Here&#8217;s an example that uses the <code>&#60;blockquote&#62;</code> element:</p>
+              <pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4</pre></td><td class="rouge-code"><pre><span class="nt">&lt;blockquote&gt;</span>&#x000A;  <span class="nt">&lt;p&gt;</span><span class="ni">&amp;#8220;</span>In most people<span class="ni">&amp;#8217;</span>s vocabularies, design is a veneer. It<span class="ni">&amp;#8217;</span>s interior decorating. It<span class="ni">&amp;#8217;</span>s the fabric of the curtains, of the sofa. But to me, nothing could be further from the meaning of design. Design is the fundamental soul of a human-made creation that ends up expressing itself in successive outer layers of the product.<span class="ni">&amp;#8221;</span><span class="nt">&lt;/p&gt;</span>&#x000A;<span class="nt">&lt;/blockquote&gt;</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <h3>External Citation</h3>
+              <p>Longer quotes used within the <code>&#60;blockquote&#62;</code> element will often include a citation. This citation may comprise both the <code>cite</code> attribute and the <code>&#60;cite&#62;</code> element.</p>
+              <p>The <code>cite</code> attribute can be included on the <code>&#60;blockquote&#62;</code> element&#8212;in the same way that it was used on the <code>&#60;q&#62;</code> element earlier&#8212;to provide a citation reference to the quote in the form of a URL. The <code>&#60;cite&#62;</code> element then can fall after the actual quote itself to specify the original source of the quote, if relevant.</p>
+              <p>The HTML here outlines an extended quote from Steve Jobs that originally appeared in <cite>Fortune</cite> magazine. The quotation is marked up using the <code>&#60;blockquote&#62;</code> element with a <code>cite</code> attribute to specify where the quote originally appeared. In the <code>&#60;blockquote&#62;</code> element, the <code>&#60;cite&#62;</code> element, along with an <code>&#60;a&#62;</code> element, provides an additional citation and reference for the quote that is visible to users.</p>
+              <pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5</pre></td><td class="rouge-code"><pre><span class="nt">&lt;blockquote</span> <span class="na">cite=</span><span class="s">"http://money.cnn.com/magazines/fortune/fortune_archive/2000/01/24/272277/index.htm"</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;p&gt;</span><span class="ni">&amp;#8220;</span>In most people<span class="ni">&amp;#8217;</span>s vocabularies, design is a veneer. It<span class="ni">&amp;#8217;</span>s interior decorating. It<span class="ni">&amp;#8217;</span>s the fabric of the curtains, of the sofa. But to me, nothing could be further from the meaning of design. Design is the fundamental soul of a human-made creation that ends up expressing itself in successive outer layers of the product.<span class="ni">&amp;#8221;</span><span class="nt">&lt;/p&gt;</span>&#x000A;  <span class="nt">&lt;p&gt;&lt;cite&gt;</span><span class="ni">&amp;#8212;</span> Steve Jobs in <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://money.cnn.com/ magazines/fortune/fortune_archive/2000/01/24/272277/index.htm"</span><span class="nt">&gt;</span> Fortune Magazine<span class="nt">&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;</span>&#x000A;<span class="nt">&lt;/blockquote&gt;</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <div class='note'>
+                <h4 class='demo-title'>External Citation Demo</h4>
+                <p class='codepen' data-default-tab='result' data-height='198' data-slug-hash='hnBxl' data-theme-id='5995'>
+                  See the Pen <a href='http://codepen.io/shayhowe/pen/hnBxl/'>External Citation</a> by Shay Howe (<a href='http://codepen.io/shayhowe'>@shayhowe</a>) on <a href='http://codepen.io/'>CodePen</a>.
+                </p>
+              </div>
+              <h2 id='summary'>Summary</h2>
+              <p>Learning how to style text is exciting, as our content can begin to convey some emotion. We can also start to play around with the hierarchy of our content, making our website more legible and digestible.</p>
+              <p>To quickly recap, within this lesson we discussed the following:</p>
+              <ul>
+                <li>Adding color to our text to enhance it</li>
+                <li>Applying <code>font</code>-based properties, including <code>font-family</code>, <code>font-size</code>, <code>font-style</code>, <code>font-weight</code>, and more</li>
+                <li>Applying <code>text</code>-based properties, including <code>text-align</code>, <code>text-decoration</code>, <code>text-indent</code>, <code>text-shadow</code>, and more</li>
+                <li>The history behind web-safe fonts and how to embed our own web fonts</li>
+                <li>How to properly mark up citations and quotations</li>
+              </ul>
+              <p>Sharpening up our text and dabbling a bit with typography has brought our design along quite a way. Next, we&#8217;ll bring a little more color to our website by going over backgrounds and gradients.</p>
+              <h2 id='resources-and-links'>Resources <abbr title="and">&amp;</abbr> Links</h2>
+              <ul class='list-column-2 group'>
+                <li>
+                  <a href='http://webtypography.net/' rel='nofollow'>The Elements of Typographic Style Applied to the Web</a>
+                  via Richard Rutter
+                </li>
+                <li>
+                  <a href='http://www.impressivewebs.com/css-font-shorthand-property-cheat-sheet/' rel='nofollow'>CSS Font Shorthand Property Cheat Sheet</a>
+                  via Impressive Webs
+                </li>
+                <li>
+                  <a href='https://www.google.com/fonts' rel='nofollow'>Google Fonts</a>
+                </li>
+              </ul>
+              <ul class='share' data-js='share' data-permalink='http://learn.shayhowe.com/html-css/working-with-typography/' data-title='Working with Typography'>
+                <li>
+                  <a class='share-twitter' data-js='share-twitter' href='#' rel='nofollow'>
+                    Share on Twitter
+                  </a>
+                </li>
+                <li>
+                  <a class='share-facebook' data-js='share-facebook' href='#' rel='nofollow'>
+                    Share on Facebook
+                  </a>
+                </li>
+                <li>
+                  <a class='share-google' data-js='share-google' href='#' rel='nofollow'>
+                    Share on Google+
+                  </a>
+                </li>
+              </ul>
+            </article>
+            <nav class='pagination container'>
+              <ul>
+                <li class='pagination-prev'>
+                  <a href='../positioning-content/index.html' rel='prev'>
+                    <strong>Lesson 5</strong>
+                    <span>Positioning Content</span>
+                  </a>
+                </li>
+                <li class='pagination-next'>
+                  <a href='../setting-backgrounds-and-gradients/index.html' rel='next'>
+                    <strong>Lesson 7</strong>
+                    <span>Setting Backgrounds &amp; Gradients</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div data-js='geo-location' hidden>
+              <section class='lead-promo'>
+                <div class='container'>
+                  <h2>Learn More <span>HTML &amp; CSS</span> or Study Other Topics</h2>
+                  <p>Learning how to code HTML <abbr title="and">&amp;</abbr> CSS and building successful websites can be challenging, and at times additional help and explanation can go a long way. Fortunately there are plenty of schools, boot camps, workshops, and the alike, both in-person and online, that can help.</p>
+                  <p>If you&#8217;re interested, complete the form below and I will connect you with a course I believe will provide the best learning opportunity for you.</p>
+                  <iframe hidden name='hidden_form'></iframe>
+                  <form action='https://docs.google.com/forms/d/e/1FAIpQLSeGG16EvML8mAF-EXUzTWsoy30ORq7W203_qORXT4SCebxqoQ/formResponse' data-js='recommendation-form' method='post' target='hidden_form'>
+                    <div class='margin-bottom'>
+                      <label class='form-label' for='name'>Name</label>
+                      <input class='form-control' data-js='name' id='name' name='entry.301578661' required type='text'>
+                    </div>
+                    <div class='margin-bottom'>
+                      <label class='form-label' for='email'>Email Address</label>
+                      <input class='form-control' data-js='email' id='email' name='entry.1305847502' required type='email'>
+                    </div>
+                    <div class='margin-bottom'>
+                      <label class='form-label' for='phone'>Phone Number</label>
+                      <input class='form-control' data-js='tel' id='phone' name='entry.363783636' required type='tel'>
+                    </div>
+                    <div class='margin-bottom hide'>
+                      <label class='form-label' for='location'>Location</label>
+                      <input class='form-control' data-js='location' id='location' name='entry.954966139' type='text'>
+                    </div>
+                    <div class='margin-bottom hide'>
+                      <label class='form-label' for='robot'>You&#8217;re not a robot, right?</label>
+                      <input class='form-control' data-js='checkbox-robot' id='robot' name='entry.1329951651' type='checkbox' value='Yes'>Yes</input>
+                    </div>
+                    <div class='margin-bottom hide'>
+                      <label class='form-label' for='key'>What is the special key?</label>
+                      <input class='form-control' data-js='key' id='key' name='entry.1046405393' required type='text' value='robotsnotwelcome'>
+                    </div>
+                    <button class='btn btn-alt' disabled type='submit'>Get Course Recommendations</button>
+                  </form>
+                  <form action='https://docs.google.com/forms/d/e/1FAIpQLSfhjyPa_D0iRyAjFyBEq3NAS5J-NONJfRLjElJyWSkALMXuwQ/formResponse' data-js='recommendation-follow-up-form' hidden method='post' target='hidden_form'>
+                    <h3>A Few Quick Follow-up Questions</h3>
+                    <p>Thank you! For the best recommendation, please answer the questions below. It&#8217;ll be the last I ask of you, promise!</p>
+                    <div class='margin-bottom hide'>
+                      <label class='form-label' for='name'>Name</label>
+                      <input class='form-control' data-js='name' id='name' name='entry.1576133276' type='text'>
+                    </div>
+                    <div class='margin-bottom hide'>
+                      <label class='form-label' for='email'>Email Address</label>
+                      <input class='form-control' data-js='email' id='email' name='entry.311025906' type='email'>
+                    </div>
+                    <div class='margin-bottom hide'>
+                      <label class='form-label' for='phone'>Phone Number</label>
+                      <input class='form-control' data-js='tel' id='phone' name='entry.1708507367' type='tel'>
+                    </div>
+                    <div class='margin-bottom hide'>
+                      <label class='form-label' for='location'>Location</label>
+                      <input class='form-control' data-js='location' id='location' name='entry.176432259' type='text'>
+                    </div>
+                    <div class='margin-bottom'>
+                      <label class='form-label'>Are you interested in an in-person or online course?</label>
+                      <div class='form-toggles'>
+                        <input data-toggle-control='setting' hidden id='setting-in-person' name='entry.814649513' required type='radio' value='In-Person'>
+                        <label class='form-toggle' for='setting-in-person'>In-Person</label>
+                        <input data-toggle-control='setting' hidden id='setting-online' name='entry.814649513' required type='radio' value='Online'>
+                        <label class='form-toggle' for='setting-online'>Online</label>
+                        <input data-toggle-control='setting' hidden id='setting-both' name='entry.814649513' required type='radio' value='Both'>
+                        <label class='form-toggle' for='setting-both'>Both</label>
+                      </div>
+                    </div>
+                    <div class='margin-bottom grid-1-1' data-toggle-setting='In-Person Online Both' hidden>
+                      <label class='form-label' for='topic'>What is your topic of interest?</label>
+                      <select class='form-select' data-toggle-control='duration' id='topic' name='entry.1204048627' required>
+                        <option value=''>Please Choose</option>
+                        <optgroup label='Design &amp; Product'>
+                          <option data-toggle-setting='In-Person Both' hidden value='Visual Design'>
+                            Visual Design
+                          </option>
+                          <option data-toggle-setting='In-Person Online Both' hidden value='User Experience Design'>
+                            User Experience Design
+                          </option>
+                          <option data-toggle-setting='In-Person Both' hidden value='Product Management'>
+                            Product Management
+                          </option>
+                        </optgroup>
+                        <optgroup label='Front-End'>
+                          <option data-toggle-setting='In-Person Online Both' hidden value='Front-End Development'>
+                            Front-End Development
+                          </option>
+                          <option data-toggle-setting='In-Person Both' hidden value='JavaScript Development'>
+                            JavaScript Development
+                          </option>
+                        </optgroup>
+                        <optgroup label='Development'>
+                          <option data-toggle-setting='In-Person Online Both' hidden value='Web Development'>
+                            Web Development
+                          </option>
+                          <option data-toggle-setting='In-Person Both' hidden value='iOS Development'>
+                            iOS Development
+                          </option>
+                          <option data-toggle-setting='In-Person Both' hidden value='Android Development'>
+                            Android Development
+                          </option>
+                        </optgroup>
+                        <optgroup label='Data &amp; Marketing'>
+                          <option data-toggle-setting='In-Person Both' hidden value='Data Science'>
+                            Data Science
+                          </option>
+                          <option data-toggle-setting='In-Person Both' hidden value='Data Analytics'>
+                            Data Analytics
+                          </option>
+                          <option data-toggle-setting='Online Both' hidden value='Data Analysis'>
+                            Data Analysis
+                          </option>
+                          <option data-toggle-setting='In-Person Online Both' hidden value='Digital Marketing'>
+                            Digital Marketing
+                          </option>
+                        </optgroup>
+                      </select>
+                    </div>
+                    <div class='margin-bottom' data-toggle-duration='User Experience Design Data Science' hidden>
+                      <label class='form-label'>Are you interested in a full-time or part-time course?</label>
+                      <div class='form-toggles'>
+                        <input hidden id='duration-full' name='entry.2037457624' type='radio' value='Full-time'>
+                        <label class='form-toggle' for='duration-full'>Full-time</label>
+                        <input hidden id='duration-part' name='entry.2037457624' type='radio' value='Part-time'>
+                        <label class='form-toggle' for='duration-part'>Part-time</label>
+                        <input hidden id='duration-both' name='entry.2037457624' type='radio' value='Both'>
+                        <label class='form-toggle' for='duration-both'>Both</label>
+                      </div>
+                    </div>
+                    <div class='margin-bottom' data-toggle-setting='In-Person Both' hidden>
+                      <label class='form-label' for='city'>In what city, or cities, would you prefer to attend a course?</label>
+                      <textarea class='form-control form-area' id='city' name='entry.1507070782' placeholder='Do you want to stay local to where you live? Are you open to traveling?'></textarea>
+                    </div>
+                    <div class='margin-bottom'>
+                      <label class='form-label' for='comments'>Do you have any additional questions or comments?</label>
+                      <textarea class='form-control form-area' id='comments' name='entry.71247427' placeholder="Any specific topics you're looking to learn more about? Any other comments?"></textarea>
+                    </div>
+                    <div class='margin-bottom hide'>
+                      <label class='form-label' for='robot'>You&#8217;re not a robot, right?</label>
+                      <input class='form-control' data-js='checkbox-robot' id='robot' name='entry.241165342' type='checkbox' value='Yes'>Yes</input>
+                    </div>
+                    <div class='margin-bottom hide'>
+                      <label class='form-label' for='key'>What is the special key?</label>
+                      <input class='form-control' data-js='key' id='key' name='entry.191730697' required type='text'>
+                    </div>
+                    <button class='btn btn-alt' disabled type='submit'>Get Course Recommendations</button>
+                  </form>
+                  <div data-js='recommendation-form-success' hidden>
+                    <h3 class='form-success-heading'>Thanks, you&#8217;re all set!</h3>
+                    Please keep an eye out for your recommendation, either from me or directly from one of the schools, boot camps, or workshops I recommend.
+                  </div>
+                </div>
+              </section>
+            </div>
+            <section class='container'>
+              <div class='promo-book'>
+                <h2>
+                  <a href='#'>Learn to Code HTML <abbr title="and">&amp;</abbr> CSS the Book</a>
+                </h2>
+                <a class='promo-img promo-book-img' data-js='promo-book-img' href='../../advanced-html-css/index.html'><img alt="HTML and CSS" src="../../assets/images/book/book-sm.png" /></a>
+                <p><cite>Learn to Code HTML <abbr title="and">&amp;</abbr> CSS</cite> is an interactive beginner&#8217;s guide with one express goal: <strong>teach you how to develop and style websites</strong> with HTML and CSS. Outlining the fundamentals, this book covers all of the common elements of front-end design and development.</p>
+                <div class='promo-btn'>
+                  <a class='btn btn-cta' href='http://click.linksynergy.com/fs-bin/click?id=0UVRLqz5qts&amp;offerid=145244.10000181&amp;type=3&amp;subid=0' onClick="_gaq.push(['_trackEvent', 'Purchase', 'Peachpit', 'Working with Typography']);" rel='nofollow'>Buy Learn to Code HTML <abbr title="and">&amp;</abbr> CSS</a>
+                </div>
+                <p class='promo-links'>
+                  Also available at
+                  <span>
+                    <a href='http://www.amazon.com/Learn-Code-HTML-CSS-Websites/dp/0321940520' onClick="_gaq.push(['_trackEvent', 'Purchase', 'Amazon', 'Working with Typography']);" rel='nofollow'>Amazon</a>
+                    and
+                    <a href='http://www.barnesandnoble.com/w/learn-to-code-html-and-css-shay-howe/1124334828' onClick="_gaq.push(['_trackEvent', 'Purchase', 'Barnes &amp; Noble', 'Working with Typography']);" rel='nofollow'>Barnes &amp; Noble</a>
+                  </span>
+                </p>
+              </div>
+            </section>
+            <section class='container'>
+              <div class='note'>
+                <div class='promo note-box note-stack'>
+                  <h3>
+                    <a href='../../advanced-html-css/index.html'>Looking for Advanced HTML <abbr title="and">&amp;</abbr> CSS Lessons?</a>
+                  </h3>
+                  <a class='promo-img promo-course-img' href='../../advanced-html-css/index.html'><img alt="HTML and CSS" class="media-circle" src="../../assets/images/code.jpg" /></a>
+                  <p>Checkout these <a href="../../advanced-html-css/index.html">advanced HTML and CSS lessons</a> to take a deeper look at front-end design and development, perfect for any designer or front-end developer looking to round out their skills.</p>
+                  <a class='btn btn-alt' href='../../advanced-html-css/index.html'>View  Advanced HTML <abbr title="and">&amp;</abbr> CSS Lessons</a>
+                </div>
+                <div class='newsletter note-box group'>
+                  <h3>Join the Newsletter</h3>
+                  <p>To stay up to date and learn when new courses and lessons are posted, please sign up for the newsletter&#8212;spam free.</p>
+                  <form action='http://shayhowe.us4.list-manage2.com/subscribe/post?u=98ada7f8bdec8f5ac0c78fd0f&amp;amp;id=4750db3524' class='newsletter-form' method='post' name='mc-embedded-subscribe-form' target='_blank'>
+                    <div class='input-group'>
+                      <input class='input-control' name='EMAIL' placeholder='Email address' required type='email'>
+                      <div class='input-group-btn'>
+                        <button class='btn btn-alt' name='subscribe'>Get Updates</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </section>
+            <script async src='http://codepen.io/assets/embed/ei.js'></script>
+          </div>
+          <footer class='primary-footer'>
+            <div class='clamp'>
+              <small>&copy; 2017 Shay Howe</small>
+              <div class='enjoy-cta'>
+                Enjoy these lessons?
+                <a class='twitter-follow-button' data-lang='en' data-show-count='false' data-size='large' href='https://twitter.com/shayhowe'>
+                  Follow @shayhowe
+                </a>
+              </div>
+            </div>
+          </footer>
+        </section>
+      </div>
+    </div>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
+    <script>
+      window.jQuery || document.write('<script src="../../assets/javascripts/vendor/jquery-1.11.0.min.js"><\/script>')
+    </script>
+    <script src="../../assets/javascripts/main.js" type="text/javascript"></script>
+    <script>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-3738010-2']);
+      _gaq.push(['_trackPageview']);
+      
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <script>
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    </script>
+  </body>
+
+<!-- Mirrored from learn.shayhowe.com/html-css/working-with-typography/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 16 Jun 2017 16:16:23 GMT -->
+</html>

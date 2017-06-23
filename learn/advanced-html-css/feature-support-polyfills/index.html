@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang='en'>
+  
+<!-- Mirrored from learn.shayhowe.com/advanced-html-css/feature-support-polyfills/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 16 Jun 2017 18:08:11 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset='utf-8'>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <meta content='Take a look at the best ways to get websites to look and perform the same in all browsers by using tools such as feature support and different polyfills.' name='description'>
+    <meta content='browser testing IE support modernizr conditional styles javascript' name='keywords'>
+    <title>Feature Support &amp; Polyfills - Learn to Code Advanced HTML &amp; CSS</title>
+    <script src='../../assets/javascripts/vendor/modernizr-2.8.1.js'></script>
+    <link href='http://cloud.typography.com/6623692/607644/css/fonts.css' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet'>
+    <link href='../../assets/stylesheets/main.css' rel='stylesheet'>
+  </head>
+  <body class='advanced-html-css advanced-html-css_feature-support-polyfills advanced-html-css_feature-support-polyfills_index'>
+    <div class='wrap-macro'>
+      <div class='wrap-micro group'>
+        <aside class='aside'>
+          <header class='primary-header' role='banner'>
+            <h1 class='primary-logo'>
+              <a href='../index.html'>
+                <span>Learn to Code Advanced</span>
+                <abbr title='Hyper Text Markup Language'>HTML</abbr>
+                <abbr title='and'>&amp;</abbr>
+                <abbr title='Cascading Style Sheets'>CSS</abbr>
+              </a>
+            </h1>
+            <a class='primary-nav-btn' data-js='primary-nav-btn' href='#' rel='nofollow'>Navigation</a>
+          </header>
+          <div class='aside-macro'>
+            <div class='aside-micro'>
+              <nav class='primary-nav' role='navigation'>
+                <ul>
+                  <li class='performance-organization'>
+                    <a href='../performance-organization/index.html'>
+                      <strong>Lesson 1</strong>
+                      Performance &amp; Organization
+                    </a>
+                  </li>
+                  <li class='detailed-css-positioning'>
+                    <a href='../detailed-css-positioning/index.html'>
+                      <strong>Lesson 2</strong>
+                      Detailed Positioning
+                    </a>
+                  </li>
+                  <li class='complex-selectors'>
+                    <a href='../complex-selectors/index.html'>
+                      <strong>Lesson 3</strong>
+                      Complex Selectors
+                    </a>
+                  </li>
+                  <li class='responsive-web-design'>
+                    <a href='../responsive-web-design/index.html'>
+                      <strong>Lesson 4</strong>
+                      Responsive Web Design
+                    </a>
+                  </li>
+                  <li class='preprocessors'>
+                    <a href='../preprocessors/index.html'>
+                      <strong>Lesson 5</strong>
+                      Preprocessors
+                    </a>
+                  </li>
+                  <li class='jquery'>
+                    <a href='../jquery/index.html'>
+                      <strong>Lesson 6</strong>
+                      jQuery
+                    </a>
+                  </li>
+                  <li class='css-transforms'>
+                    <a href='../css-transforms/index.html'>
+                      <strong>Lesson 7</strong>
+                      Transforms
+                    </a>
+                  </li>
+                  <li class='transitions-animations'>
+                    <a href='../transitions-animations/index.html'>
+                      <strong>Lesson 8</strong>
+                      Transitions &amp; Animations
+                    </a>
+                  </li>
+                  <li class='feature-support-polyfills'>
+                    <a href='index.html'>
+                      <strong>Lesson 9</strong>
+                      Feature Support &amp; Polyfills
+                    </a>
+                  </li>
+                  <li class='semantics-accessibility'>
+                    <a href='../semantics-accessibility/index.html'>
+                      <strong>Lesson 10</strong>
+                      Extending Semantics &amp; Accessibility
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <div class='aside-group'>
+                <p>Learn to Code Advanced HTML <abbr title="and">&amp;</abbr> CSS is written by designer <abbr title="and">&amp;</abbr> front-end developer <a href="http://shayhowe.com/">Shay Howe</a>.</p>
+                <p>Checkout <a href="../../html-css/index.html">Learn to Code HTML <abbr title="and">&amp;</abbr> CSS</a> for a beginner&#8217;s guide front-end design <abbr title="and">&amp;</abbr> development.</p>
+              </div>
+              <div data-js='geo-location' hidden>
+                <p>Want to learn to more HTML <abbr title="and">&amp;</abbr> CSS, or study other topics? Find the right course for you.</p>
+                <div class='margin-bottom'>
+                  <a class='btn btn-alt' href='../../recommendations/index.html'>Get Course Recommendations</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <section class='main' data-js='primary-nav-close'>
+          <div class='group'>
+            <article class='lesson container group' data-js='lesson'>
+              <div class='lesson-title'>
+                <h6>Lesson 9</h6>
+                <h1>Feature Support <abbr title="and">&amp;</abbr> Polyfills</h1>
+              </div>
+              <div class='clamp clamp-release'>
+                <div class='pop-out'>
+                  <nav class='toc'>
+                    <h4>
+                      In this Lesson
+                      <span class='toc-number'>9</span>
+                    </h4>
+                    <h6>HTML</h6>
+                    <ul>
+                      <li>
+                        <a href='#html5-shiv'>HTML5 Shiv</a>
+                      </li>
+                      <li>
+                        <a href='#cross-browser-testing'>Cross Browser Testing</a>
+                      </li>
+                    </ul>
+                    <h6>CSS</h6>
+                    <ul>
+                      <li>
+                        <a href='#detecting-browser-features'>Detecting Browser Features</a>
+                      </li>
+                    </ul>
+                    <h6>JavaScript</h6>
+                    <ul>
+                      <li>
+                        <a href='#conditionally-loading-files'>Conditionally Loading Files</a>
+                      </li>
+                    </ul>
+                    <h6>Share</h6>
+                    <ul class='share' data-js='share' data-permalink='http://learn.shayhowe.com/advanced-html-css/feature-support-polyfills/' data-title='Feature Support &amp;amp; Polyfills'>
+                      <li>
+                        <a class='share-twitter' data-js='share-twitter' href='#' rel='nofollow'>
+                          Share on Twitter
+                        </a>
+                      </li>
+                      <li>
+                        <a class='share-facebook' data-js='share-facebook' href='#' rel='nofollow'>
+                          Share on Facebook
+                        </a>
+                      </li>
+                      <li>
+                        <a class='share-google' data-js='share-google' href='#' rel='nofollow'>
+                          Share on Google+
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <div class='ad-spot group'>
+                    <script async id='_carbonads_js' src='http://cdn.carbonads.com/carbon.js?zoneid=1673&amp;serve=C6AILKT&amp;placement=learnshayhowecom' type='text/javascript'></script>
+                  </div>
+                </div>
+              </div>
+              <p>Building a website can be both extremely rewarding and frustrating. Common frustrations arise from trying to get a website to look and perform the same in every browser. All front end developers have shared this frustration at one point or another.</p>
+              <p>Truth be told, websites <strong>do not</strong> need to look or perform the same in every browser. Exactly how close a website works in each browser is up to you and your level of comfort for a given website. If a website receives under half a percent of traffic from Internet Explorer 6 it might make sense to drop support for it. If that half a percent is still contributing to thousands of dollars in sales, support may be mandatory. Determine what is acceptable for a given website and work from there.</p>
+              <p>There are a handful of common practices to get websites to perform adequately in all browsers, some of which have already been covered within this guide. When incorporating CSS3 properties, fallbacks are recommend to support older browsers. Other techniques include shivs and polyfills. Generally speaking, shivs and polyfills are small JavaScript plugins that add support for a requested set of features not natively supported by a specific browser.</p>
+              <h2 id='html5-shiv'>HTML5 Shiv</h2>
+              <p>Perhaps the most popular shiv, and one you may have likely used already, is the HTML5 Shiv. The HTML5 Shiv was <a href="http://paulirish.com/2011/the-history-of-the-html5-shiv/" rel="nofollow">created by Remy Sharp</a> to provide the ability to use HTML5 elements within versions of Internet Explorer 8 and below. The HTML5 Shiv not only creates support for HTML5 elements but also allows them to be properly styled with CSS.</p>
+              <p>The <a href="http://code.google.com/p/html5shiv/" rel="nofollow">shiv</a> should be downloaded from Google, where Remy maintains the latest version, then hosted on your server. For the best performance, reference the shiv JavaScript file within the <code>head</code> of the document, after any stylesheet references. Additionally, you want to reference the shiv inside of a <a href="http://css-tricks.com/how-to-create-an-ie-only-stylesheet/" rel="nofollow">conditional comment</a>, making sure that the file is only loaded within versions of Internet Explorer 8 and below.</p>
+              <p>In this case the conditional comment looks like <code>&#60;!--[if lt IE 9]&#62;...&#60;![endif]--&#62;</code>.</p>
+              <pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4</pre></td><td class="rouge-code"><pre><span class="c">&lt;!--[if lt IE 9]&gt;&#x000A;  &lt;script src="html5shiv.js"&gt;&lt;/script&gt;&#x000A;&lt;![endif]--&gt;</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <div class='note note-box'>
+                <h4>The Difference Between a Shiv <abbr title="and">&amp;</abbr> a Shim</h4>
+                <p>Chances are you may have heard of both the HTML5 <em>Shiv</em> and HTML5 <em>Shim</em>, and wondered what the difference, if any, may be. Oddly enough, there is <strong>no</strong> difference between the HTML5 Shiv and HTML5 Shim. The two words are often used interchangeably and are commonly transposed.</p>
+              </div>
+              <p>Additionally, once the new HTML5 elements are created using the shiv, any block level elements need to be identified and updated using the <code>display: block;</code> declaration.</p>
+              <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10&#x000A;11&#x000A;12&#x000A;13&#x000A;14</pre></td><td class="rouge-code"><pre><span class="nt">article</span><span class="o">,</span>&#x000A;<span class="nt">aside</span><span class="o">,</span>&#x000A;<span class="nt">details</span><span class="o">,</span>&#x000A;<span class="nt">figcaption</span><span class="o">,</span>&#x000A;<span class="nt">figure</span><span class="o">,</span>&#x000A;<span class="nt">footer</span><span class="o">,</span>&#x000A;<span class="nt">header</span><span class="o">,</span>&#x000A;<span class="nt">hgroup</span><span class="o">,</span>&#x000A;<span class="nt">nav</span><span class="o">,</span>&#x000A;<span class="nt">section</span><span class="o">,</span>&#x000A;<span class="nt">summary</span> <span class="p">{</span>&#x000A;  <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <p>Lastly, Internet Explorer 8 and 9 do not correctly define styles for a few HTML5 <code>inline-block</code> level elements. As before, these styles will need to be explicitly stated. After which, all versions of Internet Explorer should be good to go using any new HTML5 elements.</p>
+              <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6</pre></td><td class="rouge-code"><pre><span class="nt">audio</span><span class="o">,</span>&#x000A;<span class="nt">canvas</span><span class="o">,</span>&#x000A;<span class="nt">video</span> <span class="p">{</span>&#x000A;  <span class="nl">display</span><span class="p">:</span> <span class="n">inline-block</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <h2 id='detecting-browser-features'>Detecting Browser Features</h2>
+              <p>Referencing the HTML5 Shiv works well with a conditional comment because the intention is to specifically target browsers that don&#8217;t support new HTML5 features and elements. Additionally, there is a way to to provide support for specific HTML5 and CSS3 features, regardless of which browser is being used.</p>
+              <p>Feature detection, as provided by <a href="http://modernizr.com/" rel="nofollow">Modernizr</a>, provides a way to write conditional CSS and JavaScript based on whether or not a browser supports a specific feature. For example, if a browser supports rounded corners Modernizr will add the class of <code>borderradius</code> to the <code>html</code> element. If the browser doesn&#8217;t support rounded corners, Modernizr will add the class of <code>no-borderradius</code> to the <code>html</code> element.</p>
+              <h3>Loading Modernizr</h3>
+              <p>To get feature detection with Modernizr up and running, visit their <a href="http://modernizr.com/download/" rel="nofollow">download</a> page and customize what features you are looking to detect. Once downloaded, upload the JavaScript file on your server and reference it within the <code>head</code> of your HTML document, below any referenced style sheets.</p>
+              <p>It is worth noting that Modernizr may be configured to include the HTML5 Shiv, in which case the shiv doesn&#8217;t need to be referenced on top of Modernizr.</p>
+              <pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2</pre></td><td class="rouge-code"><pre><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"modernizr.js"</span><span class="nt">&gt;&lt;/script&gt;</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <h3>Conditionally Applying CSS Styles</h3>
+              <p>Once Modernizr is up and running CSS styles may be conditionally applied based on the features a given browser supports. Modernizr has detection for the majority of the CSS3 properties and values, all of which can be found in the Modernizr <a href="http://modernizr.com/docs/#features-css" rel="nofollow">documentation</a>.</p>
+              <p>One item to weigh out is if feature detection is necessary for certain styles. For example, using an RGBa color value may easily be supported with a fallback hexadecimal value without the use of feature detection. When deciding to use feature detection, it is important to keep styles organized and performance in mind. Avoid duplicating any code or making additional HTTP requests when possible.</p>
+              <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10&#x000A;11&#x000A;12&#x000A;13&#x000A;14&#x000A;15&#x000A;16&#x000A;17&#x000A;18&#x000A;19&#x000A;20&#x000A;21&#x000A;22&#x000A;23&#x000A;24&#x000A;25&#x000A;26&#x000A;27&#x000A;28&#x000A;29&#x000A;30&#x000A;31&#x000A;32&#x000A;33&#x000A;34&#x000A;35&#x000A;36&#x000A;37&#x000A;38</pre></td><td class="rouge-code"><pre><span class="nt">button</span> <span class="p">{</span>&#x000A;  <span class="nl">border</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>&#x000A;  <span class="nl">color</span><span class="p">:</span> <span class="m">#fff</span><span class="p">;</span>&#x000A;  <span class="nl">cursor</span><span class="p">:</span> <span class="nb">pointer</span><span class="p">;</span>&#x000A;  <span class="nl">font-size</span><span class="p">:</span> <span class="m">14px</span><span class="p">;</span>&#x000A;  <span class="nl">font-weight</span><span class="p">:</span> <span class="m">600</span><span class="p">;</span>&#x000A;  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>&#x000A;  <span class="nl">outline</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;&#x000A;<span class="c">/* With CSS Gradient Styles */</span>&#x000A;&#x000A;<span class="nc">.cssgradients</span> <span class="nt">button</span> <span class="p">{</span>&#x000A;  <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="m">#0080c2</span><span class="p">;</span>&#x000A;  <span class="nl">background</span><span class="p">:</span> <span class="n">linear-gradient</span><span class="p">(</span><span class="m">#00a2f5</span><span class="p">,</span> <span class="m">#0087cc</span><span class="p">);</span>&#x000A;  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">6px</span><span class="p">;</span>&#x000A;  <span class="nl">padding</span><span class="p">:</span> <span class="m">15px</span> <span class="m">30px</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nc">.cssgradients</span> <span class="nt">button</span><span class="nd">:hover</span> <span class="p">{</span>&#x000A;  <span class="nl">background</span><span class="p">:</span> <span class="n">linear-gradient</span><span class="p">(</span><span class="m">#1ab1ff</span><span class="p">,</span> <span class="m">#009beb</span><span class="p">);</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nc">.cssgradients</span> <span class="nt">button</span><span class="nd">:active</span> <span class="p">{</span>&#x000A;  <span class="nl">box-shadow</span><span class="p">:</span> <span class="nb">inset</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">10px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">255</span><span class="p">,</span> <span class="m">255</span><span class="p">,</span> <span class="m">255</span><span class="p">,</span> <span class="m">.5</span><span class="p">);</span>&#x000A;<span class="p">}</span>&#x000A;&#x000A;<span class="c">/* Without CSS Gradient Styles */</span>&#x000A;&#x000A;<span class="nc">.no-cssgradients</span> <span class="nt">button</span> <span class="p">{</span>&#x000A;  <span class="nl">background</span><span class="p">:</span> <span class="nb">transparent</span> <span class="sx">url("button.png")</span> <span class="m">0</span> <span class="m">0</span> <span class="nb">no-repeat</span><span class="p">;</span>&#x000A;  <span class="nl">padding</span><span class="p">:</span> <span class="m">16px</span> <span class="m">31px</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nc">.no-cssgradients</span> <span class="nt">button</span><span class="nd">:hover</span> <span class="p">{</span>&#x000A;  <span class="nl">background-position</span><span class="p">:</span> <span class="m">0</span> <span class="m">-49px</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nc">.no-cssgradients</span> <span class="nt">button</span><span class="nd">:active</span> <span class="p">{</span>&#x000A;  <span class="nl">background-position</span><span class="p">:</span> <span class="m">0</span> <span class="m">-98px</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <div class='note'>
+                <h4 class='demo-title'>Feature Detection Demo</h4>
+                <p class='codepen' data-default-tab='result' data-height='132' data-slug-hash='gKfiy' data-theme-id='5995'>
+                  See the Pen <a href='http://codepen.io/shayhowe/pen/gKfiy/'>Feature Detection</a> by Shay Howe (<a href='http://codepen.io/shayhowe'>@shayhowe</a>) on <a href='http://codepen.io/'>CodePen</a>.
+                </p>
+              </div>
+              <p>In the demonstration above, the button inherits some default styles. However, specific styles are only applied based on whether or not CSS3 gradient background are supported. In this case, rounded corners and box shadows are also included within the conditional styles. Those browsers that support gradients get a gradient background, rounded corners, and a box shadow. Those browsers that do not receive an image with all of these styles included within the image. With this code none of the styles are being over written and an HTTP request is only made when necessary.</p>
+              <p>When working with CSS3 feature detection it is hard to know what the styles look like in browsers that do not support specific CSS3 features. Fortunately, there is a bookmarklet called <a href="http://davatron5000.github.com/deCSS3/" rel="nofollow">deCSS3</a> which disables any CSS3 features. Doing so allows you to see what a website would look like without CSS3, and if your conditional styles are working. To get a quick idea of what an individual browser supports, visit <a href="http://haz.io/" rel="nofollow">haz.io</a> within that specific browser.</p>
+              <h2 id='conditionally-loading-files'>Conditionally Loading Files</h2>
+              <p>On top of conditionally loading styles, Modernizr also provides a way to use <a href="https://modernizr.com/docs#using-modernizr-with-javascript" rel="nofollow">feature detection in JavaScript</a>. With this, JavaScript polyfills and conditional files may be loaded based on the detection of a given feature with the help of jQuery and the jQuery <code>getScript</code> method.</p>
+              <p>Using Modernizr to set the condition of an <code>if</code> statement in Javascript allows different scripts to be executed based on whether or not the given condition is true or false. Below Modernizr is checking for local storage support. If local storage is supported <a href="https://davidwalsh.name/loading-scripts-jquery" rel="nofollow">jQuery is used to load</a> the <code>storage.js</code> file using the <code>getScript</code> method, and if local storage is not supported jQuery is used the <code>storage-polyfill.js</code> file using the <code>getScript</code> method.</p>
+              <pre class="highlight javascript"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10</pre></td><td class="rouge-code"><pre><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>&#x000A;  <span class="k">if</span> <span class="p">(</span><span class="nx">Modernizr</span><span class="p">.</span><span class="nx">localstorage</span><span class="p">)</span> <span class="p">{</span>&#x000A;    <span class="c1">// Local storage is available</span>&#x000A;    <span class="nx">jQuery</span><span class="p">.</span><span class="nx">getScript</span><span class="p">(</span><span class="s1">'storage.js'</span><span class="p">);</span>&#x000A;  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>&#x000A;    <span class="c1">// Local storage is not available</span>&#x000A;    <span class="nx">jQuery</span><span class="p">.</span><span class="nx">getScript</span><span class="p">(</span><span class="s1">'storage-polyfill.js'</span><span class="p">);</span>&#x000A;  <span class="p">}</span>&#x000A;<span class="p">});</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <h3>Conditionally Loading Based on Media Queries</h3>
+              <p>One interesting condition Modernizr can test against is media queries. Doing so provides the ability to only load files based on different media query conditions. Not loading unnecessary files can be extremely beneficial for performance.</p>
+              <pre class="highlight javascript"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6</pre></td><td class="rouge-code"><pre><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>&#x000A;  <span class="k">if</span> <span class="p">(</span><span class="nx">Modernizr</span><span class="p">.</span><span class="nx">mq</span><span class="p">(</span><span class="s1">'screen and (min-width: 640px)'</span><span class="p">))</span> <span class="p">{</span>&#x000A;    <span class="nx">jQuery</span><span class="p">.</span><span class="nx">getScript</span><span class="p">(</span><span class="s1">'tabs.js'</span><span class="p">);</span>&#x000A;  <span class="p">}</span>&#x000A;<span class="p">});</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <p>Above, Modernizr looks to detect screens above 640 pixels wide, primarily desktops, and then loads the <code>tabs.js</code> file based off of this condition. It is important to note that this condition is tested only once, when the page loads, and that is it. Should a user resize the page, this condition will not be retested. Should this condition need to be retested, additional JavaScript would need to be included.</p>
+              <h3>Conditionally Running Scripts</h3>
+              <p>Using Modernizr, all of the HTML5 and CSS3 features they detect may be tested within JavaScript. For example, it may be worth disabling tooltips on mobile devices due to not having hover capabilities, and instead showing the tooltip in plain text on the screen. The script for calling these tooltips could be wrapped in a Modernizr condition, preventing the script from loading on smaller screens.</p>
+              <pre class="highlight javascript"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6</pre></td><td class="rouge-code"><pre><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>&#x000A;  <span class="k">if</span> <span class="p">(</span><span class="nx">Modernizr</span><span class="p">.</span><span class="nx">mq</span><span class="p">(</span><span class="s1">'screen and (max-width: 400px)'</span><span class="p">))</span> <span class="p">{</span>&#x000A;    <span class="nx">$</span><span class="p">(</span><span class="s1">'.size'</span><span class="p">).</span><span class="nx">text</span><span class="p">(</span><span class="s1">'small'</span><span class="p">);</span>&#x000A;  <span class="p">}</span>&#x000A;<span class="p">});</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <div class='note'>
+                <h4 class='demo-title'>Conditionally Running Scripts Demo</h4>
+                <p class='codepen' data-default-tab='result' data-height='102' data-slug-hash='Gogqa' data-theme-id='5995'>
+                  See the Pen <a href='http://codepen.io/shayhowe/pen/Gogqa/'>Conditionally Running Scripts</a> by Shay Howe (<a href='http://codepen.io/shayhowe'>@shayhowe</a>) on <a href='http://codepen.io/'>CodePen</a>.
+                </p>
+              </div>
+              <p>Above is a basic example of how JavaScript can be executed based on a condition established by Modernizr. Upon loading the page, if the screen is above 800 pixels wide nothing happens. However, if the screen is below 800 pixels wide, upon being loaded, the word &#8216;small&#8217; will be swapped for &#8216;large&#8217; based off of the executed JavaScript.</p>
+              <h3>HTML5 <abbr title="and">&amp;</abbr> CSS3 Polyfills</h3>
+              <p>Currently there are polyfills for nearly all of the different HTML5 and CSS3 features. The team over at Modernizr has put together quite an exhaustive <a href="https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills" rel="nofollow">list of polyfills</a>. These polyfills can be dropped in as needed.</p>
+              <p>The same people behind Modernizr have also put together a <a href="http://html5please.com/" rel="nofollow">list</a> of all of the new HTML5 and CSS3 features, including instructions on how to use them responsibly. Understand, not all of these features need polyfills. Quite a few of them can be used outright or with the use of a fallback.</p>
+              <h2 id='cross-browser-testing'>Cross Browser Testing</h2>
+              <p>Perhaps the most dreaded part of web design and development is cross browser testing, making sure a website works well in all browsers. Generally speaking the more modern browsers, Chrome, Firefox, and Safari, all perform pretty well. The largest pitfalls live within Internet Explorer, and testing different versions of Internet Explorer can be difficult.</p>
+              <p>There are a <a href="http://www.smashingmagazine.com/2011/08/07/a-dozen-cross-browser-testing-tools/" rel="nofollow">handful</a> of services out there that do help with cross browser testing, some are interactive while others are not. Being able to interact with a browser, rather than seeing a rendered screenshot, is far more helpful for debugging code. One of the best ways to boot up multiple versions of Internet Explorer is by using multiple virtual machines, each with a different version of Internet Explorer.</p>
+              <figure class='fig'>
+                <img alt="VirtualBox" src="../../assets/images/courses/advanced-html-css/feature-support-polyfills/virtualbox.png" />
+                <figcaption>
+                  <strong>Fig. 9</strong>
+                  <p>VirtualBox running on Mac OS X with Internet Explorer versions 6 through 9.</p>
+                </figcaption>
+              </figure>
+              <p>Microsoft provides a handful of VirtualPCs that can be used solely for testing. Setting all of these up can be a herculean task. Fortunately, Greg Thornton has built an <a href="http://xdissent.github.com/ievms/" rel="nofollow">automated installer</a> for all of these virtual machines. The installation takes a while to download all of the different virtual machines, and requires a decent amount of disk space. Prepare adequately by only installing the necessary virtual machines and by clearing up the necessary disk space ahead of time. Depending on how often the virtual machines are used, it may be worth installing them on an external hard drive.</p>
+              <p>Internet Explorer versions 8 and above have built-in development tools, unfortunately versions 7 and below do not. The web inspector and all of the other debugging tools we&#8217;ve grown to love are not readily available within Internet Explorer 7 and below. There is, however, a <a href="https://getfirebug.com/firebuglite#Stable" rel="nofollow">Firebug Lite</a> bookmarklet that provides an in browser inspector that is tremendously helpful.</p>
+              <figure class='fig'>
+                <img alt="VirtualBox" src="../../assets/images/courses/advanced-html-css/feature-support-polyfills/ie7.png" />
+                <figcaption>
+                  <strong>Fig. 9</strong>
+                  <p>Internet Explorer 7 running inside of a virtual machine with the Firebug Lite bookmarklet open for debugging.</p>
+                </figcaption>
+              </figure>
+              <h2>Resources <abbr title="and">&amp;</abbr> Links</h2>
+              <ul class='list-column-2 group'>
+                <li>
+                  <a href='http://code.google.com/p/html5shiv/' rel='nofollow'>HTML5 Shiv</a>
+                  via Remy Sharp
+                </li>
+                <li>
+                  <a href='http://css-tricks.com/how-to-create-an-ie-only-stylesheet/' rel='nofollow'>How To Create an IE-Only Stylesheet</a>
+                  via CSS-Tricks
+                </li>
+                <li>
+                  <a href='http://modernizr.com/' rel='nofollow'>Modernizr</a>
+                </li>
+                <li>
+                  <a href='https://davidwalsh.name/loading-scripts-jquery' rel='nofollow'>Loading Scripts with jQuery</a>
+                  via David Walsh
+                </li>
+                <li>
+                  <a href='http://davatron5000.github.com/deCSS3/' rel='nofollow'>deCSS3</a>
+                  via Paravel and Crew
+                </li>
+                <li>
+                  <a href='http://haz.io/' rel='nofollow'>haz.io</a>
+                  via Philipp Bosch
+                </li>
+                <li>
+                  <a href='https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills' rel='nofollow'>HTML5 Cross Browser Polyfills</a>
+                </li>
+                <li>
+                  <a href='http://html5please.com/' rel='nofollow'>HTML5 Please</a>
+                </li>
+                <li>
+                  <a href='http://xdissent.github.com/ievms/' rel='nofollow'>Microsoft IE Virtual Machines</a>
+                  via Greg Thornton
+                </li>
+              </ul>
+              <ul class='share' data-js='share' data-permalink='http://learn.shayhowe.com/advanced-html-css/feature-support-polyfills/' data-title='Feature Support &amp;amp; Polyfills'>
+                <li>
+                  <a class='share-twitter' data-js='share-twitter' href='#' rel='nofollow'>
+                    Share on Twitter
+                  </a>
+                </li>
+                <li>
+                  <a class='share-facebook' data-js='share-facebook' href='#' rel='nofollow'>
+                    Share on Facebook
+                  </a>
+                </li>
+                <li>
+                  <a class='share-google' data-js='share-google' href='#' rel='nofollow'>
+                    Share on Google+
+                  </a>
+                </li>
+              </ul>
+            </article>
+            <nav class='pagination container'>
+              <ul>
+                <li class='pagination-prev'>
+                  <a href='../transitions-animations/index.html' rel='prev'>
+                    <strong>Lesson 8</strong>
+                    <span>Transitions &amp; Animations</span>
+                  </a>
+                </li>
+                <li class='pagination-next'>
+                  <a href='../semantics-accessibility/index.html' rel='next'>
+                    <strong>Lesson 10</strong>
+                    <span>Extending Semantics &amp; Accessibility</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div data-js='geo-location' hidden>
+              <section class='lead-promo'>
+                <div class='container'>
+                  <h2>Learn More <span>HTML &amp; CSS</span> or Study Other Topics</h2>
+                  <p>Learning how to code HTML <abbr title="and">&amp;</abbr> CSS and building successful websites can be challenging, and at times additional help and explanation can go a long way. Fortunately there are plenty of schools, boot camps, workshops, and the alike, both in-person and online, that can help.</p>
+                  <p>If you&#8217;re interested, complete the form below and I will connect you with a course I believe will provide the best learning opportunity for you.</p>
+                  <iframe hidden name='hidden_form'></iframe>
+                  <form action='https://docs.google.com/forms/d/e/1FAIpQLSeGG16EvML8mAF-EXUzTWsoy30ORq7W203_qORXT4SCebxqoQ/formResponse' data-js='recommendation-form' method='post' target='hidden_form'>
+                    <div class='margin-bottom'>
+                      <label class='form-label' for='name'>Name</label>
+                      <input class='form-control' data-js='name' id='name' name='entry.301578661' required type='text'>
+                    </div>
+                    <div class='margin-bottom'>
+                      <label class='form-label' for='email'>Email Address</label>
+                      <input class='form-control' data-js='email' id='email' name='entry.1305847502' required type='email'>
+                    </div>
+                    <div class='margin-bottom'>
+                      <label class='form-label' for='phone'>Phone Number</label>
+                      <input class='form-control' data-js='tel' id='phone' name='entry.363783636' required type='tel'>
+                    </div>
+                    <div class='margin-bottom hide'>
+                      <label class='form-label' for='location'>Location</label>
+                      <input class='form-control' data-js='location' id='location' name='entry.954966139' type='text'>
+                    </div>
+                    <div class='margin-bottom hide'>
+                      <label class='form-label' for='robot'>You&#8217;re not a robot, right?</label>
+                      <input class='form-control' data-js='checkbox-robot' id='robot' name='entry.1329951651' type='checkbox' value='Yes'>Yes</input>
+                    </div>
+                    <div class='margin-bottom hide'>
+                      <label class='form-label' for='key'>What is the special key?</label>
+                      <input class='form-control' data-js='key' id='key' name='entry.1046405393' required type='text' value='robotsnotwelcome'>
+                    </div>
+                    <button class='btn btn-alt' disabled type='submit'>Get Course Recommendations</button>
+                  </form>
+                  <form action='https://docs.google.com/forms/d/e/1FAIpQLSfhjyPa_D0iRyAjFyBEq3NAS5J-NONJfRLjElJyWSkALMXuwQ/formResponse' data-js='recommendation-follow-up-form' hidden method='post' target='hidden_form'>
+                    <h3>A Few Quick Follow-up Questions</h3>
+                    <p>Thank you! For the best recommendation, please answer the questions below. It&#8217;ll be the last I ask of you, promise!</p>
+                    <div class='margin-bottom hide'>
+                      <label class='form-label' for='name'>Name</label>
+                      <input class='form-control' data-js='name' id='name' name='entry.1576133276' type='text'>
+                    </div>
+                    <div class='margin-bottom hide'>
+                      <label class='form-label' for='email'>Email Address</label>
+                      <input class='form-control' data-js='email' id='email' name='entry.311025906' type='email'>
+                    </div>
+                    <div class='margin-bottom hide'>
+                      <label class='form-label' for='phone'>Phone Number</label>
+                      <input class='form-control' data-js='tel' id='phone' name='entry.1708507367' type='tel'>
+                    </div>
+                    <div class='margin-bottom hide'>
+                      <label class='form-label' for='location'>Location</label>
+                      <input class='form-control' data-js='location' id='location' name='entry.176432259' type='text'>
+                    </div>
+                    <div class='margin-bottom'>
+                      <label class='form-label'>Are you interested in an in-person or online course?</label>
+                      <div class='form-toggles'>
+                        <input data-toggle-control='setting' hidden id='setting-in-person' name='entry.814649513' required type='radio' value='In-Person'>
+                        <label class='form-toggle' for='setting-in-person'>In-Person</label>
+                        <input data-toggle-control='setting' hidden id='setting-online' name='entry.814649513' required type='radio' value='Online'>
+                        <label class='form-toggle' for='setting-online'>Online</label>
+                        <input data-toggle-control='setting' hidden id='setting-both' name='entry.814649513' required type='radio' value='Both'>
+                        <label class='form-toggle' for='setting-both'>Both</label>
+                      </div>
+                    </div>
+                    <div class='margin-bottom grid-1-1' data-toggle-setting='In-Person Online Both' hidden>
+                      <label class='form-label' for='topic'>What is your topic of interest?</label>
+                      <select class='form-select' data-toggle-control='duration' id='topic' name='entry.1204048627' required>
+                        <option value=''>Please Choose</option>
+                        <optgroup label='Design &amp; Product'>
+                          <option data-toggle-setting='In-Person Both' hidden value='Visual Design'>
+                            Visual Design
+                          </option>
+                          <option data-toggle-setting='In-Person Online Both' hidden value='User Experience Design'>
+                            User Experience Design
+                          </option>
+                          <option data-toggle-setting='In-Person Both' hidden value='Product Management'>
+                            Product Management
+                          </option>
+                        </optgroup>
+                        <optgroup label='Front-End'>
+                          <option data-toggle-setting='In-Person Online Both' hidden value='Front-End Development'>
+                            Front-End Development
+                          </option>
+                          <option data-toggle-setting='In-Person Both' hidden value='JavaScript Development'>
+                            JavaScript Development
+                          </option>
+                        </optgroup>
+                        <optgroup label='Development'>
+                          <option data-toggle-setting='In-Person Online Both' hidden value='Web Development'>
+                            Web Development
+                          </option>
+                          <option data-toggle-setting='In-Person Both' hidden value='iOS Development'>
+                            iOS Development
+                          </option>
+                          <option data-toggle-setting='In-Person Both' hidden value='Android Development'>
+                            Android Development
+                          </option>
+                        </optgroup>
+                        <optgroup label='Data &amp; Marketing'>
+                          <option data-toggle-setting='In-Person Both' hidden value='Data Science'>
+                            Data Science
+                          </option>
+                          <option data-toggle-setting='In-Person Both' hidden value='Data Analytics'>
+                            Data Analytics
+                          </option>
+                          <option data-toggle-setting='Online Both' hidden value='Data Analysis'>
+                            Data Analysis
+                          </option>
+                          <option data-toggle-setting='In-Person Online Both' hidden value='Digital Marketing'>
+                            Digital Marketing
+                          </option>
+                        </optgroup>
+                      </select>
+                    </div>
+                    <div class='margin-bottom' data-toggle-duration='User Experience Design Data Science' hidden>
+                      <label class='form-label'>Are you interested in a full-time or part-time course?</label>
+                      <div class='form-toggles'>
+                        <input hidden id='duration-full' name='entry.2037457624' type='radio' value='Full-time'>
+                        <label class='form-toggle' for='duration-full'>Full-time</label>
+                        <input hidden id='duration-part' name='entry.2037457624' type='radio' value='Part-time'>
+                        <label class='form-toggle' for='duration-part'>Part-time</label>
+                        <input hidden id='duration-both' name='entry.2037457624' type='radio' value='Both'>
+                        <label class='form-toggle' for='duration-both'>Both</label>
+                      </div>
+                    </div>
+                    <div class='margin-bottom' data-toggle-setting='In-Person Both' hidden>
+                      <label class='form-label' for='city'>In what city, or cities, would you prefer to attend a course?</label>
+                      <textarea class='form-control form-area' id='city' name='entry.1507070782' placeholder='Do you want to stay local to where you live? Are you open to traveling?'></textarea>
+                    </div>
+                    <div class='margin-bottom'>
+                      <label class='form-label' for='comments'>Do you have any additional questions or comments?</label>
+                      <textarea class='form-control form-area' id='comments' name='entry.71247427' placeholder="Any specific topics you're looking to learn more about? Any other comments?"></textarea>
+                    </div>
+                    <div class='margin-bottom hide'>
+                      <label class='form-label' for='robot'>You&#8217;re not a robot, right?</label>
+                      <input class='form-control' data-js='checkbox-robot' id='robot' name='entry.241165342' type='checkbox' value='Yes'>Yes</input>
+                    </div>
+                    <div class='margin-bottom hide'>
+                      <label class='form-label' for='key'>What is the special key?</label>
+                      <input class='form-control' data-js='key' id='key' name='entry.191730697' required type='text'>
+                    </div>
+                    <button class='btn btn-alt' disabled type='submit'>Get Course Recommendations</button>
+                  </form>
+                  <div data-js='recommendation-form-success' hidden>
+                    <h3 class='form-success-heading'>Thanks, you&#8217;re all set!</h3>
+                    Please keep an eye out for your recommendation, either from me or directly from one of the schools, boot camps, or workshops I recommend.
+                  </div>
+                </div>
+              </section>
+            </div>
+            <section class='container'>
+              <div class='promo-book'>
+                <h2>
+                  <a href='#'>Learn to Code HTML <abbr title="and">&amp;</abbr> CSS the Book</a>
+                </h2>
+                <a class='promo-img promo-book-img' data-js='promo-book-img' href='../index.html'><img alt="HTML and CSS" src="../../assets/images/book/book-sm.png" /></a>
+                <p><cite>Learn to Code HTML <abbr title="and">&amp;</abbr> CSS</cite> is an interactive beginner&#8217;s guide with one express goal: <strong>teach you how to develop and style websites</strong> with HTML and CSS. Outlining the fundamentals, this book covers all of the common elements of front-end design and development.</p>
+                <div class='promo-btn'>
+                  <a class='btn btn-cta' href='http://click.linksynergy.com/fs-bin/click?id=0UVRLqz5qts&amp;offerid=145244.10000181&amp;type=3&amp;subid=0' onClick="_gaq.push(['_trackEvent', 'Purchase', 'Peachpit', 'Feature Support &amp;amp; Polyfills']);" rel='nofollow'>Buy Learn to Code HTML <abbr title="and">&amp;</abbr> CSS</a>
+                </div>
+                <p class='promo-links'>
+                  Also available at
+                  <span>
+                    <a href='http://www.amazon.com/Learn-Code-HTML-CSS-Websites/dp/0321940520' onClick="_gaq.push(['_trackEvent', 'Purchase', 'Amazon', 'Feature Support &amp;amp; Polyfills']);" rel='nofollow'>Amazon</a>
+                    and
+                    <a href='http://www.barnesandnoble.com/w/learn-to-code-html-and-css-shay-howe/1124334828' onClick="_gaq.push(['_trackEvent', 'Purchase', 'Barnes &amp; Noble', 'Feature Support &amp;amp; Polyfills']);" rel='nofollow'>Barnes &amp; Noble</a>
+                  </span>
+                </p>
+              </div>
+            </section>
+            <section class='container'>
+              <div class='note'>
+                <div class='promo note-box note-stack'>
+                  <h3>
+                    <a href='../../html-css/index.html'>Looking for Beginner HTML <abbr title="and">&amp;</abbr> CSS Lessons?</a>
+                  </h3>
+                  <a class='promo-img promo-course-img' href='../../html-css/index.html'><img alt="HTML and CSS" class="media-circle" src="../../assets/images/code.jpg" /></a>
+                  <p>Checkout these <a href="../../html-css/index.html">beginner focused HTML and CSS lessons</a>, compiled into a simple and comprehensive guide dedicated to helping beginners learn HTML and CSS, working through all common components.</p>
+                  <a class='btn btn-alt' href='../../html-css/index.html'>View Beginner HTML <abbr title="and">&amp;</abbr> CSS Lessons</a>
+                </div>
+                <div class='newsletter note-box group'>
+                  <h3>Join the Newsletter</h3>
+                  <p>To stay up to date and learn when new courses and lessons are posted, please sign up for the newsletter&#8212;spam free.</p>
+                  <form action='http://shayhowe.us4.list-manage2.com/subscribe/post?u=98ada7f8bdec8f5ac0c78fd0f&amp;amp;id=4750db3524' class='newsletter-form' method='post' name='mc-embedded-subscribe-form' target='_blank'>
+                    <div class='input-group'>
+                      <input class='input-control' name='EMAIL' placeholder='Email address' required type='email'>
+                      <div class='input-group-btn'>
+                        <button class='btn btn-alt' name='subscribe'>Get Updates</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </section>
+            <script async src='http://codepen.io/assets/embed/ei.js'></script>
+          </div>
+          <footer class='primary-footer'>
+            <div class='clamp'>
+              <small>&copy; 2017 Shay Howe</small>
+              <div class='enjoy-cta'>
+                Enjoy these lessons?
+                <a class='twitter-follow-button' data-lang='en' data-show-count='false' data-size='large' href='https://twitter.com/shayhowe'>
+                  Follow @shayhowe
+                </a>
+              </div>
+            </div>
+          </footer>
+        </section>
+      </div>
+    </div>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
+    <script>
+      window.jQuery || document.write('<script src="../../assets/javascripts/vendor/jquery-1.11.0.min.js"><\/script>')
+    </script>
+    <script src="../../assets/javascripts/main.js" type="text/javascript"></script>
+    <script>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-3738010-2']);
+      _gaq.push(['_trackPageview']);
+      
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <script>
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    </script>
+  </body>
+
+<!-- Mirrored from learn.shayhowe.com/advanced-html-css/feature-support-polyfills/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 16 Jun 2017 18:08:13 GMT -->
+</html>

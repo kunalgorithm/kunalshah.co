@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang='en'>
+  
+<!-- Mirrored from learn.shayhowe.com/advanced-html-css/transitions-animations/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 16 Jun 2017 18:08:11 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset='utf-8'>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <meta content='Transitions and animations have worked there way into CSS3, providing extensive control for appearance and behavior. Learn how to leverage these new features.' name='description'>
+    <meta content='css tutorial transitions animations 3d css3' name='keywords'>
+    <title>Transitions &amp; Animations - Learn to Code Advanced HTML &amp; CSS</title>
+    <script src='../../assets/javascripts/vendor/modernizr-2.8.1.js'></script>
+    <link href='http://cloud.typography.com/6623692/607644/css/fonts.css' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet'>
+    <link href='../../assets/stylesheets/main.css' rel='stylesheet'>
+  </head>
+  <body class='advanced-html-css advanced-html-css_transitions-animations advanced-html-css_transitions-animations_index'>
+    <div class='wrap-macro'>
+      <div class='wrap-micro group'>
+        <aside class='aside'>
+          <header class='primary-header' role='banner'>
+            <h1 class='primary-logo'>
+              <a href='../index.html'>
+                <span>Learn to Code Advanced</span>
+                <abbr title='Hyper Text Markup Language'>HTML</abbr>
+                <abbr title='and'>&amp;</abbr>
+                <abbr title='Cascading Style Sheets'>CSS</abbr>
+              </a>
+            </h1>
+            <a class='primary-nav-btn' data-js='primary-nav-btn' href='#' rel='nofollow'>Navigation</a>
+          </header>
+          <div class='aside-macro'>
+            <div class='aside-micro'>
+              <nav class='primary-nav' role='navigation'>
+                <ul>
+                  <li class='performance-organization'>
+                    <a href='../performance-organization/index.html'>
+                      <strong>Lesson 1</strong>
+                      Performance &amp; Organization
+                    </a>
+                  </li>
+                  <li class='detailed-css-positioning'>
+                    <a href='../detailed-css-positioning/index.html'>
+                      <strong>Lesson 2</strong>
+                      Detailed Positioning
+                    </a>
+                  </li>
+                  <li class='complex-selectors'>
+                    <a href='../complex-selectors/index.html'>
+                      <strong>Lesson 3</strong>
+                      Complex Selectors
+                    </a>
+                  </li>
+                  <li class='responsive-web-design'>
+                    <a href='../responsive-web-design/index.html'>
+                      <strong>Lesson 4</strong>
+                      Responsive Web Design
+                    </a>
+                  </li>
+                  <li class='preprocessors'>
+                    <a href='../preprocessors/index.html'>
+                      <strong>Lesson 5</strong>
+                      Preprocessors
+                    </a>
+                  </li>
+                  <li class='jquery'>
+                    <a href='../jquery/index.html'>
+                      <strong>Lesson 6</strong>
+                      jQuery
+                    </a>
+                  </li>
+                  <li class='css-transforms'>
+                    <a href='../css-transforms/index.html'>
+                      <strong>Lesson 7</strong>
+                      Transforms
+                    </a>
+                  </li>
+                  <li class='transitions-animations'>
+                    <a href='index.html'>
+                      <strong>Lesson 8</strong>
+                      Transitions &amp; Animations
+                    </a>
+                  </li>
+                  <li class='feature-support-polyfills'>
+                    <a href='../feature-support-polyfills/index.html'>
+                      <strong>Lesson 9</strong>
+                      Feature Support &amp; Polyfills
+                    </a>
+                  </li>
+                  <li class='semantics-accessibility'>
+                    <a href='../semantics-accessibility/index.html'>
+                      <strong>Lesson 10</strong>
+                      Extending Semantics &amp; Accessibility
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <div class='aside-group'>
+                <p>Learn to Code Advanced HTML <abbr title="and">&amp;</abbr> CSS is written by designer <abbr title="and">&amp;</abbr> front-end developer <a href="http://shayhowe.com/">Shay Howe</a>.</p>
+                <p>Checkout <a href="../../html-css/index.html">Learn to Code HTML <abbr title="and">&amp;</abbr> CSS</a> for a beginner&#8217;s guide front-end design <abbr title="and">&amp;</abbr> development.</p>
+              </div>
+              <div data-js='geo-location' hidden>
+                <p>Want to learn to more HTML <abbr title="and">&amp;</abbr> CSS, or study other topics? Find the right course for you.</p>
+                <div class='margin-bottom'>
+                  <a class='btn btn-alt' href='../../recommendations/index.html'>Get Course Recommendations</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <section class='main' data-js='primary-nav-close'>
+          <div class='group'>
+            <article class='lesson container group' data-js='lesson'>
+              <div class='lesson-title'>
+                <h6>Lesson 8</h6>
+                <h1>Transitions <abbr title="and">&amp;</abbr> Animations</h1>
+              </div>
+              <div class='clamp clamp-release'>
+                <div class='pop-out'>
+                  <nav class='toc'>
+                    <h4>
+                      In this Lesson
+                      <span class='toc-number'>8</span>
+                    </h4>
+                    <h6>CSS</h6>
+                    <ul>
+                      <li>
+                        <a href='#transitions'>Transitions</a>
+                      </li>
+                      <li>
+                        <a href='#shorthand-transitions'>Shorthand Transitions</a>
+                      </li>
+                      <li>
+                        <a href='#animations'>Animations</a>
+                      </li>
+                      <li>
+                        <a href='#customizing-animations'>Customizing Animations</a>
+                      </li>
+                      <li>
+                        <a href='#shorthand-animations'>Shorthand Animations</a>
+                      </li>
+                    </ul>
+                    <h6>Share</h6>
+                    <ul class='share' data-js='share' data-permalink='http://learn.shayhowe.com/advanced-html-css/transitions-animations/' data-title='Transitions &amp;amp; Animations'>
+                      <li>
+                        <a class='share-twitter' data-js='share-twitter' href='#' rel='nofollow'>
+                          Share on Twitter
+                        </a>
+                      </li>
+                      <li>
+                        <a class='share-facebook' data-js='share-facebook' href='#' rel='nofollow'>
+                          Share on Facebook
+                        </a>
+                      </li>
+                      <li>
+                        <a class='share-google' data-js='share-google' href='#' rel='nofollow'>
+                          Share on Google+
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <div class='ad-spot group'>
+                    <script async id='_carbonads_js' src='http://cdn.carbonads.com/carbon.js?zoneid=1673&amp;serve=C6AILKT&amp;placement=learnshayhowecom' type='text/javascript'></script>
+                  </div>
+                </div>
+              </div>
+              <p>One evolution with CSS3 was the ability to write behaviors for transitions and animations. Front end developers have been asking for the ability to design these interactions within HTML and CSS, without the use of JavaScript or Flash, for years. Now their wish has come true.</p>
+              <p>With CSS3 transitions you have the potential to alter the appearance and behavior of an element whenever a state change occurs, such as when it is hovered over, focused on, active, or targeted.</p>
+              <p>Animations within CSS3 allow the appearance and behavior of an element to be altered in multiple keyframes. Transitions provide a change from one state to another, while animations can set multiple points of transition upon different keyframes.</p>
+              <h2 id='transitions'>Transitions</h2>
+              <p>As mentioned, for a <a href="http://www.alistapart.com/articles/understanding-css3-transitions/" rel="nofollow">transition</a> to take place, an element must have a change in state, and different styles must be identified for each state. The easiest way for determining styles for different states is by using the <code>:hover</code>, <code>:focus</code>, <code>:active</code>, and <code>:target</code> pseudo-classes.</p>
+              <p>There are four transition related properties in total, including <code>transition-property</code>, <code>transition-duration</code>, <code>transition-timing-function</code>, and <code>transition-delay</code>. Not all of these are required to build a transition, with the first three are the most popular.</p>
+              <p>In the example below the box will change its <code>background</code> color over the course of <code>1</code> second in a <code>linear</code> fashion.</p>
+              <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10</pre></td><td class="rouge-code"><pre><span class="nc">.box</span> <span class="p">{</span>&#x000A;  <span class="nl">background</span><span class="p">:</span> <span class="m">#2db34a</span><span class="p">;</span>&#x000A;  <span class="nl">transition-property</span><span class="p">:</span> <span class="n">background</span><span class="p">;</span>&#x000A;  <span class="nl">transition-duration</span><span class="p">:</span> <span class="m">1s</span><span class="p">;</span>&#x000A;  <span class="nl">transition-timing-function</span><span class="p">:</span> <span class="n">linear</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nc">.box</span><span class="nd">:hover</span> <span class="p">{</span>&#x000A;  <span class="nl">background</span><span class="p">:</span> <span class="m">#ff7b29</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <div class='note'>
+                <h4 class='demo-title'>Transition Demo</h4>
+                <p class='codepen' data-default-tab='result' data-height='180' data-slug-hash='aCwcK' data-theme-id='5995'>
+                  See the Pen <a href='http://codepen.io/shayhowe/pen/aCwcK/'>Transition</a> by Shay Howe (<a href='http://codepen.io/shayhowe'>@shayhowe</a>) on <a href='http://codepen.io/'>CodePen</a>.
+                </p>
+              </div>
+              <div class='note note-box'>
+                <h4>Vendor Prefixes</h4>
+                <p>The code above, as with the rest of the code samples in this lesson, are not vendor prefixed. This is intentionally un-prefixed in the interest of keeping the code snippet small and comprehensible. For the best support across all browsers, use vendor prefixes.</p>
+                <p>For reference, the prefixed version of the code above would look like the following.</p>
+                <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10&#x000A;11&#x000A;12&#x000A;13&#x000A;14&#x000A;15&#x000A;16&#x000A;17&#x000A;18&#x000A;19</pre></td><td class="rouge-code"><pre><span class="nc">.box</span> <span class="p">{</span>&#x000A;    <span class="nl">background</span><span class="p">:</span> <span class="m">#2db34a</span><span class="p">;</span>&#x000A;    <span class="nl">-webkit-transition-property</span><span class="p">:</span> <span class="n">background</span><span class="p">;</span>&#x000A;       <span class="nl">-moz-transition-property</span><span class="p">:</span> <span class="n">background</span><span class="p">;</span>&#x000A;         <span class="nl">-o-transition-property</span><span class="p">:</span> <span class="n">background</span><span class="p">;</span>&#x000A;            <span class="nl">transition-property</span><span class="p">:</span> <span class="n">background</span><span class="p">;</span>&#x000A;    <span class="nl">-webkit-transition-duration</span><span class="p">:</span> <span class="m">1s</span><span class="p">;</span>&#x000A;       <span class="nl">-moz-transition-duration</span><span class="p">:</span> <span class="m">1s</span><span class="p">;</span>&#x000A;         <span class="nl">-o-transition-duration</span><span class="p">:</span> <span class="m">1s</span><span class="p">;</span>&#x000A;            <span class="nl">transition-duration</span><span class="p">:</span> <span class="m">1s</span><span class="p">;</span>&#x000A;    <span class="nl">-webkit-transition-timing-function</span><span class="p">:</span> <span class="n">linear</span><span class="p">;</span>&#x000A;       <span class="nl">-moz-transition-timing-function</span><span class="p">:</span> <span class="n">linear</span><span class="p">;</span>&#x000A;         <span class="nl">-o-transition-timing-function</span><span class="p">:</span> <span class="n">linear</span><span class="p">;</span>&#x000A;            <span class="nl">transition-timing-function</span><span class="p">:</span> <span class="n">linear</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nc">.box</span><span class="nd">:hover</span> <span class="p">{</span>&#x000A;  <span class="nl">background</span><span class="p">:</span> <span class="m">#ff7b29</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+                </code></pre>
+              </div>
+              <h3>Transitional Property</h3>
+              <p>The <code>transition-property</code> property determines exactly what properties will be altered in conjunction with the other transitional properties. By default, all of the properties within an element&#8217;s different states will be altered upon change. However, only the properties identified within the <code>transition-property</code> value will be affected by any transitions.</p>
+              <p>In the example above, the <code>background</code> property is identified in the <code>transition-property</code> value. Here the <code>background</code> property is the only property that will change over the duration of <code>1</code> second in a <code>linear</code> fashion. Any other properties included when changing an element&#8217;s state, but not included within the <code>transition-property</code> value, will not receive the transition behaviors as set by the <code>transition-duration</code> or <code>transition-timing-function</code> properties.</p>
+              <p>If multiple properties need to be transitioned they may be comma separated within the <code>transition-property</code> value. Additionally, the keyword value <code>all</code> may be used to transition all properties of an element.</p>
+              <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10&#x000A;11&#x000A;12</pre></td><td class="rouge-code"><pre><span class="nc">.box</span> <span class="p">{</span>&#x000A;    <span class="nl">background</span><span class="p">:</span> <span class="m">#2db34a</span><span class="p">;</span>&#x000A;    <span class="nl">border-radius</span><span class="p">:</span> <span class="m">6px</span>&#x000A;    <span class="n">transition-property</span><span class="p">:</span> <span class="n">background</span><span class="p">,</span> <span class="n">border-radius</span><span class="p">;</span>&#x000A;    <span class="nl">transition-duration</span><span class="p">:</span> <span class="m">1s</span><span class="p">;</span>&#x000A;    <span class="nl">transition-timing-function</span><span class="p">:</span> <span class="n">linear</span><span class="p">;</span>&#x000A;  <span class="p">}</span>&#x000A;  <span class="nc">.box</span><span class="nd">:hover</span> <span class="p">{</span>&#x000A;    <span class="nl">background</span><span class="p">:</span> <span class="m">#ff7b29</span><span class="p">;</span>&#x000A;    <span class="nl">border-radius</span><span class="p">:</span> <span class="m">50%</span><span class="p">;</span>&#x000A;  <span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <div class='note'>
+                <h4 class='demo-title'>Transition Property Demo</h4>
+                <p class='codepen' data-default-tab='result' data-height='180' data-slug-hash='HlgxF' data-theme-id='5995'>
+                  See the Pen <a href='http://codepen.io/shayhowe/pen/HlgxF/'>Transition Property</a> by Shay Howe (<a href='http://codepen.io/shayhowe'>@shayhowe</a>) on <a href='http://codepen.io/'>CodePen</a>.
+                </p>
+              </div>
+              <h4>Transitional Properties</h4>
+              <p>It is important to note, <strong>not all properties may be transitioned</strong>, only properties that have an identifiable halfway point. Colors, font sizes, and the alike may be transitioned from one value to another as they have recognizable values in-between one another. The <code>display</code> property, for example, may not be transitioned as it does not have any midpoint. A handful of the more popular transitional properties include the following.</p>
+              <ul class='list-column-3 group'>
+                <li>
+                  <code>background-color</code>
+                </li>
+                <li>
+                  <code>background-position</code>
+                </li>
+                <li>
+                  <code>border-color</code>
+                </li>
+                <li>
+                  <code>border-width</code>
+                </li>
+                <li>
+                  <code>border-spacing</code>
+                </li>
+                <li>
+                  <code>bottom</code>
+                </li>
+                <li>
+                  <code>clip</code>
+                </li>
+                <li>
+                  <code>color</code>
+                </li>
+                <li>
+                  <code>crop</code>
+                </li>
+                <li>
+                  <code>font-size</code>
+                </li>
+                <li>
+                  <code>font-weight</code>
+                </li>
+                <li>
+                  <code>height</code>
+                </li>
+                <li>
+                  <code>left</code>
+                </li>
+                <li>
+                  <code>letter-spacing</code>
+                </li>
+                <li>
+                  <code>line-height</code>
+                </li>
+                <li>
+                  <code>margin</code>
+                </li>
+                <li>
+                  <code>max-height</code>
+                </li>
+                <li>
+                  <code>max-width</code>
+                </li>
+                <li>
+                  <code>min-height</code>
+                </li>
+                <li>
+                  <code>min-width</code>
+                </li>
+                <li>
+                  <code>opacity</code>
+                </li>
+                <li>
+                  <code>outline-color</code>
+                </li>
+                <li>
+                  <code>outline-offset</code>
+                </li>
+                <li>
+                  <code>outline-width</code>
+                </li>
+                <li>
+                  <code>padding</code>
+                </li>
+                <li>
+                  <code>right</code>
+                </li>
+                <li>
+                  <code>text-indent</code>
+                </li>
+                <li>
+                  <code>text-shadow</code>
+                </li>
+                <li>
+                  <code>top</code>
+                </li>
+                <li>
+                  <code>vertical-align</code>
+                </li>
+                <li>
+                  <code>visibility</code>
+                </li>
+                <li>
+                  <code>width</code>
+                </li>
+                <li>
+                  <code>word-spacing</code>
+                </li>
+                <li>
+                  <code>z-index</code>
+                </li>
+              </ul>
+              <h3>Transition Duration</h3>
+              <p>The duration in which a transition takes place is set using the <code>transition-duration</code> property. The value of this property can be set using general timing values, including seconds (<code>s</code>) and milliseconds (<code>ms</code>). These timing values may also come in fractional measurements, <code>.2s</code> for example.</p>
+              <p>When transitioning multiple properties you can set multiple durations, one for each property. As with the <code>transition-property</code> property value, multiple durations can be declared using comma separated values. The order of these values when identifying individual properties and durations does matter. For example, the first property identified within the <code>transition-property</code> property will match up with the first time identified within the <code>transition-duration</code> property, and so forth.</p>
+              <p>If multiple properties are being transitioned with only one duration value declared, that one value will be the duration of all the transitioned properties.</p>
+              <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10&#x000A;11&#x000A;12</pre></td><td class="rouge-code"><pre><span class="nc">.box</span> <span class="p">{</span>&#x000A;  <span class="nl">background</span><span class="p">:</span> <span class="m">#2db34a</span><span class="p">;</span>&#x000A;  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">6px</span><span class="p">;</span>&#x000A;  <span class="nl">transition-property</span><span class="p">:</span> <span class="n">background</span><span class="p">,</span> <span class="n">border-radius</span><span class="p">;</span>&#x000A;  <span class="nl">transition-duration</span><span class="p">:</span> <span class="m">.2s</span><span class="p">,</span> <span class="m">1s</span><span class="p">;</span>&#x000A;  <span class="nl">transition-timing-function</span><span class="p">:</span> <span class="n">linear</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nc">.box</span><span class="nd">:hover</span> <span class="p">{</span>&#x000A;  <span class="nl">background</span><span class="p">:</span> <span class="m">#ff7b29</span><span class="p">;</span>&#x000A;  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">50%</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <div class='note'>
+                <h4 class='demo-title'>Transition Duration Demo</h4>
+                <p class='codepen' data-default-tab='result' data-height='180' data-slug-hash='BGmdv' data-theme-id='5995'>
+                  See the Pen <a href='http://codepen.io/shayhowe/pen/BGmdv/'>Transition Duration</a> by Shay Howe (<a href='http://codepen.io/shayhowe'>@shayhowe</a>) on <a href='http://codepen.io/'>CodePen</a>.
+                </p>
+              </div>
+              <h3>Transition Timing</h3>
+              <p>The <code>transition-timing-function</code> property is used to set the speed in which a transition will move. Knowing the duration from the <code>transition-duration</code> property a transition can have multiple speeds within a single duration. A few of the more popular keyword values for the <code>transition-timing-function</code> property include <code>linear</code>, <code>ease-in</code>, <code>ease-out</code>, and <code>ease-in-out</code>.</p>
+              <p>The <code>linear</code> keyword value identifies a transition moving in a constant speed from one state to another. The <code>ease-in</code> value identifies a transition that starts slowly and speeds up throughout the transition, while the <code>ease-out</code> value identifies a transition that starts quickly and slows down throughout the transition. The <code>ease-in-out</code> value identifies a transition that starts slowly, speeds up in the middle, then slows down again before ending.</p>
+              <p>Each timing function has a <a href="http://www.roblaplaca.com/examples/bezierBuilder/" rel="nofollow">cubic-bezier curve</a> behind it, which can be specifically set using the <code>cubic-bezier(x1, y1, x2, y2)</code> value. Additional values include <code>step-start</code>, <code>step-stop</code>, and a uniquely identified <code>steps(number_of_steps, direction)</code> value.</p>
+              <p>When transitioning multiple properties, you can identify multiple timing functions. These timing function values, as with other transition property values, may be declared as comma separated values.</p>
+              <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10&#x000A;11&#x000A;12</pre></td><td class="rouge-code"><pre><span class="nc">.box</span> <span class="p">{</span>&#x000A;  <span class="nl">background</span><span class="p">:</span> <span class="m">#2db34a</span><span class="p">;</span>&#x000A;  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">6px</span><span class="p">;</span>&#x000A;  <span class="nl">transition-property</span><span class="p">:</span> <span class="n">background</span><span class="p">,</span> <span class="n">border-radius</span><span class="p">;</span>&#x000A;  <span class="nl">transition-duration</span><span class="p">:</span> <span class="m">.2s</span><span class="p">,</span> <span class="m">1s</span><span class="p">;</span>&#x000A;  <span class="nl">transition-timing-function</span><span class="p">:</span> <span class="n">linear</span><span class="p">,</span> <span class="n">ease-in</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nc">.box</span><span class="nd">:hover</span> <span class="p">{</span>&#x000A;  <span class="nl">background</span><span class="p">:</span> <span class="m">#ff7b29</span><span class="p">;</span>&#x000A;  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">50%</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <div class='note'>
+                <h4 class='demo-title'>Transition Timing Demo</h4>
+                <p class='codepen' data-default-tab='result' data-height='180' data-slug-hash='qzGpr' data-theme-id='5995'>
+                  See the Pen <a href='http://codepen.io/shayhowe/pen/qzGpr/'>Transition Timing</a> by Shay Howe (<a href='http://codepen.io/shayhowe'>@shayhowe</a>) on <a href='http://codepen.io/'>CodePen</a>.
+                </p>
+              </div>
+              <h3>Transition Delay</h3>
+              <p>On top of declaring the transition property, duration, and timing function, you can also set a delay with the <code>transition-delay</code> property. The delay sets a time value, seconds or milliseconds, that determines how long a transition should be stalled before executing. As with all other transition properties, to delay numerous transitions, each delay can be declared as comma separated values.</p>
+              <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10&#x000A;11&#x000A;12&#x000A;13</pre></td><td class="rouge-code"><pre><span class="nc">.box</span> <span class="p">{</span>&#x000A;  <span class="nl">background</span><span class="p">:</span> <span class="m">#2db34a</span><span class="p">;</span>&#x000A;  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">6px</span>&#x000A;  <span class="n">transition-property</span><span class="p">:</span> <span class="n">background</span><span class="p">,</span> <span class="n">border-radius</span><span class="p">;</span>&#x000A;  <span class="nl">transition-duration</span><span class="p">:</span> <span class="m">.2s</span><span class="p">,</span> <span class="m">1s</span><span class="p">;</span>&#x000A;  <span class="nl">transition-timing-function</span><span class="p">:</span> <span class="n">linear</span><span class="p">,</span> <span class="n">ease-in</span><span class="p">;</span>&#x000A;  <span class="nl">transition-delay</span><span class="p">:</span> <span class="m">0s</span><span class="p">,</span> <span class="m">1s</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nc">.box</span><span class="nd">:hover</span> <span class="p">{</span>&#x000A;  <span class="nl">background</span><span class="p">:</span> <span class="m">#ff7b29</span><span class="p">;</span>&#x000A;  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">50%</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <div class='note'>
+                <h4 class='demo-title'>Transition Delay Demo</h4>
+                <p class='codepen' data-default-tab='result' data-height='180' data-slug-hash='naDEp' data-theme-id='5995'>
+                  See the Pen <a href='http://codepen.io/shayhowe/pen/naDEp/'>Transition Delay</a> by Shay Howe (<a href='http://codepen.io/shayhowe'>@shayhowe</a>) on <a href='http://codepen.io/'>CodePen</a>.
+                </p>
+              </div>
+              <h2 id='shorthand-transitions'>Shorthand Transitions</h2>
+              <p>Declaring every transition property individually can become quite intensive, especially with vendor prefixes. Fortunately there is a shorthand property, <code>transition</code>, capable of supporting all of these different properties and values. Using the <code>transition</code> value alone, you can set every transition value in the order of <code>transition-property</code>, <code>transition-duration</code>, <code>transition-timing-function</code>, and lastly <code>transition-delay</code>. Do not use commas with these values unless you are identifying numerous transitions.</p>
+              <p>To set numerous transitions at once, set each individual group of transition values, then use a comma to separate each additional group of transition values.</p>
+              <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10</pre></td><td class="rouge-code"><pre><span class="nc">.box</span> <span class="p">{</span>&#x000A;  <span class="nl">background</span><span class="p">:</span> <span class="m">#2db34a</span><span class="p">;</span>&#x000A;  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">6px</span><span class="p">;</span>&#x000A;  <span class="nl">transition</span><span class="p">:</span> <span class="n">background</span> <span class="m">.2s</span> <span class="n">linear</span><span class="p">,</span> <span class="n">border-radius</span> <span class="m">1s</span> <span class="n">ease-in</span> <span class="m">1s</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nc">.box</span><span class="nd">:hover</span> <span class="p">{</span>&#x000A;  <span class="nl">color</span><span class="p">:</span> <span class="m">#ff7b29</span><span class="p">;</span>&#x000A;  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">50%</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <div class='note'>
+                <h4 class='demo-title'>Shorthand Transitions Demo</h4>
+                <p class='codepen' data-default-tab='result' data-height='180' data-slug-hash='bFDyh' data-theme-id='5995'>
+                  See the Pen <a href='http://codepen.io/shayhowe/pen/bFDyh/'>Shorthand Transitions</a> by Shay Howe (<a href='http://codepen.io/shayhowe'>@shayhowe</a>) on <a href='http://codepen.io/'>CodePen</a>.
+                </p>
+              </div>
+              <div class='note note-box'>
+                <h3>Transitional Button</h3>
+                <h6>HTML</h6>
+                <pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2</pre></td><td class="rouge-code"><pre><span class="nt">&lt;button&gt;</span>Awesome Button<span class="nt">&lt;/button&gt;</span>&#x000A;</pre></td></tr></tbody></table>
+                </code></pre>
+                <h6>CSS</h6>
+                <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10&#x000A;11&#x000A;12&#x000A;13&#x000A;14&#x000A;15&#x000A;16&#x000A;17&#x000A;18</pre></td><td class="rouge-code"><pre><span class="nt">button</span> <span class="p">{</span>&#x000A;  <span class="nl">border</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>&#x000A;  <span class="nl">background</span><span class="p">:</span> <span class="m">#0087cc</span><span class="p">;</span>&#x000A;  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">4px</span><span class="p">;</span>&#x000A;  <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">5px</span> <span class="m">0</span> <span class="m">#006599</span><span class="p">;</span>&#x000A;  <span class="nl">color</span><span class="p">:</span> <span class="m">#fff</span><span class="p">;</span>&#x000A;  <span class="nl">cursor</span><span class="p">:</span> <span class="nb">pointer</span><span class="p">;</span>&#x000A;  <span class="nl">font</span><span class="p">:</span> <span class="nb">inherit</span><span class="p">;</span>&#x000A;  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>&#x000A;  <span class="nl">outline</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>&#x000A;  <span class="nl">padding</span><span class="p">:</span> <span class="m">12px</span> <span class="m">20px</span><span class="p">;</span>&#x000A;  <span class="nl">transition</span><span class="p">:</span> <span class="n">all</span> <span class="m">.1s</span> <span class="n">linear</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nt">button</span><span class="nd">:active</span> <span class="p">{</span>&#x000A;  <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">2px</span> <span class="m">0</span> <span class="m">#006599</span><span class="p">;</span>&#x000A;  <span class="nl">transform</span><span class="p">:</span> <span class="n">translateY</span><span class="p">(</span><span class="m">3px</span><span class="p">);</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+                </code></pre>
+                <h4 class='demo-title'>Demo</h4>
+                <div class='demo-code'>
+                  <p class='codepen' data-default-tab='result' data-height='138' data-slug-hash='Bocnt' data-theme-id='5995'>
+                    See the Pen <a href='http://codepen.io/shayhowe/pen/Bocnt/'>Transitional Button</a> by Shay Howe (<a href='http://codepen.io/shayhowe'>@shayhowe</a>) on <a href='http://codepen.io/'>CodePen</a>.
+                  </p>
+                </div>
+              </div>
+              <div class='note note-box'>
+                <h3>Card Flip</h3>
+                <h6>HTML</h6>
+                <pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7</pre></td><td class="rouge-code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-container"</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"side"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>&#x000A;    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"side back"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>&#x000A;  <span class="nt">&lt;/div&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre></td></tr></tbody></table>
+                </code></pre>
+                <h6>CSS</h6>
+                <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10&#x000A;11&#x000A;12&#x000A;13&#x000A;14&#x000A;15&#x000A;16&#x000A;17&#x000A;18&#x000A;19&#x000A;20&#x000A;21&#x000A;22&#x000A;23&#x000A;24&#x000A;25&#x000A;26</pre></td><td class="rouge-code"><pre><span class="nc">.card-container</span> <span class="p">{</span>&#x000A;  <span class="nl">height</span><span class="p">:</span> <span class="m">150px</span><span class="p">;</span>&#x000A;  <span class="nl">perspective</span><span class="p">:</span> <span class="m">600</span><span class="p">;</span>&#x000A;  <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>&#x000A;  <span class="nl">width</span><span class="p">:</span> <span class="m">150px</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nc">.card</span> <span class="p">{</span>&#x000A;  <span class="nl">height</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>&#x000A;  <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>&#x000A;  <span class="nl">transform-style</span><span class="p">:</span> <span class="n">preserve-3d</span><span class="p">;</span>&#x000A;  <span class="nl">transition</span><span class="p">:</span> <span class="n">all</span> <span class="m">1s</span> <span class="n">ease-in-out</span><span class="p">;</span>&#x000A;  <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nc">.card</span><span class="nd">:hover</span> <span class="p">{</span>&#x000A;  <span class="nl">transform</span><span class="p">:</span> <span class="n">rotateY</span><span class="p">(</span><span class="m">180deg</span><span class="p">);</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nc">.card</span> <span class="nc">.side</span> <span class="p">{</span>&#x000A;  <span class="nl">backface-visibility</span><span class="p">:</span> <span class="nb">hidden</span><span class="p">;</span>&#x000A;  <span class="nl">height</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>&#x000A;  <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>&#x000A;  <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nc">.card</span> <span class="nc">.back</span> <span class="p">{</span>&#x000A;  <span class="nl">transform</span><span class="p">:</span> <span class="n">rotateY</span><span class="p">(</span><span class="m">180deg</span><span class="p">);</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+                </code></pre>
+                <h4 class='demo-title'>Demo</h4>
+                <div class='demo-code'>
+                  <p class='codepen' data-default-tab='result' data-height='258' data-slug-hash='Fvjnf' data-theme-id='5995'>
+                    See the Pen <a href='http://codepen.io/shayhowe/pen/Fvjnf/'>Card Flip</a> by Shay Howe (<a href='http://codepen.io/shayhowe'>@shayhowe</a>) on <a href='http://codepen.io/'>CodePen</a>.
+                  </p>
+                </div>
+              </div>
+              <h2 id='animations'>Animations</h2>
+              <p>Transitions do a great job of building out visual interactions from one state to another, and are perfect for these kinds of single state changes. However, when more control is required, transitions need to have multiple states. In return, this is where <a href="http://coding.smashingmagazine.com/2011/09/14/the-guide-to-css-animation-principles-and-examples/" rel="nofollow">animations</a> pick up where transitions leave off.</p>
+              <h3>Animations Keyframes</h3>
+              <p>To set multiple points at which an element should undergo a transition, use the <code>@keyframes</code> rule. The <code>@keyframes</code> rule includes the animation name, any animation breakpoints, and the properties intended to be animated.</p>
+              <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10&#x000A;11&#x000A;12&#x000A;13&#x000A;14&#x000A;15</pre></td><td class="rouge-code"><pre><span class="k">@keyframes</span> <span class="n">slide</span> <span class="p">{</span>&#x000A;  <span class="nt">0</span><span class="o">%</span> <span class="p">{</span>&#x000A;    <span class="nl">left</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>&#x000A;    <span class="nl">top</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>&#x000A;  <span class="p">}</span>&#x000A;  <span class="nt">50</span><span class="o">%</span> <span class="p">{</span>&#x000A;    <span class="nl">left</span><span class="p">:</span> <span class="m">244px</span><span class="p">;</span>&#x000A;    <span class="nl">top</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>&#x000A;  <span class="p">}</span>&#x000A;  <span class="nt">100</span><span class="o">%</span> <span class="p">{</span>&#x000A;    <span class="nl">left</span><span class="p">:</span> <span class="m">488px</span><span class="p">;</span>&#x000A;    <span class="nl">top</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>&#x000A;  <span class="p">}</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <div class='note note-box'>
+                <h4>Vendor Prefixing the Keyframe Rule</h4>
+                <p>The <code>@keyframes</code> rule must be vendor prefixed, just like all of the other <code>transition</code> and <code>animation</code> properties. The vendor prefixes for the <code>@keyframes</code> rule look like the following:</p>
+                <ul class='list-column-2 group'>
+                  <li>
+                    <code>@-moz-keyframes</code>
+                  </li>
+                  <li>
+                    <code>@-o-keyframes</code>
+                  </li>
+                  <li>
+                    <code>@-webkit-keyframes</code>
+                  </li>
+                </ul>
+              </div>
+              <p>The animation above is named <code>slide</code>, stated directly after the opening <code>@keyframes</code> rule. The different keyframe breakpoints are set using percentages, starting at <code>0%</code> and working to <code>100%</code> with an intermediate breakpoint at <code>50%</code>. The keywords <code>from</code> and <code>to</code> could be used in place of <code>0%</code> and <code>100%</code> if wished. Additional breakpoints, besides <code>50%</code>, may also be stated. The element properties to be animated are listed inside each of the breakpoints, <code>left</code> and <code>top</code> in the example above.</p>
+              <p>It is important to note, as with transitions only individual properties may be animated. Consider how you might move an element from top to bottom for example. Trying to animate from <code>top: 0;</code> to <code>bottom: 0;</code> will not work, because animations can only apply a transition within a single property, not from one property to another. In this case, the element will need to be animated from <code>top: 0;</code> to <code>top: 100%;</code>.</p>
+              <div class='note'>
+                <div class='note-box'>
+                  <h4>Animations Keyframes Demo</h4>
+                  <p>Hover over the ball below to see the animation in action.</p>
+                </div>
+                <p class='codepen' data-default-tab='result' data-height='234' data-slug-hash='hIpFr' data-theme-id='5995'>
+                  See the Pen <a href='http://codepen.io/shayhowe/pen/hIpFr/'>Animations Keyframes</a> by Shay Howe (<a href='http://codepen.io/shayhowe'>@shayhowe</a>) on <a href='http://codepen.io/'>CodePen</a>.
+                </p>
+              </div>
+              <h3>Animation Name</h3>
+              <p>Once the keyframes for an animation have been declared they need to be assigned to an element. To do so, the <code>animation-name</code> property is used with the animation name, identified from the <code>@keyframes</code> rule, as the property value. The <code>animation-name</code> declaration is applied to the element in which the animation is to be applied to.</p>
+              <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4</pre></td><td class="rouge-code"><pre><span class="nc">.stage</span><span class="nd">:hover</span> <span class="nc">.ball</span> <span class="p">{</span>&#x000A;  <span class="nl">animation-name</span><span class="p">:</span> <span class="n">slide</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <p>Using the <code>animation-name</code> property alone isn&#8217;t enough though. You also need to declare an <code>animation-duration</code> property and value so that the browser knows how long an animation should take to complete.</p>
+              <h3>Animation Duration, Timing Function, <abbr title="and">&amp;</abbr> Delay</h3>
+              <p>Once you have declared the <code>animation-name</code> property on an element, animations behave similarly to transitions. They include a duration, timing function, and delay if desired. To start, animations need a duration declared using the <code>animation-duration</code> property. As with transitions, the duration may be set in seconds or milliseconds.</p>
+              <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5</pre></td><td class="rouge-code"><pre><span class="nc">.stage</span><span class="nd">:hover</span> <span class="nc">.ball</span> <span class="p">{</span>&#x000A;  <span class="nl">animation-name</span><span class="p">:</span> <span class="n">slide</span><span class="p">;</span>&#x000A;  <span class="nl">animation-duration</span><span class="p">:</span> <span class="m">2s</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <p>A timing function and delay can be declared using the <code>animation-timing-function</code> and <code>animation-delay</code> properties respectively. The values for these properties mimic and behave just as they do with transitions.</p>
+              <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7</pre></td><td class="rouge-code"><pre><span class="nc">.stage</span><span class="nd">:hover</span> <span class="nc">.ball</span> <span class="p">{</span>&#x000A;  <span class="nl">animation-name</span><span class="p">:</span> <span class="n">slide</span><span class="p">;</span>&#x000A;  <span class="nl">animation-duration</span><span class="p">:</span> <span class="m">2s</span><span class="p">;</span>&#x000A;  <span class="nl">animation-timing-function</span><span class="p">:</span> <span class="n">ease-in-out</span><span class="p">;</span>&#x000A;  <span class="nl">animation-delay</span><span class="p">:</span> <span class="m">.5s</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <p>The animation below should cause the <code>ball</code> to bounce once while moving to the left, however only when hovering over the <code>stage</code>.</p>
+              <h6>HTML</h6>
+              <pre class="highlight html"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4</pre></td><td class="rouge-code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"stage"</span><span class="nt">&gt;</span>&#x000A;  <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"ball"</span><span class="nt">&gt;&lt;/figure&gt;</span>&#x000A;<span class="nt">&lt;/div&gt;</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <h6>CSS</h6>
+              <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10&#x000A;11&#x000A;12&#x000A;13&#x000A;14&#x000A;15&#x000A;16&#x000A;17&#x000A;18&#x000A;19&#x000A;20&#x000A;21&#x000A;22&#x000A;23&#x000A;24&#x000A;25&#x000A;26&#x000A;27&#x000A;28&#x000A;29&#x000A;30</pre></td><td class="rouge-code"><pre><span class="k">@keyframes</span> <span class="n">slide</span> <span class="p">{</span>&#x000A;  <span class="nt">0</span><span class="o">%</span> <span class="p">{</span>&#x000A;    <span class="nl">left</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>&#x000A;    <span class="nl">top</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>&#x000A;  <span class="p">}</span>&#x000A;  <span class="nt">50</span><span class="o">%</span> <span class="p">{</span>&#x000A;    <span class="nl">left</span><span class="p">:</span> <span class="m">244px</span><span class="p">;</span>&#x000A;    <span class="nl">top</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>&#x000A;  <span class="p">}</span>&#x000A;  <span class="nt">100</span><span class="o">%</span> <span class="p">{</span>&#x000A;    <span class="nl">left</span><span class="p">:</span> <span class="m">488px</span><span class="p">;</span>&#x000A;    <span class="nl">top</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>&#x000A;  <span class="p">}</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nc">.stage</span> <span class="p">{</span>&#x000A;  <span class="nl">height</span><span class="p">:</span> <span class="m">150px</span><span class="p">;</span>&#x000A;  <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nc">.ball</span> <span class="p">{</span>&#x000A;    <span class="nl">height</span><span class="p">:</span> <span class="m">50px</span><span class="p">;</span>&#x000A;    <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>&#x000A;    <span class="nl">width</span><span class="p">:</span> <span class="m">50px</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nc">.stage</span><span class="nd">:hover</span> <span class="nc">.ball</span> <span class="p">{</span>&#x000A;  <span class="nl">animation-name</span><span class="p">:</span> <span class="n">slide</span><span class="p">;</span>&#x000A;  <span class="nl">animation-duration</span><span class="p">:</span> <span class="m">2s</span><span class="p">;</span>&#x000A;  <span class="nl">animation-timing-function</span><span class="p">:</span> <span class="n">ease-in-out</span><span class="p">;</span>&#x000A;  <span class="nl">animation-delay</span><span class="p">:</span> <span class="m">.5s</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <div class='note'>
+                <div class='note-box'>
+                  <h4>Animation Demo</h4>
+                  <p>Hover over the ball below to see the animation in action.</p>
+                </div>
+                <p class='codepen' data-default-tab='result' data-height='234' data-slug-hash='fochl' data-theme-id='5995'>
+                  See the Pen <a href='http://codepen.io/shayhowe/pen/fochl/'>Animation</a> by Shay Howe (<a href='http://codepen.io/shayhowe'>@shayhowe</a>) on <a href='http://codepen.io/'>CodePen</a>.
+                </p>
+              </div>
+              <h2 id='customizing-animations'>Customizing Animations</h2>
+              <p>Animations also provide the ability to further customize an element&#8217;s behavior, including the ability to declare the number of times an animation runs, as well as the direction in which an animation completes.</p>
+              <h3>Animation Iteration</h3>
+              <p>By default, animations run their cycle once from beginning to end and then stop. To have an animation repeat itself numerous times the <code>animation-iteration-count</code> property may be used. Values for the <code>animation-iteration-count</code> property include either an integer or the <code>infinite</code> keyword. Using an integer will repeat the animation as many times as specified, while the <code>infinite</code> keyword will repeat the animation indefinitely in a never ending fashion.</p>
+              <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8</pre></td><td class="rouge-code"><pre><span class="nc">.stage</span><span class="nd">:hover</span> <span class="nc">.ball</span> <span class="p">{</span>&#x000A;  <span class="nl">animation-name</span><span class="p">:</span> <span class="n">slide</span><span class="p">;</span>&#x000A;  <span class="nl">animation-duration</span><span class="p">:</span> <span class="m">2s</span><span class="p">;</span>&#x000A;  <span class="nl">animation-timing-function</span><span class="p">:</span> <span class="n">ease-in-out</span><span class="p">;</span>&#x000A;  <span class="nl">animation-delay</span><span class="p">:</span> <span class="m">.5s</span><span class="p">;</span>&#x000A;  <span class="nl">animation-iteration-count</span><span class="p">:</span> <span class="n">infinite</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <div class='note'>
+                <div class='note-box'>
+                  <h4>Animation Iteration Demo</h4>
+                  <p>Hover over the ball below to see the animation in action.</p>
+                </div>
+                <p class='codepen' data-default-tab='result' data-height='234' data-slug-hash='xvbqF' data-theme-id='5995'>
+                  See the Pen <a href='http://codepen.io/shayhowe/pen/xvbqF/'>Animation Iteration</a> by Shay Howe (<a href='http://codepen.io/shayhowe'>@shayhowe</a>) on <a href='http://codepen.io/'>CodePen</a>.
+                </p>
+              </div>
+              <h3>Animation Direction</h3>
+              <p>On top of being able to set the number of times an animation repeats, you may also declare the direction an animation completes using the <code>animation-direction</code> property. Values for the <code>animation-direction</code> property include <code>normal</code>, <code>reverse</code>, <code>alternate</code>, and <code>alternate-reverse</code>.</p>
+              <p>The <code>normal</code> value plays an animation as intended from beginning to end. The <code>reverse</code> value will play the animation exactly opposite as identified within the <code>@keyframes</code> rule, thus starting at <code>100%</code> and working backwards to <code>0%</code>.</p>
+              <p>The <code>alternate</code> value will play an animation forwards then backwards. Within the keyframes that includes running forward from <code>0%</code> to <code>100%</code> and then backwards from <code>100%</code> to <code>0%</code>. Using the <code>animation-iteration-count</code> property may limit the number of times an animation runs both forwards and backwards. The count starts at <code>1</code> running an animation forwards from <code>0%</code> to <code>100%</code>, then adds <code>1</code> running an animation backwards from <code>100%</code> to <code>0%</code>. Combining for a total of <code>2</code> iterations. The <code>alternate</code> value also inverses any timing functions when playing in reverse. If an animation uses the <code>ease-in</code> value going from <code>0%</code> to <code>100%</code>, it then uses the <code>ease-out</code> value going from <code>100%</code> to <code>0%</code>.</p>
+              <p>Lastly, the <code>alternate-reverse</code> value combines both the <code>alternate</code> and <code>reverse</code> values, running an animation backwards then forwards. The <code>alternate-reverse</code> value starts at <code>100%</code> running to <code>0%</code> and then back to <code>100%</code> again.</p>
+              <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9</pre></td><td class="rouge-code"><pre><span class="nc">.stage</span><span class="nd">:hover</span> <span class="nc">.ball</span> <span class="p">{</span>&#x000A;  <span class="nl">animation-name</span><span class="p">:</span> <span class="n">slide</span><span class="p">;</span>&#x000A;  <span class="nl">animation-duration</span><span class="p">:</span> <span class="m">2s</span><span class="p">;</span>&#x000A;  <span class="nl">animation-timing-function</span><span class="p">:</span> <span class="n">ease-in-out</span><span class="p">;</span>&#x000A;  <span class="nl">animation-delay</span><span class="p">:</span> <span class="m">.5s</span><span class="p">;</span>&#x000A;  <span class="nl">animation-iteration-count</span><span class="p">:</span> <span class="n">infinite</span><span class="p">;</span>&#x000A;  <span class="nl">animation-direction</span><span class="p">:</span> <span class="n">alternate</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <div class='note'>
+                <div class='note-box'>
+                  <h4>Animation Direction Demo</h4>
+                  <p>Hover over the ball below to see the animation in action.</p>
+                </div>
+                <p class='codepen' data-default-tab='result' data-height='234' data-slug-hash='xpigK' data-theme-id='5995'>
+                  See the Pen <a href='http://codepen.io/shayhowe/pen/xpigK/'>Animation Direction</a> by Shay Howe (<a href='http://codepen.io/shayhowe'>@shayhowe</a>) on <a href='http://codepen.io/'>CodePen</a>.
+                </p>
+              </div>
+              <h3>Animation Play State</h3>
+              <p>The <code>animation-play-state</code> property allows an animation to be played or paused using the <code>running</code> and <code>paused</code> keyword values respectively. When you play a paused animation, it will resume running from its current state rather than starting from the very beginning again.</p>
+              <p>In the example below the <code>animation-play-state</code> property is set to <code>paused</code> when making the <code>stage</code> active by clicking on it. Notice how the animation will temporarily pause until you let up on the mouse.</p>
+              <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10&#x000A;11&#x000A;12</pre></td><td class="rouge-code"><pre><span class="nc">.stage</span><span class="nd">:hover</span> <span class="nc">.ball</span> <span class="p">{</span>&#x000A;  <span class="nl">animation-name</span><span class="p">:</span> <span class="n">slide</span><span class="p">;</span>&#x000A;  <span class="nl">animation-duration</span><span class="p">:</span> <span class="m">2s</span><span class="p">;</span>&#x000A;  <span class="nl">animation-timing-function</span><span class="p">:</span> <span class="n">ease-in-out</span><span class="p">;</span>&#x000A;  <span class="nl">animation-delay</span><span class="p">:</span> <span class="m">.5s</span><span class="p">;</span>&#x000A;  <span class="nl">animation-iteration-count</span><span class="p">:</span> <span class="n">infinite</span><span class="p">;</span>&#x000A;  <span class="nl">animation-direction</span><span class="p">:</span> <span class="n">alternate</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nc">.stage</span><span class="nd">:active</span> <span class="nc">.ball</span> <span class="p">{</span>&#x000A;  <span class="nl">animation-play-state</span><span class="p">:</span> <span class="n">paused</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <div class='note'>
+                <div class='note-box'>
+                  <h4>Animation Play State Demo</h4>
+                  <p>Hover over the ball below to see the animation in action. Click to pause the animation.</p>
+                </div>
+                <p class='codepen' data-default-tab='result' data-height='234' data-slug-hash='ogJjm' data-theme-id='5995'>
+                  See the Pen <a href='http://codepen.io/shayhowe/pen/ogJjm/'>Animation Play State</a> by Shay Howe (<a href='http://codepen.io/shayhowe'>@shayhowe</a>) on <a href='http://codepen.io/'>CodePen</a>.
+                </p>
+              </div>
+              <h3>Animation Fill Mode</h3>
+              <p>The <code>animation-fill-mode</code> property identifies how an element should be styled either before, after, or before and after an animation is run. The <code>animation-fill-mode</code> property accepts four keyword values, including <code>none</code>, <code>forwards</code>, <code>backwards</code>, and <code>both</code>.</p>
+              <p>The <code>none</code> value will not apply any styles to an element before or after an animation has been run.</p>
+              <p>The <code>forwards</code> value will keep the styles declared within the last specified keyframe. These styles may, however, be affected by the <code>animation-direction</code> and <code>animation-iteration-count</code> property values, changing exactly where an animation ends.</p>
+              <p>The <code>backwards</code> value will apply the styles within the first specified keyframe as soon as being identified, before the animation has been run. This does include applying those styles during any time that may be set within an animation delay. The <code>backwards</code> value may also be affected by the <code>animation-direction</code> property value.</p>
+              <p>Lastly, the <code>both</code> value will apply the behaviors from both the <code>forwards</code> and <code>backwards</code> values.</p>
+              <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7&#x000A;8&#x000A;9&#x000A;10&#x000A;11</pre></td><td class="rouge-code"><pre><span class="nc">.stage</span><span class="nd">:hover</span> <span class="nc">.ball</span> <span class="p">{</span>&#x000A;  <span class="nl">animation-name</span><span class="p">:</span> <span class="n">slide</span><span class="p">;</span>&#x000A;  <span class="nl">animation-duration</span><span class="p">:</span> <span class="m">2s</span><span class="p">;</span>&#x000A;  <span class="nl">animation-timing-function</span><span class="p">:</span> <span class="n">ease-in-out</span><span class="p">;</span>&#x000A;  <span class="nl">animation-delay</span><span class="p">:</span> <span class="m">.5s</span><span class="p">;</span>&#x000A;  <span class="nl">animation-fill-mode</span><span class="p">:</span> <span class="n">forwards</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nc">.stage</span><span class="nd">:active</span> <span class="nc">.ball</span> <span class="p">{</span>&#x000A;  <span class="nl">animation-play-state</span><span class="p">:</span> <span class="n">paused</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <div class='note'>
+                <div class='note-box'>
+                  <h4>Animation Fill Mode Demo</h4>
+                  <p>Hover over the ball below to see the animation in action. Click to pause the animation.</p>
+                </div>
+                <p class='codepen' data-default-tab='result' data-height='234' data-slug-hash='xEgoL' data-theme-id='5995'>
+                  See the Pen <a href='http://codepen.io/shayhowe/pen/xEgoL/'>Animation Fill Mode</a> by Shay Howe (<a href='http://codepen.io/shayhowe'>@shayhowe</a>) on <a href='http://codepen.io/'>CodePen</a>.
+                </p>
+              </div>
+              <h2 id='shorthand-animations'>Shorthand Animations</h2>
+              <p>Fortunately <a href="https://developer.mozilla.org/en-US/docs/CSS/Using_CSS_animations" rel="nofollow">animations</a>, just like transitions, can be written out in a shorthand format. This is accomplished with one <code>animation</code> property, rather than multiple declarations. The order of values within the <code>animation</code> property should be <code>animation-name</code>, <code>animation-duration</code>, <code>animation-timing-function</code>, <code>animation-delay</code>, <code>animation-iteration-count</code>, <code>animation-direction</code>, <code>animation-fill-mode</code>, and lastly <code>animation-play-state</code>.</p>
+              <pre class="highlight css"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;7</pre></td><td class="rouge-code"><pre><span class="nc">.stage</span><span class="nd">:hover</span> <span class="nc">.ball</span> <span class="p">{</span>&#x000A;  <span class="nl">animation</span><span class="p">:</span> <span class="n">slide</span> <span class="m">2s</span> <span class="n">ease-in-out</span> <span class="m">.5s</span> <span class="n">infinite</span> <span class="n">alternate</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;<span class="nc">.stage</span><span class="nd">:active</span> <span class="nc">.ball</span> <span class="p">{</span>&#x000A;  <span class="nl">animation-play-state</span><span class="p">:</span> <span class="n">paused</span><span class="p">;</span>&#x000A;<span class="p">}</span>&#x000A;</pre></td></tr></tbody></table>
+              </code></pre>
+              <div class='note'>
+                <div class='note-box'>
+                  <h4>Shorthand Animations Demo</h4>
+                  <p>Hover over the ball below to see the animation in action. Click to pause the animation.</p>
+                </div>
+                <p class='codepen' data-default-tab='result' data-height='234' data-slug-hash='gDmka' data-theme-id='5995'>
+                  See the Pen <a href='http://codepen.io/shayhowe/pen/gDmka/'>Shorthand Animations</a> by Shay Howe (<a href='http://codepen.io/shayhowe'>@shayhowe</a>) on <a href='http://codepen.io/'>CodePen</a>.
+                </p>
+              </div>
+              <h2>Resources <abbr title="and">&amp;</abbr> Links</h2>
+              <ul class='list-column-2 group'>
+                <li>
+                  <a href='http://www.alistapart.com/articles/understanding-css3-transitions/' rel='nofollow'>Understanding CSS3 Transitions</a>
+                  via A List Apart
+                </li>
+                <li>
+                  <a href='http://www.roblaplaca.com/examples/bezierBuilder/' rel='nofollow'>CSS Cubic-Bezier Builder</a>
+                  via Rob LaPlaca
+                </li>
+                <li>
+                  <a href='http://coding.smashingmagazine.com/2011/09/14/the-guide-to-css-animation-principles-and-examples/' rel='nofollow'>The Guide To CSS Animation: Principles and Examples</a>
+                  via Smashing Magazine
+                </li>
+                <li>
+                  <a href='https://developer.mozilla.org/en-US/docs/CSS/Using_CSS_animations' rel='nofollow'>Using CSS Animations</a>
+                  via Mozilla Developer Network
+                </li>
+              </ul>
+              <ul class='share' data-js='share' data-permalink='http://learn.shayhowe.com/advanced-html-css/transitions-animations/' data-title='Transitions &amp;amp; Animations'>
+                <li>
+                  <a class='share-twitter' data-js='share-twitter' href='#' rel='nofollow'>
+                    Share on Twitter
+                  </a>
+                </li>
+                <li>
+                  <a class='share-facebook' data-js='share-facebook' href='#' rel='nofollow'>
+                    Share on Facebook
+                  </a>
+                </li>
+                <li>
+                  <a class='share-google' data-js='share-google' href='#' rel='nofollow'>
+                    Share on Google+
+                  </a>
+                </li>
+              </ul>
+            </article>
+            <nav class='pagination container'>
+              <ul>
+                <li class='pagination-prev'>
+                  <a href='../css-transforms/index.html' rel='prev'>
+                    <strong>Lesson 7</strong>
+                    <span>Transforms</span>
+                  </a>
+                </li>
+                <li class='pagination-next'>
+                  <a href='../feature-support-polyfills/index.html' rel='next'>
+                    <strong>Lesson 9</strong>
+                    <span>Feature Support &amp; Polyfills</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div data-js='geo-location' hidden>
+              <section class='lead-promo'>
+                <div class='container'>
+                  <h2>Learn More <span>HTML &amp; CSS</span> or Study Other Topics</h2>
+                  <p>Learning how to code HTML <abbr title="and">&amp;</abbr> CSS and building successful websites can be challenging, and at times additional help and explanation can go a long way. Fortunately there are plenty of schools, boot camps, workshops, and the alike, both in-person and online, that can help.</p>
+                  <p>If you&#8217;re interested, complete the form below and I will connect you with a course I believe will provide the best learning opportunity for you.</p>
+                  <iframe hidden name='hidden_form'></iframe>
+                  <form action='https://docs.google.com/forms/d/e/1FAIpQLSeGG16EvML8mAF-EXUzTWsoy30ORq7W203_qORXT4SCebxqoQ/formResponse' data-js='recommendation-form' method='post' target='hidden_form'>
+                    <div class='margin-bottom'>
+                      <label class='form-label' for='name'>Name</label>
+                      <input class='form-control' data-js='name' id='name' name='entry.301578661' required type='text'>
+                    </div>
+                    <div class='margin-bottom'>
+                      <label class='form-label' for='email'>Email Address</label>
+                      <input class='form-control' data-js='email' id='email' name='entry.1305847502' required type='email'>
+                    </div>
+                    <div class='margin-bottom'>
+                      <label class='form-label' for='phone'>Phone Number</label>
+                      <input class='form-control' data-js='tel' id='phone' name='entry.363783636' required type='tel'>
+                    </div>
+                    <div class='margin-bottom hide'>
+                      <label class='form-label' for='location'>Location</label>
+                      <input class='form-control' data-js='location' id='location' name='entry.954966139' type='text'>
+                    </div>
+                    <div class='margin-bottom hide'>
+                      <label class='form-label' for='robot'>You&#8217;re not a robot, right?</label>
+                      <input class='form-control' data-js='checkbox-robot' id='robot' name='entry.1329951651' type='checkbox' value='Yes'>Yes</input>
+                    </div>
+                    <div class='margin-bottom hide'>
+                      <label class='form-label' for='key'>What is the special key?</label>
+                      <input class='form-control' data-js='key' id='key' name='entry.1046405393' required type='text' value='robotsnotwelcome'>
+                    </div>
+                    <button class='btn btn-alt' disabled type='submit'>Get Course Recommendations</button>
+                  </form>
+                  <form action='https://docs.google.com/forms/d/e/1FAIpQLSfhjyPa_D0iRyAjFyBEq3NAS5J-NONJfRLjElJyWSkALMXuwQ/formResponse' data-js='recommendation-follow-up-form' hidden method='post' target='hidden_form'>
+                    <h3>A Few Quick Follow-up Questions</h3>
+                    <p>Thank you! For the best recommendation, please answer the questions below. It&#8217;ll be the last I ask of you, promise!</p>
+                    <div class='margin-bottom hide'>
+                      <label class='form-label' for='name'>Name</label>
+                      <input class='form-control' data-js='name' id='name' name='entry.1576133276' type='text'>
+                    </div>
+                    <div class='margin-bottom hide'>
+                      <label class='form-label' for='email'>Email Address</label>
+                      <input class='form-control' data-js='email' id='email' name='entry.311025906' type='email'>
+                    </div>
+                    <div class='margin-bottom hide'>
+                      <label class='form-label' for='phone'>Phone Number</label>
+                      <input class='form-control' data-js='tel' id='phone' name='entry.1708507367' type='tel'>
+                    </div>
+                    <div class='margin-bottom hide'>
+                      <label class='form-label' for='location'>Location</label>
+                      <input class='form-control' data-js='location' id='location' name='entry.176432259' type='text'>
+                    </div>
+                    <div class='margin-bottom'>
+                      <label class='form-label'>Are you interested in an in-person or online course?</label>
+                      <div class='form-toggles'>
+                        <input data-toggle-control='setting' hidden id='setting-in-person' name='entry.814649513' required type='radio' value='In-Person'>
+                        <label class='form-toggle' for='setting-in-person'>In-Person</label>
+                        <input data-toggle-control='setting' hidden id='setting-online' name='entry.814649513' required type='radio' value='Online'>
+                        <label class='form-toggle' for='setting-online'>Online</label>
+                        <input data-toggle-control='setting' hidden id='setting-both' name='entry.814649513' required type='radio' value='Both'>
+                        <label class='form-toggle' for='setting-both'>Both</label>
+                      </div>
+                    </div>
+                    <div class='margin-bottom grid-1-1' data-toggle-setting='In-Person Online Both' hidden>
+                      <label class='form-label' for='topic'>What is your topic of interest?</label>
+                      <select class='form-select' data-toggle-control='duration' id='topic' name='entry.1204048627' required>
+                        <option value=''>Please Choose</option>
+                        <optgroup label='Design &amp; Product'>
+                          <option data-toggle-setting='In-Person Both' hidden value='Visual Design'>
+                            Visual Design
+                          </option>
+                          <option data-toggle-setting='In-Person Online Both' hidden value='User Experience Design'>
+                            User Experience Design
+                          </option>
+                          <option data-toggle-setting='In-Person Both' hidden value='Product Management'>
+                            Product Management
+                          </option>
+                        </optgroup>
+                        <optgroup label='Front-End'>
+                          <option data-toggle-setting='In-Person Online Both' hidden value='Front-End Development'>
+                            Front-End Development
+                          </option>
+                          <option data-toggle-setting='In-Person Both' hidden value='JavaScript Development'>
+                            JavaScript Development
+                          </option>
+                        </optgroup>
+                        <optgroup label='Development'>
+                          <option data-toggle-setting='In-Person Online Both' hidden value='Web Development'>
+                            Web Development
+                          </option>
+                          <option data-toggle-setting='In-Person Both' hidden value='iOS Development'>
+                            iOS Development
+                          </option>
+                          <option data-toggle-setting='In-Person Both' hidden value='Android Development'>
+                            Android Development
+                          </option>
+                        </optgroup>
+                        <optgroup label='Data &amp; Marketing'>
+                          <option data-toggle-setting='In-Person Both' hidden value='Data Science'>
+                            Data Science
+                          </option>
+                          <option data-toggle-setting='In-Person Both' hidden value='Data Analytics'>
+                            Data Analytics
+                          </option>
+                          <option data-toggle-setting='Online Both' hidden value='Data Analysis'>
+                            Data Analysis
+                          </option>
+                          <option data-toggle-setting='In-Person Online Both' hidden value='Digital Marketing'>
+                            Digital Marketing
+                          </option>
+                        </optgroup>
+                      </select>
+                    </div>
+                    <div class='margin-bottom' data-toggle-duration='User Experience Design Data Science' hidden>
+                      <label class='form-label'>Are you interested in a full-time or part-time course?</label>
+                      <div class='form-toggles'>
+                        <input hidden id='duration-full' name='entry.2037457624' type='radio' value='Full-time'>
+                        <label class='form-toggle' for='duration-full'>Full-time</label>
+                        <input hidden id='duration-part' name='entry.2037457624' type='radio' value='Part-time'>
+                        <label class='form-toggle' for='duration-part'>Part-time</label>
+                        <input hidden id='duration-both' name='entry.2037457624' type='radio' value='Both'>
+                        <label class='form-toggle' for='duration-both'>Both</label>
+                      </div>
+                    </div>
+                    <div class='margin-bottom' data-toggle-setting='In-Person Both' hidden>
+                      <label class='form-label' for='city'>In what city, or cities, would you prefer to attend a course?</label>
+                      <textarea class='form-control form-area' id='city' name='entry.1507070782' placeholder='Do you want to stay local to where you live? Are you open to traveling?'></textarea>
+                    </div>
+                    <div class='margin-bottom'>
+                      <label class='form-label' for='comments'>Do you have any additional questions or comments?</label>
+                      <textarea class='form-control form-area' id='comments' name='entry.71247427' placeholder="Any specific topics you're looking to learn more about? Any other comments?"></textarea>
+                    </div>
+                    <div class='margin-bottom hide'>
+                      <label class='form-label' for='robot'>You&#8217;re not a robot, right?</label>
+                      <input class='form-control' data-js='checkbox-robot' id='robot' name='entry.241165342' type='checkbox' value='Yes'>Yes</input>
+                    </div>
+                    <div class='margin-bottom hide'>
+                      <label class='form-label' for='key'>What is the special key?</label>
+                      <input class='form-control' data-js='key' id='key' name='entry.191730697' required type='text'>
+                    </div>
+                    <button class='btn btn-alt' disabled type='submit'>Get Course Recommendations</button>
+                  </form>
+                  <div data-js='recommendation-form-success' hidden>
+                    <h3 class='form-success-heading'>Thanks, you&#8217;re all set!</h3>
+                    Please keep an eye out for your recommendation, either from me or directly from one of the schools, boot camps, or workshops I recommend.
+                  </div>
+                </div>
+              </section>
+            </div>
+            <section class='container'>
+              <div class='promo-book'>
+                <h2>
+                  <a href='#'>Learn to Code HTML <abbr title="and">&amp;</abbr> CSS the Book</a>
+                </h2>
+                <a class='promo-img promo-book-img' data-js='promo-book-img' href='../index.html'><img alt="HTML and CSS" src="../../assets/images/book/book-sm.png" /></a>
+                <p><cite>Learn to Code HTML <abbr title="and">&amp;</abbr> CSS</cite> is an interactive beginner&#8217;s guide with one express goal: <strong>teach you how to develop and style websites</strong> with HTML and CSS. Outlining the fundamentals, this book covers all of the common elements of front-end design and development.</p>
+                <div class='promo-btn'>
+                  <a class='btn btn-cta' href='http://click.linksynergy.com/fs-bin/click?id=0UVRLqz5qts&amp;offerid=145244.10000181&amp;type=3&amp;subid=0' onClick="_gaq.push(['_trackEvent', 'Purchase', 'Peachpit', 'Transitions &amp;amp; Animations']);" rel='nofollow'>Buy Learn to Code HTML <abbr title="and">&amp;</abbr> CSS</a>
+                </div>
+                <p class='promo-links'>
+                  Also available at
+                  <span>
+                    <a href='http://www.amazon.com/Learn-Code-HTML-CSS-Websites/dp/0321940520' onClick="_gaq.push(['_trackEvent', 'Purchase', 'Amazon', 'Transitions &amp;amp; Animations']);" rel='nofollow'>Amazon</a>
+                    and
+                    <a href='http://www.barnesandnoble.com/w/learn-to-code-html-and-css-shay-howe/1124334828' onClick="_gaq.push(['_trackEvent', 'Purchase', 'Barnes &amp; Noble', 'Transitions &amp;amp; Animations']);" rel='nofollow'>Barnes &amp; Noble</a>
+                  </span>
+                </p>
+              </div>
+            </section>
+            <section class='container'>
+              <div class='note'>
+                <div class='promo note-box note-stack'>
+                  <h3>
+                    <a href='../../html-css/index.html'>Looking for Beginner HTML <abbr title="and">&amp;</abbr> CSS Lessons?</a>
+                  </h3>
+                  <a class='promo-img promo-course-img' href='../../html-css/index.html'><img alt="HTML and CSS" class="media-circle" src="../../assets/images/code.jpg" /></a>
+                  <p>Checkout these <a href="../../html-css/index.html">beginner focused HTML and CSS lessons</a>, compiled into a simple and comprehensive guide dedicated to helping beginners learn HTML and CSS, working through all common components.</p>
+                  <a class='btn btn-alt' href='../../html-css/index.html'>View Beginner HTML <abbr title="and">&amp;</abbr> CSS Lessons</a>
+                </div>
+                <div class='newsletter note-box group'>
+                  <h3>Join the Newsletter</h3>
+                  <p>To stay up to date and learn when new courses and lessons are posted, please sign up for the newsletter&#8212;spam free.</p>
+                  <form action='http://shayhowe.us4.list-manage2.com/subscribe/post?u=98ada7f8bdec8f5ac0c78fd0f&amp;amp;id=4750db3524' class='newsletter-form' method='post' name='mc-embedded-subscribe-form' target='_blank'>
+                    <div class='input-group'>
+                      <input class='input-control' name='EMAIL' placeholder='Email address' required type='email'>
+                      <div class='input-group-btn'>
+                        <button class='btn btn-alt' name='subscribe'>Get Updates</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </section>
+            <script async src='http://codepen.io/assets/embed/ei.js'></script>
+          </div>
+          <footer class='primary-footer'>
+            <div class='clamp'>
+              <small>&copy; 2017 Shay Howe</small>
+              <div class='enjoy-cta'>
+                Enjoy these lessons?
+                <a class='twitter-follow-button' data-lang='en' data-show-count='false' data-size='large' href='https://twitter.com/shayhowe'>
+                  Follow @shayhowe
+                </a>
+              </div>
+            </div>
+          </footer>
+        </section>
+      </div>
+    </div>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
+    <script>
+      window.jQuery || document.write('<script src="../../assets/javascripts/vendor/jquery-1.11.0.min.js"><\/script>')
+    </script>
+    <script src="../../assets/javascripts/main.js" type="text/javascript"></script>
+    <script>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-3738010-2']);
+      _gaq.push(['_trackPageview']);
+      
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <script>
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    </script>
+  </body>
+
+<!-- Mirrored from learn.shayhowe.com/advanced-html-css/transitions-animations/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 16 Jun 2017 18:08:11 GMT -->
+</html>
