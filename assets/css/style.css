@@ -186,6 +186,10 @@ Examples of online services see in Documentation  */
 ===	#Magnific Popup CSS File 
 
 */
+/* NEW CUSTOM CSS */
+h4 a {
+  border-bottom: 0.07142857rem solid rgba(255, 123, 41, .5);
+}
 
 /* #CSS RESET
  ===================================================================*/
@@ -249,11 +253,11 @@ body {
 .font-light { font-weight:100 !important;}
 .font-norm { font-weight:normal !important;}
 ::selection{
-	background-color: #ffea00;
+	background-color: #C0C0C0;
   color:#323336;
 }
 ::-moz-selection {
-	background-color: #ffea00;
+	background-color: #C0C0C0;
   color:#323336;
 }
 .relative {position: relative;}
@@ -2605,6 +2609,8 @@ support for no js
 /* #REVO #SLIDER custom 
 ================================================== */
 .red-dot { color:#ff0000;}
+.orange-dot { color:#ff7b29;}
+
 .tp-banner{
 	width:100%;
 	position:relative;
@@ -5858,14 +5864,14 @@ label.error {
 input, textarea, select, .login-select, .form-control{
   font-family: 'Poppins','Open Sans',Arial, Helvetica, sans-serif;
   border:none;
-	border-bottom: 1px solid #ccc; 
-	border-radius: 0px;
+  border-bottom: 1px solid rgba(255, 123, 41, .5);
+  border-radius: 0px;
   background:transparent;
-	color: #323336;
-	font-size: 14px;
-	margin: 0;
-	outline: medium none;
-	padding: 8px 20px 8px 0;
+  color: #323336;
+  font-size: 14px;
+  margin: 0;
+  outline: medium none;
+  padding: 8px 20px 8px 0;
 }
 select{
   overflow: hidden;
@@ -8305,7 +8311,8 @@ ul#portfolio {
 ===============================================================*/
 /***** #HEADINGS *****/
 h1, h2, h3, h4, h5, h6{
-	font-family: 'Poppins',Arial,Helvetica,sans-serif;
+  /*font-family: 'Poppins',Arial,Helvetica,sans-serif;*/
+	font-family: 'Raleway',Arial,Helvetica,sans-serif;
 	font-weight:normal;
 	color: #323336;
 	margin: 0;
@@ -9207,10 +9214,18 @@ a {
   color: #323336;
 	outline: none !important;
   text-decoration: none;
-  transition: all .3s ease 0s;
+
+
+}
+p a {
+  color: #323336;
+	outline: none !important;
+  text-decoration: none;
+  border-bottom: 0.07142857rem solid #c0c0c0c0;
+
 }
 a:hover, a:focus {
-  color: #97999c;
+  color: #c0c0c0;
   text-decoration: none;
   transition: all .3s ease 0s;
 	cursor:pointer;
