@@ -5864,7 +5864,7 @@ label.error {
 input, textarea, select, .login-select, .form-control{
   font-family: 'Poppins','Open Sans',Arial, Helvetica, sans-serif;
   border:none;
-  border-bottom: 1px solid rgba(255, 123, 41, .5);
+  border-bottom: 1px solid #ccc;
   border-radius: 0px;
   background:transparent;
   color: #323336;
@@ -9225,7 +9225,7 @@ p a {
 
 }
 a:hover, a:focus {
-  color: #c0c0c0;
+  color: #97999c;
   text-decoration: none;
   transition: all .3s ease 0s;
 	cursor:pointer;
