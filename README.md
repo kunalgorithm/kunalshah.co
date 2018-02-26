@@ -4,6 +4,6 @@ Created by [Kunal Shah](http://kunalshah.co)
 This repository contains the source code for my personal website.
 
 # Have a web development or design project in mind? 
-Get in touch! 
+Send me a note!
 
-You can [email me](mailto:contact@kunalshah.co) or use my [contact form.](http://kunalshah.co/#contact)
+You can [email me](mailto:hello@kunalshah.co) or use my [contact form.](http://kunalshah.co/#contact)

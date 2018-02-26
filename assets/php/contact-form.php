@@ -21,17 +21,17 @@ if (array_key_exists('email', $_POST)) {
     //Use a fixed address in your own domain as the from address
     //**DO NOT** use the submitter's address here as it will be forgery
     //and will cause your messages to fail SPF checks
-
-    $mail->setFrom('contact-form@kunalshah.co', 'Contact form: kunalshah.co'); //**Write here sender email. For example, emails will be sent to you from your website, so write email of your website (if you don't have it, write any email, which you want) and the name of your website. Example ('email@your-website.com', 'your-website.com')) Send from a fixed, valid address in your own domain, perhaps one that allows you to easily identify that it originated on your contact form**
-
+    
+    $mail->setFrom('hello@kunalshah.co', 'kunalshah.co'); //**Write here sender email. For example, emails will be sent to you from your website, so write email of your website (if you don't have it, write any email, which you want) and the name of your website. Example ('email@your-website.com', 'your-website.com')) Send from a fixed, valid address in your own domain, perhaps one that allows you to easily identify that it originated on your contact form**
+    
     //Send the message to yourself, or whoever should receive contact for submissions
-
-    $mail->addAddress('contact@kunalshah.co'); //**WRITE HERE RECIPIENT EMAIL ADDRESS (AT THIS ADDRESS EMAILS WILL BE COME)**
-
+    
+    $mail->addAddress('hello@kunalshah.co'); //**WRITE HERE RECIPIENT EMAIL ADDRESS (AT THIS ADDRESS EMAILS WILL BE COME)**
+    
     //Put the submitter's address in a reply-to header
     //This will fail if the address provided is invalid,
     //in which case we should ignore the whole request
-
+    
     if ($mail->addReplyTo($_POST['email'], $_POST['name'])) {
         $mail->Subject = 'Message from '.$_POST['name'];
         //Keep it simple - don't use HTML
@@ -51,7 +51,7 @@ EOT;
       $arrResult = array ('response'=>'success');
 
       echo json_encode($arrResult);
-
+      
     } else {
 
       $arrResult = array ('response'=>'error');
