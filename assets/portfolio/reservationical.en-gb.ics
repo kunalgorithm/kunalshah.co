@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Booking.com\, b.v.//NONSGML v1.0//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1285425266@booking.com
+ORGANIZER;CN=Kunal Shah:mailto:
+DTSTAMP:20181108T054406Z
+DTSTART:20181203T150000
+DTEND:20181206T113000
+SUMMARY:Casa Aperta B&B (迷路 為了看花 緩民宿)
+LOCATION:No.58\, Shulin Road\, Hengchun\, 946\, Taiwan
+GEO:21.9539241508328;120.721653688361
+URL:https://secure.booking.com/myreservations.en-gb.html?label=gen173nr-1FCAEoggI46AdIM1gEaOcBiAEBmAEuuAEHyAEM2AEB6AEB-AELiAIBqAID;sid=0a06dcf00063e016d51184b239d3e559;auth_key=C8yrIjEqCJv5FPWt&
+DESCRIPTION:Arrival: Monday 3 December 2018, check-in between 15:00 - 19:00\n\nDeparture: Thursday 6 December 2018, check-out between 09:00 - 11:30\n\nYou can view, change or cancel your booking here
+END:VEVENT
+END:VCALENDAR
