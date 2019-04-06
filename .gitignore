@@ -2,3 +2,6 @@ assets/images/brick-cutout.png
 assets/images/bw-brick.png
 assets/fonts/devicon/*
 
+.DS_Store
+assets/*/*/.DS_Store
+*/.DS_Store
