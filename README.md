@@ -1,9 +1,1 @@
-
-# kunalshah.co
-Created by [Kunal Shah](http://kunalshah.co)
-This repository contains the source code for my personal website.
-
-# Have a web development or design project in mind? 
-Send me a note!
-
-You can [email me](mailto:kunal@kunalshah.co) or use my [contact form.](http://kunalshah.co/#contact)
+This is the source code of my previous personal website, which has been deprecated. You can visit my more recent website at [kunal.sh](https://kunal.sh) and find the corresponding source code at https://github.com/kunalgorithm/kunal.sh
